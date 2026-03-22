@@ -7,34 +7,51 @@ header.site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 4rem;
   background: var(--glass-bg);
   backdrop-filter: blur(12px);
-  border-bottom: var(--glass-border);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--glass-border);
   z-index: 1000;
   transition: var(--transition);
 }
 
+header.site-header.scrolled {
+  height: 70px;
+  background: rgba(2, 6, 23, 0.95);
+}
+
 .logo {
   font-family: var(--font-heading);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  color: var(--secondary-color);
-  letter-spacing: 1px;
+  color: var(--text-primary);
+  letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.logo span {
+  color: var(--secondary-color);
 }
 
 nav.nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 nav.nav-links a {
-  color: var(--text-primary);
+  color: var(--text-secondary);
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   position: relative;
   padding: 0.5rem 0;
+  transition: var(--transition);
+}
+
+nav.nav-links a:hover {
+  color: var(--text-primary);
 }
 
 nav.nav-links a::after {
@@ -43,7 +60,7 @@ nav.nav-links a::after {
   bottom: 0;
   left: 0;
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: var(--secondary-color);
   transition: var(--transition);
 }
@@ -57,13 +74,19 @@ nav.nav-links a.active {
   color: var(--secondary-color);
 }
 
+@media (max-width: 1024px) {
+  header.site-header {
+    padding: 0 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   header.site-header {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
+    height: var(--header-height);
   }
 
   nav.nav-links {
-    gap: 1rem;
-    font-size: 0.9rem;
+    display: none; /* In a real app, we'd add a hamburger menu */
   }
 }

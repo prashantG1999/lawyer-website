@@ -1,33 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
-  /* Color Palette */
-  --primary-color: #0f172a;
-  /* Deep Navy */
-  --secondary-color: #c5a059;
-  /* Gold/Bronze */
-  --accent-color: #64ffda;
-  /* Subtle Cyan for highlights */
-  --text-primary: #e2e8f0;
+  /* Color Palette - Deep, Sophisticated Navy & Gold */
+  --primary-color: #020617; /* Deep Navy Black */
+  --primary-light: #0f172a;
+  --secondary-color: #c5a059; /* Classic Gold */
+  --secondary-hover: #d4b47a;
+  --accent-color: #e2e8f0;
+  
+  /* Text Colors */
+  --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  
+  /* Backgrounds */
   --bg-color: #020617;
-  /* Very dark blue/black */
-  --card-bg: rgba(30, 41, 59, 0.7);
+  --card-bg: rgba(30, 41, 59, 0.4);
+  --glass-bg: rgba(2, 6, 23, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.08);
 
   /* Typography */
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Inter', sans-serif;
 
   /* Spacing & Layout */
-  --max-width: 1200px;
-  --header-height: 80px;
+  --max-width: 1400px;
+  --header-height: 90px;
+  --section-padding: 100px 2rem;
 
   /* Effects */
-  --glass-bg: rgba(15, 23, 42, 0.6);
-  --glass-border: 1px solid rgba(255, 255, 255, 0.1);
-  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
-  --transition: all 0.3s ease;
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --border-radius: 12px;
 }
 
 * {
@@ -36,26 +42,36 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-body);
   background-color: var(--bg-color);
   color: var(--text-primary);
-  line-height: 1.6;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
   overflow-x: hidden;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  color: var(--secondary-color);
-  margin-bottom: 1rem;
-  line-height: 1.2;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 700; }
+h2 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; }
+h3 { font-size: 1.75rem; font-weight: 600; }
+
+p {
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+  font-weight: 400;
 }
 
 a {
@@ -65,17 +81,36 @@ a {
 }
 
 a:hover {
-  color: #e2c076;
+  color: var(--secondary-hover);
 }
 
-button {
-  font-family: var(--font-body);
-  cursor: pointer;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* Scrollbar */
+ul {
+  list-style: none;
+}
+
+/* Glassmorphism Utility */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Scrollbar Customization */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -83,6 +118,46 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
+  background: var(--primary-light);
+  border: 3px solid var(--bg-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
   background: var(--secondary-color);
-  border-radius: 4px;
+}
+
+/* Section Spacing */
+section {
+  padding: var(--section-padding);
+}
+
+/* Shared Components Style */
+.section-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-title h2 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 1rem;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --header-height: 70px;
+    --section-padding: 60px 1rem;
+  }
 }

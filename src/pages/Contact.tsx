@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
 
     return (
         <section className="contact">
-            <h1>Contact Us</h1>
+            <h1>Contact <span>Us</span></h1>
             <form ref={formRef} onSubmit={sendEmail} className="contact-form">
                 <label>
                     Name

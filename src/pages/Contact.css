@@ -1,6 +1,5 @@
-/* Contact Page Styling */
 .contact {
-    padding: calc(var(--header-height) + 4rem) 2rem 4rem;
+    padding: calc(var(--header-height) + 6rem) 2rem 6rem;
     min-height: 100vh;
     background-color: var(--bg-color);
     display: flex;
@@ -9,38 +8,51 @@
 }
 
 .contact h1 {
-    font-size: 3rem;
-    color: var(--secondary-color);
-    margin-bottom: 2rem;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    color: var(--text-primary);
+    margin-bottom: 4rem;
     text-align: center;
+    font-family: var(--font-heading);
+}
+
+.contact h1 span {
+    color: var(--secondary-color);
 }
 
 .contact-form {
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     background: var(--card-bg);
-    padding: 3rem;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 4rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     box-shadow: var(--shadow-lg);
+}
+
+.form-group {
+    margin-bottom: 2rem;
 }
 
 .contact-form label {
     display: block;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem;
     color: var(--text-primary);
     font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 1rem;
-    margin-top: 0.5rem;
-    background: rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 6px;
-    color: #fff;
+    padding: 1.25rem;
+    background: rgba(15, 23, 42, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    color: var(--text-primary);
     font-family: var(--font-body);
     font-size: 1rem;
     transition: var(--transition);
@@ -50,26 +62,35 @@
 .contact-form textarea:focus {
     outline: none;
     border-color: var(--secondary-color);
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(15, 23, 42, 0.6);
+    box-shadow: 0 0 0 4px rgba(197, 160, 89, 0.1);
 }
 
 .contact-form button {
     width: 100%;
-    padding: 1rem;
+    padding: 1.25rem;
     background-color: var(--secondary-color);
-    color: #000;
+    color: var(--primary-color);
     font-weight: 700;
-    border: none;
-    border-radius: 6px;
-    font-size: 1.1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    font-size: 1rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: 1rem;
+    letter-spacing: 2px;
+    margin-top: 2rem;
     transition: var(--transition);
+    cursor: pointer;
 }
 
 .contact-form button:hover {
-    background-color: #e2c076;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(197, 160, 89, 0.3);
+    background-color: transparent;
+    color: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(197, 160, 89, 0.15);
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 2.5rem 1.5rem;
+    }
 }

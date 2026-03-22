@@ -1,21 +1,66 @@
-/* About Page Styling */
 .about {
-    padding: calc(var(--header-height) + 4rem) 2rem 4rem;
+    padding: calc(var(--header-height) + 8rem) 2rem 8rem;
     min-height: 100vh;
     background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
     text-align: center;
+    position: relative;
+    padding: 5rem;
+    background: var(--card-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.about-container::before {
+    content: '"';
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-family: var(--font-heading);
+    font-size: 8rem;
+    color: var(--secondary-color);
+    opacity: 0.1;
+    line-height: 1;
 }
 
 .about h1 {
-    font-size: 3rem;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    color: var(--text-primary);
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.about h1 span {
     color: var(--secondary-color);
-    margin-bottom: 2rem;
 }
 
 .about p {
-    max-width: 800px;
-    margin: 0 auto 2rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: var(--text-secondary);
-    line-height: 1.8;
+    line-height: 2;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        padding: 3rem 1.5rem;
+    }
+    
+    .about h1 {
+        font-size: 2.5rem;
+    }
+    
+    .about p {
+        font-size: 1.1rem;
+    }
 }
