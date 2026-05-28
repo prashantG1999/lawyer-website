@@ -175,7 +175,7 @@ nav.nav-links a.active {
   background: rgba(2, 6, 23, 0.7);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  z-index: 1000;
+  z-index: 999;
   animation: fadeIn 0.3s ease-out forwards;
 }
 
