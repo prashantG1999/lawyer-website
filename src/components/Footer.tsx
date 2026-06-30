@@ -44,7 +44,6 @@ const Footer: React.FC = () => {
                 </div>
                 <div className="footer-copyright">
                     <p>&copy; {new Date().getFullYear()} Juriva Legal. All rights reserved.</p>
-                    <p>Designed for Excellence.</p>
                 </div>
             </div>
         </footer>
