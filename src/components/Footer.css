@@ -90,7 +90,7 @@ footer.site-footer {
 
 .footer-copyright {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     padding-top: 1rem;
