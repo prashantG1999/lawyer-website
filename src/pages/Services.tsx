@@ -23,6 +23,11 @@ const servicesList = [
         icon: '📜'
     },
     {
+        title: 'Revenue Law',
+        description: 'Expertise in matters related to land revenue, agricultural land disputes, mutations, land demarcation, and proceedings before various revenue authorities and courts.',
+        icon: '🌾'
+    },
+    {
         title: 'Other Legal Services',
         description: 'Proficient in consumer court disputes, cheque bounce cases (Section 138 of the NI Act), legal drafting, and comprehensive contract reviews.',
         icon: '💼'

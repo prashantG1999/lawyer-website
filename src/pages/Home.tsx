@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
 import { NavLink } from 'react-router-dom';
+import logoImage from '../assets/Juriva_Logo.png';
 
 const Home: React.FC = () => {
     return (
@@ -10,7 +11,10 @@ const Home: React.FC = () => {
                 <div className="hero-overlay"></div>
                 <div className="hero-content">
                     <h1>
-                        <span>Juriva Legal</span>
+                        <span className="hero-logo-wrapper">
+                            <img src={logoImage} alt="Juriva Legal Logo" className="hero-logo-large" />
+                            <span>Juriva <span style={{ color: 'var(--secondary-color)' }}>Legal</span></span>
+                        </span>
                         Comprehensive Legal Expertise You Can Trust
                     </h1>
                     <p>
@@ -103,7 +107,7 @@ const Home: React.FC = () => {
                                 <span className="icon">✉️</span>
                                 <div>
                                     <h4>Email</h4>
-                                    <p><a href="mailto:nishantgiri102096@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>nishantgiri102096@gmail.com</a></p>
+                                    <p><a href="mailto:advnishantgiri@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>advnishantgiri@gmail.com</a></p>
                                 </div>
                             </div>
                         </div>

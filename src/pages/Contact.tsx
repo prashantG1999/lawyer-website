@@ -59,7 +59,7 @@ const Contact: React.FC = () => {
                             <div className="info-icon">✉️</div>
                             <div className="info-text">
                                 <h3>Email</h3>
-                                <p><a href="mailto:nishantgiri102096@gmail.com">nishantgiri102096@gmail.com</a></p>
+                                <p><a href="mailto:advnishantgiri@gmail.com">advnishantgiri@gmail.com</a></p>
                             </div>
                         </div>
                     </div>
