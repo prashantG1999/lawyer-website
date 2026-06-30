@@ -3,34 +3,29 @@ import './Services.css';
 
 const servicesList = [
     {
-        title: 'Civil Litigation',
-        description: 'Expert representation in civil disputes, property matters, and contract enforcement.',
+        title: 'Civil Law',
+        description: 'Specialized in property disputes, breach of contract, recovery suits, injunctions, and landlord-tenant litigation under the CPC and local state laws.',
         icon: '⚖️'
     },
     {
-        title: 'Criminal Defense',
-        description: 'Strategic defense for individuals facing criminal charges, ensuring fair trial rights.',
+        title: 'Criminal Law',
+        description: 'Offering strong defense representation and bail applications, handling matters ranging from white-collar crimes and fraud to private complaints and FIR quashing.',
         icon: '🛡️'
     },
     {
-        title: 'Corporate Law',
-        description: 'Comprehensive legal advisory for businesses, startups, and mergers & acquisitions.',
-        icon: '🏢'
-    },
-    {
-        title: 'Family Law',
-        description: 'Compassionate handling of divorce, child custody, and inheritance matters.',
+        title: 'Family & Matrimonial Law',
+        description: 'Providing compassionate yet assertive guidance through divorce proceedings, child custody battles, maintenance/Alimony issues, and domestic violence cases.',
         icon: '👨‍👩‍👧‍👦'
     },
     {
-        title: 'Intellectual Property',
-        description: 'Protecting your creative assets through trademarks, copyrights, and patents.',
-        icon: '💡'
+        title: 'Personal Law & Succession',
+        description: 'Assisting with the drafting and execution of Wills, probate administration, partition suits, and succession certificates across different personal law frameworks in India.',
+        icon: '📜'
     },
     {
-        title: 'Real Estate',
-        description: 'Navigating complex property transactions, disputes, and regulatory compliance.',
-        icon: '🏠'
+        title: 'Other Legal Services',
+        description: 'Proficient in consumer court disputes, cheque bounce cases (Section 138 of the NI Act), legal drafting, and comprehensive contract reviews.',
+        icon: '💼'
     }
 ];
 

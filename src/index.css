@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
-  /* Color Palette - Deep, Sophisticated Navy & Gold */
-  --primary-color: #020617; /* Deep Navy Black */
-  --primary-light: #0f172a;
-  --secondary-color: #c5a059; /* Classic Gold */
-  --secondary-hover: #d4b47a;
+  /* Color Palette - Elegant Olive & Gold */
+  --primary-color: #3e4b31; /* Deep Olive */
+  --primary-light: #526343;
+  --secondary-color: #a8895b; /* Logo Gold */
+  --secondary-hover: #c09d69;
   --accent-color: #e2e8f0;
   
   /* Text Colors */
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
+  --text-primary: #1a1e13;
+  --text-secondary: #4a543b;
+  --text-muted: #748060;
   
   /* Backgrounds */
-  --bg-color: #020617;
-  --card-bg: rgba(30, 41, 59, 0.4);
-  --glass-bg: rgba(2, 6, 23, 0.8);
-  --glass-border: rgba(255, 255, 255, 0.08);
+  --bg-color: #ffffff;
+  --card-bg: rgba(168, 137, 91, 0.08);
+  --glass-bg: rgba(255, 255, 255, 0.9);
+  --glass-border: rgba(62, 75, 49, 0.1);
 
   /* Typography */
   --font-heading: 'Playfair Display', serif;
@@ -159,5 +159,8 @@ section {
   :root {
     --header-height: 70px;
     --section-padding: 60px 1rem;
+  }
+  .container {
+    padding: 0 1rem;
   }
 }

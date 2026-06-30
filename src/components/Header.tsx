@@ -29,9 +29,10 @@ const Header: React.FC = () => {
     return (
         <>
             <header className={`site-header ${scrolled ? 'scrolled' : ''} ${isOpen ? 'menu-open' : ''}`}>
-                <div className="logo">
-                    Law<span>yer</span> India
-                </div>
+                <NavLink to="/" className="logo">
+                    <img src="/Juriva_Logo.png" alt="Juriva Legal" className="logo-icon-img" />
+                    Juriva <span>Legal</span>
+                </NavLink>
                 
                 {/* Desktop Navigation */}
                 <nav className="nav-links">

@@ -7,10 +7,13 @@ const Footer: React.FC = () => {
         <footer className="site-footer">
             <div className="footer-container">
                 <div className="footer-info">
-                    <h3>Law<span>yer</span> India</h3>
+                    <h3 className="footer-logo">
+                        <img src="/Juriva_Logo.png" alt="Juriva Legal" className="footer-logo-img" />
+                        Juriva <span>Legal</span>
+                    </h3>
                     <p>
-                        Established in 2005, we provide expert legal representation with 
-                        unwavering commitment and integrity.
+                        Established in 2019, providing expert legal representation with 
+                        unwavering commitment and integrity across various courts and tribunals in India.
                     </p>
                 </div>
                 
@@ -26,14 +29,14 @@ const Footer: React.FC = () => {
                 
                 <div className="footer-contact">
                     <h4>Contact Us</h4>
-                    <p>New Delhi, India</p>
-                    <p>info@lawyerindia.com</p>
-                    <p>+91 98765 43210</p>
+                    <p>Kota, Rajasthan, India</p>
+                    <p>nishantgiri102096@gmail.com</p>
+                    <p>+91-9660460445</p>
                 </div>
             </div>
             
             <div className="footer-bottom">
-                <p>&copy; {new Date().getFullYear()} Lawyer India. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} Juriva Legal. All rights reserved.</p>
                 <p>Designed for Excellence.</p>
             </div>
         </footer>
