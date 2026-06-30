@@ -37,8 +37,15 @@ const Footer: React.FC = () => {
             </div>
             
             <div className="footer-bottom">
-                <p>&copy; {new Date().getFullYear()} Juriva Legal. All rights reserved.</p>
-                <p>Designed for Excellence.</p>
+                <div className="footer-disclaimer">
+                    <p>
+                        <strong>Disclaimer:</strong> As per the rules of the Bar Council of India, we are not permitted to solicit work or advertise. By accessing this website, you acknowledge that you are seeking information about Juriva Legal of your own accord and that there has been no solicitation, advertisement, or inducement by Juriva Legal or its members. The content of this website is for informational purposes only and should not be interpreted as soliciting or advertisement.
+                    </p>
+                </div>
+                <div className="footer-copyright">
+                    <p>&copy; {new Date().getFullYear()} Juriva Legal. All rights reserved.</p>
+                    <p>Designed for Excellence.</p>
+                </div>
             </div>
         </footer>
     );
