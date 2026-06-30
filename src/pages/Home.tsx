@@ -18,7 +18,7 @@ const Home: React.FC = () => {
                         Comprehensive Legal Expertise You Can Trust
                     </h1>
                     <p>
-                        With years of extensive experience practicing across various courts and tribunals in India, 
+                        With years of extensive experience practicing across various courts and tribunals in India,
                         providing robust legal representation and strategic counsel tailored to your unique situation.
                     </p>
                     <div className="cta-group">
@@ -87,7 +87,7 @@ const Home: React.FC = () => {
                     <div className="cta-box">
                         <h2>Need Legal Assistance?</h2>
                         <p>Protect your rights and secure your peace of mind. Contact the chamber today to schedule a confidential consultation.</p>
-                        
+
                         <div className="cta-info-grid">
                             <div className="cta-info-item">
                                 <span className="icon">📍</span>
@@ -111,7 +111,7 @@ const Home: React.FC = () => {
                                 </div>
                             </div>
                         </div>
-                        
+
                         <NavLink to="/contact" className="cta-button">Contact Chamber</NavLink>
                     </div>
                 </div>

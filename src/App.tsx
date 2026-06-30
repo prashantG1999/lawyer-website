@@ -6,11 +6,13 @@ import Home from './pages/Home.tsx';
 import About from './pages/About.tsx';
 import Services from './pages/Services.tsx';
 import Contact from './pages/Contact.tsx';
+import ScrollToTop from './components/ScrollToTop.tsx';
 
 const App: React.FC = () => {
   return (
     <HelmetProvider>
       <Router>
+        <ScrollToTop />
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />

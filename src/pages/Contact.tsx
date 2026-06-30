@@ -33,12 +33,12 @@ const Contact: React.FC = () => {
                     <h1>Contact <span>Chamber</span></h1>
                     <p>Protect your rights and secure your peace of mind. Get in touch to schedule a confidential consultation.</p>
                 </div>
-                
+
                 <div className="contact-grid">
                     <div className="contact-info-panel">
                         <h2>Chamber Details</h2>
                         <p>Reach out directly to schedule an appointment or for urgent legal assistance:</p>
-                        
+
                         <div className="contact-info-card">
                             <div className="info-icon">📍</div>
                             <div className="info-text">
@@ -46,7 +46,7 @@ const Contact: React.FC = () => {
                                 <p>Kota, Rajasthan, India</p>
                             </div>
                         </div>
-                        
+
                         <div className="contact-info-card">
                             <div className="info-icon">📞</div>
                             <div className="info-text">
@@ -54,7 +54,7 @@ const Contact: React.FC = () => {
                                 <p><a href="tel:+919660460445">+91 96604 60445</a></p>
                             </div>
                         </div>
-                        
+
                         <div className="contact-info-card">
                             <div className="info-icon">✉️</div>
                             <div className="info-text">
