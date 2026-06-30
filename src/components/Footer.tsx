@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { NavLink } from 'react-router-dom';
+import logoImage from '../assets/Juriva_Logo.png';
 
 const Footer: React.FC = () => {
     return (
@@ -8,7 +9,7 @@ const Footer: React.FC = () => {
             <div className="footer-container">
                 <div className="footer-info">
                     <h3 className="footer-logo">
-                        <img src="/Juriva_Logo.png" alt="Juriva Legal" className="footer-logo-img" />
+                        <img src={logoImage} alt="Juriva Legal" className="footer-logo-img" />
                         Juriva <span>Legal</span>
                     </h3>
                     <p>

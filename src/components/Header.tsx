@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import logoImage from '../assets/Juriva_Logo.png';
 import './Header.css';
 
 const Header: React.FC = () => {
@@ -30,7 +31,7 @@ const Header: React.FC = () => {
         <>
             <header className={`site-header ${scrolled ? 'scrolled' : ''} ${isOpen ? 'menu-open' : ''}`}>
                 <NavLink to="/" className="logo">
-                    <img src="/Juriva_Logo.png" alt="Juriva Legal" className="logo-icon-img" />
+                    <img src={logoImage} alt="Juriva Legal" className="logo-icon-img" />
                     Juriva <span>Legal</span>
                 </NavLink>
                 
