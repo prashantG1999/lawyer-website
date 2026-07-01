@@ -174,8 +174,8 @@
     width: 100%;
     margin-top: 0.5rem;
     padding: 1.15rem;
-    background: rgba(15, 23, 42, 0.4);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: #ffffff;
+    border: 1px solid var(--glass-border);
     border-radius: 4px;
     color: var(--text-primary);
     font-family: var(--font-body);
@@ -187,7 +187,7 @@
 .contact-form textarea:focus {
     outline: none;
     border-color: var(--secondary-color);
-    background: rgba(15, 23, 42, 0.6);
+    background: #ffffff;
     box-shadow: 0 0 0 4px rgba(197, 160, 89, 0.1);
 }
 
@@ -195,7 +195,7 @@
     width: 100%;
     padding: 1.25rem;
     background-color: var(--secondary-color);
-    color: var(--primary-color);
+    color: var(--text-primary);
     font-weight: 700;
     border: 1px solid var(--secondary-color);
     border-radius: 4px;

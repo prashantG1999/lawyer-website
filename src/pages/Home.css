@@ -6,13 +6,15 @@
 /* Hero Section */
 .hero-section {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     background-color: var(--bg-color);
+    padding-top: var(--header-height);
+    padding-bottom: 2rem;
 }
 
 .hero-section::before {
@@ -41,8 +43,8 @@
     position: relative;
     z-index: 3;
     max-width: 1000px;
-    padding: 0 2rem;
-    margin-top: calc(var(--header-height) + 2rem);
+    padding: 0 1.5rem;
+    margin-top: 2rem;
     text-align: center;
     animation: fadeInUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
@@ -96,8 +98,8 @@
     display: inline-block;
     padding: 1.2rem 3rem;
     background-color: var(--secondary-color);
-    color: var(--primary-color);
-    font-weight: 600;
+    color: var(--text-primary);
+    font-weight: 700;
     font-size: 0.9rem;
     border-radius: 4px;
     text-transform: uppercase;
@@ -398,12 +400,17 @@
     }
 
     .hero-content h1 {
-        font-size: 2.6rem;
+        font-size: 2.4rem;
+    }
+
+    .hero-content h1 > span.hero-logo-wrapper {
+        margin-bottom: 1.5rem;
     }
 
     .hero-content p {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
         margin-bottom: 2.5rem;
+        padding: 0 1rem;
     }
 
     .cta-group {
@@ -447,11 +454,21 @@
     }
 
     .hero-content h1 {
-        font-size: 2.2rem;
+        font-size: 2.1rem;
+    }
+
+    .hero-content h1 > span.hero-logo-wrapper {
+        margin-bottom: 1.25rem;
+        font-size: 1.5rem;
+    }
+    
+    .hero-logo-large {
+        width: 150px;
     }
 
     .hero-content p {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        padding: 0 0.5rem;
     }
 
     .cta-box {
