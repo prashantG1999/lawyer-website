@@ -1,0 +1,44 @@
+.practice-area-page {
+    background-color: var(--bg-color);
+    padding: calc(var(--header-height) + 4rem) 0 6rem;
+    min-height: 60vh;
+}
+
+.practice-area-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    color: var(--text-primary);
+}
+
+.practice-area-container h1 {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-family: var(--font-heading);
+}
+
+.practice-area-subtitle {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    margin-bottom: 2.5rem;
+}
+
+.practice-area-details {
+    background: var(--card-bg);
+    padding: 3rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px);
+}
+
+.practice-area-details p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.practice-area-details p:last-child {
+    margin-bottom: 0;
+}
