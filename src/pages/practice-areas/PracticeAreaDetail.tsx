@@ -49,11 +49,35 @@ const PracticeAreaDetail: React.FC = () => {
                     <p className="practice-area-subtitle">{area.subtitle}</p>
                     
                     <div className="practice-area-details">
-                        {area.paragraphs.map((paragraph, index) => (
-                            <p key={index}>{paragraph}</p>
-                        ))}
+                        <p className="practice-area-intro">{area.intro}</p>
                         
-                        <div style={{ marginTop: '3rem', borderTop: '1px solid var(--glass-border)', paddingTop: '2rem' }}>
+                        <div className="practice-area-section">
+                            <h2>Core Services</h2>
+                            <ul className="services-bullet-list">
+                                {area.services.map((service, index) => (
+                                    <li key={index} className="service-bullet-item">
+                                        <span className="service-bullet-diamond"></span>
+                                        <p>{service}</p>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        {area.forums && (
+                            <div className="practice-area-section forums-panel">
+                                <h2>Practice Forums</h2>
+                                <p className="section-panel-text">{area.forums}</p>
+                            </div>
+                        )}
+
+                        {area.laws && (
+                            <div className="practice-area-section laws-panel">
+                                <h2>Key Laws & Statutes</h2>
+                                <p className="section-panel-text">{area.laws}</p>
+                            </div>
+                        )}
+                        
+                        <div style={{ marginTop: '3.5rem', borderTop: '1px solid var(--glass-border)', paddingTop: '2rem' }}>
                             <Link to="/services" style={{ textDecoration: 'none', color: 'var(--secondary-color)', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
                                 ← Back to All Practice Areas
                             </Link>
