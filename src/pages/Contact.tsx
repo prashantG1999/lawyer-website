@@ -66,17 +66,18 @@ const Contact: React.FC = () => {
 
                     <form ref={formRef} onSubmit={sendEmail} className="contact-form">
                         <h2>Send a Message</h2>
+                        <input type="hidden" name="time" value={new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })} />
                         <label>
                             Name
-                            <input type="text" name="user_name" required />
+                            <input type="text" name="name" required />
                         </label>
                         <label>
                             Email
-                            <input type="email" name="user_email" required />
+                            <input type="email" name="email" required />
                         </label>
                         <label>
                             Phone
-                            <input type="tel" name="user_phone" />
+                            <input type="tel" name="phone" />
                         </label>
                         <label>
                             Message
