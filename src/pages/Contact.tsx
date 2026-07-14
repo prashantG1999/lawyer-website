@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import './Contact.css';
 
@@ -8,22 +8,29 @@ const USER_ID = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || '';
 
 const Contact: React.FC = () => {
     const formRef = useRef<HTMLFormElement>(null);
+    const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
 
     const sendEmail = (e: React.FormEvent) => {
         e.preventDefault();
         if (!formRef.current) return;
+        
+        setStatus('sending');
         emailjs
             .sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, USER_ID)
             .then(
                 (_,) => {
-                    alert('Message sent successfully!');
+                    setStatus('success');
                     formRef.current?.reset();
                 },
                 (error) => {
                     console.error('EmailJS error:', error);
-                    alert('Failed to send message. Please try again later.');
+                    setStatus('error');
                 }
             );
+    };
+
+    const closeModal = () => {
+        setStatus('idle');
     };
 
     return (
@@ -83,10 +90,31 @@ const Contact: React.FC = () => {
                             Message
                             <textarea name="message" rows={5} required />
                         </label>
-                        <button type="submit">Send Message</button>
+                        <button type="submit" disabled={status === 'sending'}>
+                            {status === 'sending' ? 'Sending...' : 'Send Message'}
+                        </button>
                     </form>
                 </div>
             </div>
+            
+            {status !== 'idle' && status !== 'sending' && (
+                <div className="contact-modal-overlay">
+                    <div className="contact-modal" role="dialog" aria-modal="true">
+                        <div className="contact-modal-icon">
+                            {status === 'success' ? '✅' : '❌'}
+                        </div>
+                        <h2>{status === 'success' ? 'Thank You!' : 'Error!'}</h2>
+                        <p>
+                            {status === 'success' 
+                                ? 'Your message has been sent successfully. We will get back to you shortly.' 
+                                : 'Failed to send your message. Please try again or contact us directly.'}
+                        </p>
+                        <button className="contact-modal-btn" onClick={closeModal}>
+                            Close
+                        </button>
+                    </div>
+                </div>
+            )}
         </section>
     );
 };
