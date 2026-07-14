@@ -2,9 +2,9 @@ import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import './Contact.css';
 
-const SERVICE_ID = 'YOUR_SERVICE_ID'; // replace with EmailJS service ID
-const TEMPLATE_ID = 'YOUR_TEMPLATE_ID'; // replace with EmailJS template ID
-const USER_ID = 'YOUR_USER_ID'; // replace with EmailJS user/public key
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || ''; 
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || ''; 
+const USER_ID = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || ''; 
 
 const Contact: React.FC = () => {
     const formRef = useRef<HTMLFormElement>(null);
