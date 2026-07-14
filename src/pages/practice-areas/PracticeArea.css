@@ -42,3 +42,101 @@
 .practice-area-details p:last-child {
     margin-bottom: 0;
 }
+
+/* Related Practice Areas Section */
+.related-areas-section {
+    padding: 6rem 0;
+    background-color: rgba(168, 137, 91, 0.02);
+    border-top: 1px solid var(--glass-border);
+}
+
+.related-areas-section .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.related-card {
+    background: var(--card-bg);
+    border: 1px solid var(--glass-border);
+    padding: 3rem 2.25rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    text-decoration: none;
+    color: inherit;
+}
+
+.related-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--secondary-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: var(--transition);
+}
+
+.related-card:hover {
+    transform: translateY(-8px);
+    background: rgba(168, 137, 91, 0.12);
+    border-color: rgba(168, 137, 91, 0.3);
+    box-shadow: var(--shadow-lg);
+}
+
+.related-card:hover::before {
+    transform: scaleX(1);
+}
+
+.related-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 0 15px rgba(197, 160, 89, 0.15));
+    transition: var(--transition);
+}
+
+.related-card:hover .related-icon {
+    transform: scale(1.1);
+}
+
+.related-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+    font-family: var(--font-heading);
+}
+
+.related-card p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .related-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .related-card {
+        padding: 2.5rem 1.5rem;
+    }
+}
+

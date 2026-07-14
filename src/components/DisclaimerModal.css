@@ -1,0 +1,199 @@
+.disclaimer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(26, 30, 19, 0.65); /* Dark olive overlay matching index.css text-primary */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  padding: 1.5rem;
+}
+
+.disclaimer-modal {
+  background-color: var(--bg-color);
+  max-width: 600px;
+  width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  animation: disclaimerFadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid var(--glass-border);
+}
+
+@keyframes disclaimerFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.disclaimer-header {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid var(--glass-border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: rgba(168, 137, 91, 0.03); /* Lighter version of card-bg */
+}
+
+.disclaimer-title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.disclaimer-close {
+  position: absolute;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  font-size: 1.75rem;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: var(--transition);
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+.disclaimer-close:hover {
+  color: var(--primary-color);
+  transform: rotate(90deg) scale(1.1);
+}
+
+.disclaimer-body {
+  padding: 2.25rem 2.5rem 1.75rem;
+  max-height: 60vh;
+  overflow-y: auto;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.disclaimer-intro {
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.disclaimer-list {
+  margin: 0;
+  padding: 0;
+}
+
+.disclaimer-item {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+  align-items: flex-start;
+}
+
+.disclaimer-item:last-child {
+  margin-bottom: 0;
+}
+
+.disclaimer-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: var(--secondary-color); /* Elegant gold bullet */
+  margin-top: 0.5rem;
+  flex-shrink: 0;
+  transform: rotate(45deg); /* Diamond shape bullet */
+}
+
+.disclaimer-text {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.disclaimer-footer {
+  padding: 1.5rem 2rem;
+  border-top: 1px solid var(--glass-border);
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  background-color: rgba(168, 137, 91, 0.05); /* Soft gold tint */
+}
+
+.disclaimer-btn {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  padding: 0.9rem 2.5rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition);
+  text-transform: uppercase;
+}
+
+/* Primary Button - Agree */
+.disclaimer-btn-agree {
+  background-color: var(--secondary-color);
+  color: var(--text-primary);
+  border: 1px solid var(--secondary-color);
+}
+
+.disclaimer-btn-agree:hover {
+  background-color: transparent;
+  color: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(168, 137, 91, 0.2);
+}
+
+/* Secondary Button - Disagree */
+.disclaimer-btn-disagree {
+  background-color: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--glass-border);
+}
+
+.disclaimer-btn-disagree:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+body.disclaimer-active {
+  overflow: hidden !important;
+}
+
+@media (max-width: 640px) {
+  .disclaimer-overlay {
+    padding: 1rem;
+  }
+  .disclaimer-body {
+    padding: 1.75rem 1.5rem;
+  }
+  .disclaimer-footer {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.5rem;
+  }
+  .disclaimer-btn {
+    width: 100%;
+    padding: 0.9rem 1.5rem;
+    text-align: center;
+  }
+}
