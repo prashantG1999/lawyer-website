@@ -296,11 +296,29 @@
 }
 
 .contact-modal-icon {
-    font-size: 4rem;
-    margin-bottom: 1.5rem;
-    line-height: 1;
-    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.15));
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
 }
+
+.contact-modal-icon.success {
+    border: 3px solid var(--secondary-color);
+    color: var(--secondary-color);
+    background-color: rgba(168, 137, 91, 0.08);
+}
+
+.contact-modal-icon.error {
+    border: 3px solid #e53e3e;
+    color: #e53e3e;
+    background-color: rgba(229, 62, 62, 0.08);
+}
+
 
 .contact-modal h2 {
     font-family: var(--font-heading);
