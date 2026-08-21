@@ -1,9 +1,11 @@
 import React from 'react';
 import './Home.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import logoImage from '../assets/Juriva_Logo.png';
+import { blogPosts } from '../data/blogData.ts';
 
 const Home: React.FC = () => {
+    const navigate = useNavigate();
     return (
         <div className="home-page">
             {/* Hero Section */}
@@ -17,7 +19,7 @@ const Home: React.FC = () => {
                         </span>
                         Comprehensive Legal Expertise You Can Trust
                     </h1>
-                    <p>
+                    <p className="font-bookman">
                         With years of extensive experience practicing across various courts and tribunals in India,
                         providing robust legal representation and strategic counsel tailored to your unique situation.
                     </p>
@@ -77,6 +79,47 @@ const Home: React.FC = () => {
                             <h3>Tailored Legal Strategies</h3>
                             <p>No two cases are the same. We analyze your specific situation to build a customized roadmap toward a favorable resolution.</p>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Latest Legal Insights Section */}
+            <section className="home-blog-section">
+                <div className="container">
+                    <div className="section-header" style={{ textAlign: 'center', marginBottom: '3rem' }}>
+                        <h2>Latest Legal <span>Insights</span></h2>
+                        <p style={{ color: 'var(--text-secondary)', maxWidth: '600px', margin: '0.5rem auto 0' }}>
+                            Stay updated with our latest legal analyses, practical guidance, and case updates.
+                        </p>
+                    </div>
+
+                    <div className="blog-grid">
+                        {blogPosts.slice(0, 3).map((post) => (
+                            <article 
+                                key={post.id} 
+                                className="blog-card"
+                                onClick={() => {
+                                    window.scrollTo(0, 0);
+                                    navigate(`/blog/${post.slug}`);
+                                }}
+                            >
+                                <div>
+                                    <span className="card-category">{post.category}</span>
+                                    <h3 className="card-title">{post.title}</h3>
+                                    <p className="card-summary">{post.summary}</p>
+                                </div>
+                                <div className="card-footer">
+                                    <span>{post.date}</span>
+                                    <span className="read-more-link">Read Article &rarr;</span>
+                                </div>
+                            </article>
+                        ))}
+                    </div>
+
+                    <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
+                        <NavLink to="/blog" className="cta-button secondary" onClick={() => window.scrollTo(0, 0)}>
+                            Explore All Insights &rarr;
+                        </NavLink>
                     </div>
                 </div>
             </section>

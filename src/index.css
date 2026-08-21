@@ -22,6 +22,7 @@
   /* Typography */
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Inter', sans-serif;
+  --font-bookman: 'Bookman Antiqua', 'Palatino Linotype', 'Bookman', serif;
 
   /* Spacing & Layout */
   --max-width: 1400px;
@@ -34,6 +35,11 @@
   --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   --border-radius: 12px;
+}
+
+.font-bookman,
+.bookman-text {
+  font-family: var(--font-bookman);
 }
 
 * {

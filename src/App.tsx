@@ -8,6 +8,8 @@ import Services from './pages/Services.tsx';
 import Contact from './pages/Contact.tsx';
 import ScrollToTop from './components/ScrollToTop.tsx';
 import PracticeAreaDetail from './pages/practice-areas/PracticeAreaDetail.tsx';
+import Blog from './pages/Blog.tsx';
+import BlogPostDetail from './pages/BlogPostDetail.tsx';
 
 const App: React.FC = () => {
   return (
@@ -20,6 +22,8 @@ const App: React.FC = () => {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/services/:id" element={<PracticeAreaDetail />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<BlogPostDetail />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </Layout>

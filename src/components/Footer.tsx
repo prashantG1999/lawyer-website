@@ -24,6 +24,7 @@ const Footer: React.FC = () => {
                         <li><NavLink to="/" onClick={() => window.scrollTo(0, 0)}>Home</NavLink></li>
                         <li><NavLink to="/about" onClick={() => window.scrollTo(0, 0)}>About Us</NavLink></li>
                         <li><NavLink to="/services" onClick={() => window.scrollTo(0, 0)}>Practice Areas</NavLink></li>
+                        <li><NavLink to="/blog" onClick={() => window.scrollTo(0, 0)}>Blog & Insights</NavLink></li>
                         <li><NavLink to="/contact" onClick={() => window.scrollTo(0, 0)}>Contact</NavLink></li>
                     </ul>
                 </div>

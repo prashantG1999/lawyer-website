@@ -46,6 +46,9 @@ const Header: React.FC = () => {
                     <NavLink to="/services" className={({ isActive }) => (isActive ? 'active' : undefined)}>
                         Services
                     </NavLink>
+                    <NavLink to="/blog" className={({ isActive }) => (isActive ? 'active' : undefined)}>
+                        Blog & Insights
+                    </NavLink>
                     <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : undefined)}>
                         Contact
                     </NavLink>
@@ -73,6 +76,9 @@ const Header: React.FC = () => {
                         </NavLink>
                         <NavLink to="/services" onClick={() => setIsOpen(false)} className={({ isActive }) => (isActive ? 'active' : undefined)}>
                             Services
+                        </NavLink>
+                        <NavLink to="/blog" onClick={() => setIsOpen(false)} className={({ isActive }) => (isActive ? 'active' : undefined)}>
+                            Blog & Insights
                         </NavLink>
                         <NavLink to="/contact" onClick={() => setIsOpen(false)} className={({ isActive }) => (isActive ? 'active' : undefined)}>
                             Contact
