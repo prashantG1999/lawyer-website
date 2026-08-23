@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, NavLink } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { getPracticeAreaById, practiceAreasList } from '../../data/practiceAreasData.ts';
 import './PracticeArea.css';
@@ -50,6 +50,15 @@ const PracticeAreaDetail: React.FC = () => {
                         <meta name="twitter:description" content={area.description} />
                     </Helmet>
                     
+                    {/* Breadcrumb Navigation */}
+                    <nav className="breadcrumbs" aria-label="Breadcrumb">
+                        <NavLink to="/">Home</NavLink>
+                        <span>&rsaquo;</span>
+                        <NavLink to="/services">Practice Areas</NavLink>
+                        <span>&rsaquo;</span>
+                        <span className="current" aria-current="page">{area.title}</span>
+                    </nav>
+
                     <h1>{area.title}</h1>
                     <p className="practice-area-subtitle">{area.subtitle}</p>
                     

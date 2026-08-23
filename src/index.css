@@ -119,6 +119,44 @@ ul {
   padding: 0 2rem;
 }
 
+/* Breadcrumb Navigation */
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.breadcrumbs a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: var(--transition);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.breadcrumbs span:not(.current) {
+  flex-shrink: 0;
+}
+
+.breadcrumbs a:hover {
+  color: var(--secondary-color);
+}
+
+.breadcrumbs .current {
+  color: var(--text-primary);
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
 /* Scrollbar Customization */
 ::-webkit-scrollbar {
   width: 10px;
