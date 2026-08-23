@@ -43,6 +43,11 @@ const PracticeAreaDetail: React.FC = () => {
                     <Helmet>
                         <title>{area.title} | Juriva Legal</title>
                         <meta name="description" content={area.description} />
+                        <meta property="og:title" content={`${area.title} | Juriva Legal`} />
+                        <meta property="og:description" content={area.description} />
+                        <meta property="og:type" content="website" />
+                        <meta name="twitter:title" content={`${area.title} | Juriva Legal`} />
+                        <meta name="twitter:description" content={area.description} />
                     </Helmet>
                     
                     <h1>{area.title}</h1>

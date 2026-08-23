@@ -79,15 +79,15 @@ export const practiceAreasList: PracticeArea[] = [
   },
   {
     id: "cheque-bounce",
-    title: "Negotiable Instruments Act (Cheque Bounce)",
-    subtitle: "Cheque Bounce Prosecution and Defense",
+    title: "Negotiable Instruments Act (Cheque Bounce/Dishonour)",
+    subtitle: "Cheque Bounce/Dishonour Prosecution and Defense",
     description: "We focus heavily on financial disputes arising under the NI Act, representing creditors, businesses, and individuals.",
     icon: "🖋️",
     intro: "We focus heavily on financial disputes arising under the Negotiable Instruments Act, representing individuals, businesses, commercial partnerships, financial institutions, and creditors. We manage litigation from the initial issuance of statutory demand notices through to trial, appeals, revisions, and execution of compensation orders.",
     services: [
       "Statutory Compliance: Drafting, issuing, and replying to statutory demand notices under Section 138 of the NI Act.",
       "Trial & Defense: Filing and defending complaints, contesting interim compensation and deposit applications, bail proceedings, cross-examination of witnesses, and applications for recalling witnesses.",
-      "Settlement & Execution: Compounding and negotiation of cheque bounce settlements, appeals against conviction/acquittal, suspension of sentences, and enforcement of compensation orders.",
+      "Settlement & Execution: Compounding and negotiation of cheque bounce/dishonour settlements, appeals against conviction/acquittal, suspension of sentences, and enforcement of compensation orders.",
       "Commercial Advisory: Legal counsel on promissory notes, bills of exchange, commercial loan recoveries, friendly loans, and partnership debt liabilities."
     ],
     forums: "Judicial Magistrate Courts, Sessions Courts, Appellate Courts, and the High Court.",

@@ -38,6 +38,11 @@ const Blog: React.FC = () => {
                     name="description" 
                     content="Stay informed with expert legal analysis, practical advice, and updates on Indian SARFAESI Act, Civil Litigation, Criminal Defense, and Property Laws." 
                 />
+                <meta property="og:title" content="Legal Insights & Blog | Juriva Legal" />
+                <meta property="og:description" content="Stay informed with expert legal analysis, practical advice, and updates on Indian SARFAESI Act, Civil Litigation, Criminal Defense, and Property Laws." />
+                <meta property="og:type" content="blog" />
+                <meta name="twitter:title" content="Legal Insights & Blog | Juriva Legal" />
+                <meta name="twitter:description" content="Stay informed with expert legal analysis, practical advice, and updates on Indian SARFAESI Act, Civil Litigation, Criminal Defense, and Property Laws." />
             </Helmet>
 
             <div className="blog-page">

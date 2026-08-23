@@ -95,6 +95,11 @@ const BlogPostDetail: React.FC = () => {
             <Helmet>
                 <title>{`${post.title} | Juriva Legal Insights`}</title>
                 <meta name="description" content={post.summary} />
+                <meta property="og:title" content={`${post.title} | Juriva Legal Insights`} />
+                <meta property="og:description" content={post.summary} />
+                <meta property="og:type" content="article" />
+                <meta name="twitter:title" content={`${post.title} | Juriva Legal Insights`} />
+                <meta name="twitter:description" content={post.summary} />
             </Helmet>
 
             <article className="post-detail-page">
