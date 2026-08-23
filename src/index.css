@@ -21,8 +21,8 @@
 
   /* Typography */
   --font-heading: 'Playfair Display', serif;
-  --font-body: 'Inter', sans-serif;
-  --font-bookman: 'Bookman Antiqua', 'Palatino Linotype', 'Bookman', serif;
+  --font-body: 'Bookman Old Style', 'Bookman Old', 'Bookman', serif;
+  --font-bookman: 'Bookman Old Style', 'Bookman Old', 'Bookman', serif;
 
   /* Spacing & Layout */
   --max-width: 1400px;
@@ -46,6 +46,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
 }
 
 html {
