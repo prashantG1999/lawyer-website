@@ -16,8 +16,6 @@
     background: var(--card-bg);
     border: 1px solid var(--glass-border);
     border-radius: var(--border-radius);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
 }
 
 .about-container::before {

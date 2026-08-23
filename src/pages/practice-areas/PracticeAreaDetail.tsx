@@ -59,12 +59,28 @@ const PracticeAreaDetail: React.FC = () => {
                         <div className="practice-area-section">
                             <h2>Core Services</h2>
                             <ul className="services-bullet-list">
-                                {area.services.map((service, index) => (
-                                    <li key={index} className="service-bullet-item">
-                                        <span className="service-bullet-diamond"></span>
-                                        <p>{service}</p>
-                                    </li>
-                                ))}
+                                {area.services.map((service, index) => {
+                                    const colonIndex = service.indexOf(':');
+                                    if (colonIndex !== -1) {
+                                        const title = service.substring(0, colonIndex + 1);
+                                        const description = service.substring(colonIndex + 1);
+                                        return (
+                                            <li key={index} className="service-bullet-item">
+                                                <span className="service-bullet-diamond" aria-hidden="true"></span>
+                                                <p>
+                                                    <strong className="service-item-title">{title}</strong>
+                                                    {description}
+                                                </p>
+                                            </li>
+                                        );
+                                    }
+                                    return (
+                                        <li key={index} className="service-bullet-item">
+                                            <span className="service-bullet-diamond" aria-hidden="true"></span>
+                                            <p>{service}</p>
+                                        </li>
+                                    );
+                                })}
                             </ul>
                         </div>
 

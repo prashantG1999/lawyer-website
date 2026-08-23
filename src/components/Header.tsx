@@ -8,10 +8,17 @@ const Header: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
+        let isScrolled = window.scrollY > 50;
+        setScrolled(isScrolled);
+
         const handleScroll = () => {
-            setScrolled(window.scrollY > 50);
+            const currentScrolled = window.scrollY > 50;
+            if (currentScrolled !== isScrolled) {
+                isScrolled = currentScrolled;
+                setScrolled(currentScrolled);
+            }
         };
-        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', handleScroll, { passive: true });
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 

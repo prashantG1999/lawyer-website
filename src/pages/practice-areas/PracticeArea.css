@@ -1,52 +1,54 @@
 .practice-area-page {
     background-color: var(--bg-color);
-    padding: calc(var(--header-height) + 4rem) 0 6rem;
+    padding: calc(var(--header-height) + 3rem) 0 5rem;
     min-height: 60vh;
 }
 
 .practice-area-container {
-    max-width: 800px;
+    max-width: 860px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
     color: var(--text-primary);
 }
 
 .practice-area-container h1 {
-    font-size: 3rem;
+    font-size: clamp(2rem, 5vw, 3rem);
     color: var(--secondary-color);
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     font-family: var(--font-heading);
+    line-height: 1.2;
 }
 
 .practice-area-subtitle {
-    font-size: 1.5rem;
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
     color: var(--text-secondary);
     margin-bottom: 2.5rem;
+    line-height: 1.5;
 }
 
 .practice-area-details {
     background: var(--card-bg);
-    padding: 3rem;
+    padding: 3.5rem 3rem;
     border-radius: var(--border-radius);
     border: 1px solid var(--glass-border);
-    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-sm);
 }
 
 .practice-area-details p {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     line-height: 1.8;
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
 }
 
 .practice-area-intro {
-    font-size: 1.25rem !important;
+    font-size: clamp(1.05rem, 2.5vw, 1.2rem) !important;
     font-weight: 500;
     color: var(--primary-color) !important;
-    line-height: 1.8;
-    margin-bottom: 3rem !important;
+    line-height: 1.75;
+    margin-bottom: 2.5rem !important;
     border-left: 3px solid var(--secondary-color);
-    padding-left: 1.5rem;
+    padding-left: 1.25rem;
 }
 
 .practice-area-section {
@@ -73,8 +75,8 @@
 
 .service-bullet-item {
     display: flex;
-    gap: 1.25rem;
-    margin-bottom: 1.5rem;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
     align-items: flex-start;
 }
 
@@ -88,21 +90,31 @@
     background-color: var(--secondary-color);
     transform: rotate(45deg);
     flex-shrink: 0;
-    margin-top: 0.65rem;
+    margin-top: 0.55rem;
+    border-radius: 1px;
 }
 
 .service-bullet-item p {
     margin-bottom: 0 !important;
-    font-size: 1rem !important;
+    font-size: 0.98rem !important;
     color: var(--text-secondary) !important;
-    line-height: 1.7 !important;
+    line-height: 1.65 !important;
+    word-break: normal;
+    overflow-wrap: break-word;
+}
+
+.service-item-title {
+    color: var(--text-primary);
+    font-weight: 700;
+    margin-right: 0.35rem;
+    display: inline;
 }
 
 .forums-panel,
 .laws-panel {
-    background: rgba(168, 137, 91, 0.04) !important;
+    background: rgba(168, 137, 91, 0.05) !important;
     border: 1px solid var(--glass-border);
-    padding: 2.25rem;
+    padding: 2rem 1.75rem;
     border-radius: 8px;
 }
 
@@ -115,16 +127,17 @@
 
 .section-panel-text {
     margin-bottom: 0 !important;
-    font-size: 1.05rem !important;
+    font-size: 1rem !important;
     color: var(--text-secondary) !important;
     line-height: 1.7 !important;
     font-style: italic;
+    word-break: normal;
+    overflow-wrap: break-word;
 }
-
 
 /* Related Practice Areas Section */
 .related-areas-section {
-    padding: 6rem 0;
+    padding: 5rem 0;
     background-color: rgba(168, 137, 91, 0.02);
     border-top: 1px solid var(--glass-border);
 }
@@ -132,20 +145,20 @@
 .related-areas-section .container {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
 }
 
 .related-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
-    margin-top: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2.5rem;
 }
 
 .related-card {
     background: var(--card-bg);
     border: 1px solid var(--glass-border);
-    padding: 3rem 2.25rem;
+    padding: 2.5rem 1.75rem;
     border-radius: var(--border-radius);
     transition: var(--transition);
     position: relative;
@@ -154,8 +167,6 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
     text-decoration: none;
     color: inherit;
 }
@@ -174,7 +185,7 @@
 }
 
 .related-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-6px);
     background: rgba(168, 137, 91, 0.12);
     border-color: rgba(168, 137, 91, 0.3);
     box-shadow: var(--shadow-lg);
@@ -185,37 +196,84 @@
 }
 
 .related-icon {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.75rem;
+    margin-bottom: 1.25rem;
     filter: drop-shadow(0 0 15px rgba(197, 160, 89, 0.15));
     transition: var(--transition);
 }
 
 .related-card:hover .related-icon {
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 
 .related-card h3 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
     color: var(--text-primary);
     font-family: var(--font-heading);
 }
 
 .related-card p {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     color: var(--text-secondary);
-    line-height: 1.7;
+    line-height: 1.65;
     margin-bottom: 0;
 }
 
+/* Mobile & Tablet Responsive Queries */
 @media (max-width: 768px) {
+    .practice-area-page {
+        padding: calc(var(--header-height) + 1.5rem) 0 3.5rem;
+    }
+
+    .practice-area-container {
+        padding: 0 1rem;
+    }
+
+    .practice-area-details {
+        padding: 2rem 1.25rem;
+    }
+
+    .practice-area-intro {
+        padding-left: 1rem;
+        margin-bottom: 2rem !important;
+    }
+
+    .service-bullet-item {
+        gap: 0.75rem;
+        margin-bottom: 1.15rem;
+    }
+
+    .forums-panel,
+    .laws-panel {
+        padding: 1.5rem 1.15rem;
+    }
+
+    .related-areas-section {
+        padding: 3.5rem 0;
+    }
+
     .related-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
     }
+
     .related-card {
-        padding: 2.5rem 1.5rem;
+        padding: 2rem 1.25rem;
     }
 }
 
+@media (max-width: 480px) {
+    .practice-area-details {
+        padding: 1.5rem 1rem;
+    }
+
+    .practice-area-section {
+        margin-bottom: 2rem;
+    }
+
+    .forums-panel,
+    .laws-panel {
+        padding: 1.25rem 0.85rem;
+    }
+}

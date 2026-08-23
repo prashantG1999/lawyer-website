@@ -169,8 +169,6 @@
     padding: 3rem;
     border-radius: var(--border-radius);
     position: relative;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
 }
 
 .quote-wrapper::before {
@@ -221,8 +219,6 @@
     border-radius: var(--border-radius);
     transition: var(--transition);
     text-align: center;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
 }
 
 .why-card:hover {
@@ -258,13 +254,11 @@
 }
 
 .cta-box {
-    background: linear-gradient(135deg, rgba(168, 137, 91, 0.1) 0%, rgba(168, 137, 91, 0.03) 100%);
+    background: linear-gradient(135deg, rgba(168, 137, 91, 0.1) 0%, rgba(168, 137, 91, 0.03) 100%), #ffffff;
     border: 1px solid rgba(168, 137, 91, 0.2);
     padding: 5rem 4rem;
     border-radius: var(--border-radius);
     text-align: center;
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
     box-shadow: var(--shadow-sm);
     position: relative;
     overflow: hidden;
