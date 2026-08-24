@@ -210,15 +210,15 @@ const AdminDashboard: React.FC = () => {
                         </strong>
                         <span className="article-slug-sub">/blog/{post.slug}</span>
                       </td>
-                      <td>
+                      <td className="article-category-cell">
                         <span className="badge-cat">{post.category}</span>
                       </td>
-                      <td>
-                        <div>{post.date}</div>
-                        <small style={{ color: 'var(--text-muted)' }}>{post.readTime}</small>
+                      <td className="article-date-cell">
+                        <div className="article-date-val">{post.date}</div>
+                        <small className="article-read-time">{post.readTime}</small>
                       </td>
-                      <td style={{ textAlign: 'right' }}>
-                        <div className="action-buttons-group" style={{ justifyContent: 'flex-end' }}>
+                      <td className="article-actions-cell" style={{ textAlign: 'right' }}>
+                        <div className="action-buttons-group">
                           <NavLink
                             to={`/blog/${post.slug}`}
                             target="_blank"
