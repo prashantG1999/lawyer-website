@@ -13,6 +13,21 @@ const DisclaimerModal: React.FC = () => {
     });
 
     useEffect(() => {
+        // Re-check consent on pageshow (e.g., if user navigated back from Google via browser back button)
+        const checkConsent = () => {
+            const agreed = localStorage.getItem('juriva_disclaimer_agreed');
+            if (agreed !== 'true') {
+                setIsVisible(true);
+            }
+        };
+
+        window.addEventListener('pageshow', checkConsent);
+        return () => {
+            window.removeEventListener('pageshow', checkConsent);
+        };
+    }, []);
+
+    useEffect(() => {
         if (isVisible) {
             document.body.classList.add('disclaimer-active');
         } else {
@@ -29,6 +44,7 @@ const DisclaimerModal: React.FC = () => {
     };
 
     const handleDisagree = () => {
+        localStorage.removeItem('juriva_disclaimer_agreed');
         window.location.href = 'https://www.google.com';
     };
 
