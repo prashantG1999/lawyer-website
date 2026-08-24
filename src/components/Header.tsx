@@ -4,12 +4,11 @@ import logoImage from '../assets/Juriva_Logo.png';
 import './Header.css';
 
 const Header: React.FC = () => {
-    const [scrolled, setScrolled] = useState(false);
+    const [scrolled, setScrolled] = useState(() => typeof window !== 'undefined' && window.scrollY > 50);
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
         let isScrolled = window.scrollY > 50;
-        setScrolled(isScrolled);
 
         const handleScroll = () => {
             const currentScrolled = window.scrollY > 50;

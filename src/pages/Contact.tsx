@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
         emailjs
             .sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, USER_ID)
             .then(
-                (_,) => {
+                () => {
                     setStatus('success');
                     formRef.current?.reset();
                 },

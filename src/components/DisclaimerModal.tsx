@@ -2,19 +2,15 @@ import React, { useState, useEffect } from 'react';
 import './DisclaimerModal.css';
 
 const DisclaimerModal: React.FC = () => {
-    const [isVisible, setIsVisible] = useState(false);
-
-    useEffect(() => {
+    const [isVisible, setIsVisible] = useState(() => {
+        if (typeof window === 'undefined') return false;
         const params = new URLSearchParams(window.location.search);
         if (params.get('reset') === 'true') {
             localStorage.removeItem('juriva_disclaimer_agreed');
         }
-        
         const agreed = localStorage.getItem('juriva_disclaimer_agreed');
-        if (agreed !== 'true') {
-            setIsVisible(true);
-        }
-    }, []);
+        return agreed !== 'true';
+    });
 
     useEffect(() => {
         if (isVisible) {

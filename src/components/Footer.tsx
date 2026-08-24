@@ -26,6 +26,7 @@ const Footer: React.FC = () => {
                         <li><NavLink to="/services" onClick={() => window.scrollTo(0, 0)}>Practice Areas</NavLink></li>
                         <li><NavLink to="/blog" onClick={() => window.scrollTo(0, 0)}>Blog & Insights</NavLink></li>
                         <li><NavLink to="/contact" onClick={() => window.scrollTo(0, 0)}>Contact</NavLink></li>
+                        <li><NavLink to="/admin" onClick={() => window.scrollTo(0, 0)} style={{ opacity: 0.6, fontSize: '0.82rem' }}>🔒 Owner Portal</NavLink></li>
                     </ul>
                 </div>
                 

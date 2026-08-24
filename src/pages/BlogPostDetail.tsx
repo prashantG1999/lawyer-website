@@ -1,23 +1,52 @@
-import React, { useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, NavLink, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import './BlogPostDetail.css';
-import { blogPosts } from '../data/blogData.ts';
+import { type BlogPost } from '../data/blogData.ts';
+import { fetchPostBySlug, fetchAllPosts } from '../services/blogService.ts';
 
 const BlogPostDetail: React.FC = () => {
     const { id } = useParams<{ id: string }>();
     const navigate = useNavigate();
 
-    const post = useMemo(() => {
-        return blogPosts.find((p) => p.slug === id || p.id === id);
+    const [post, setPost] = useState<BlogPost | null>(null);
+    const [allPosts, setAllPosts] = useState<BlogPost[]>([]);
+    const [isLoading, setIsLoading] = useState<boolean>(true);
+
+    useEffect(() => {
+        if (!id) return;
+        const load = async () => {
+            try {
+                setIsLoading(true);
+                const [current, all] = await Promise.all([
+                    fetchPostBySlug(id),
+                    fetchAllPosts()
+                ]);
+                setPost(current);
+                setAllPosts(all);
+            } catch (err) {
+                console.error('Failed to load article detail:', err);
+            } finally {
+                setIsLoading(false);
+            }
+        };
+        load();
     }, [id]);
 
     const relatedPosts = useMemo(() => {
         if (!post) return [];
-        return blogPosts
+        return allPosts
             .filter((p) => p.id !== post.id && p.category === post.category)
             .slice(0, 3);
-    }, [post]);
+    }, [post, allPosts]);
+
+    if (isLoading) {
+        return (
+            <div className="container" style={{ padding: '8rem 1rem 4rem', textAlign: 'center' }}>
+                <p style={{ color: 'var(--text-secondary)' }}>Loading legal article...</p>
+            </div>
+        );
+    }
 
     if (!post) {
         return (
@@ -77,7 +106,7 @@ const BlogPostDetail: React.FC = () => {
                 );
             }
             if (trimmed.startsWith('- ')) {
-                const items = trimmed.split('\n').map(item => item.replace(/^[-\*]\s*/, ''));
+                const items = trimmed.split('\n').map(item => item.replace(/^[-*]\s*/, ''));
                 return (
                     <ul key={idx}>
                         {items.map((item, itemIdx) => (

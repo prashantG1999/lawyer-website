@@ -1,16 +1,33 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import './Blog.css';
-import { blogPosts, blogCategories } from '../data/blogData.ts';
+import { blogCategories, type BlogPost } from '../data/blogData.ts';
+import { fetchAllPosts } from '../services/blogService.ts';
 
 const Blog: React.FC = () => {
     const navigate = useNavigate();
+    const [posts, setPosts] = useState<BlogPost[]>([]);
     const [searchQuery, setSearchQuery] = useState('');
     const [selectedCategory, setSelectedCategory] = useState<string>('All');
+    const [isLoading, setIsLoading] = useState<boolean>(true);
+
+    useEffect(() => {
+        const load = async () => {
+            try {
+                const data = await fetchAllPosts();
+                setPosts(data);
+            } catch (err) {
+                console.error('Failed to load posts:', err);
+            } finally {
+                setIsLoading(false);
+            }
+        };
+        load();
+    }, []);
 
     const filteredPosts = useMemo(() => {
-        return blogPosts.filter((post) => {
+        return posts.filter((post) => {
             const matchesCategory = selectedCategory === 'All' || post.category === selectedCategory;
             const matchesSearch = 
                 post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -19,11 +36,11 @@ const Blog: React.FC = () => {
             
             return matchesCategory && matchesSearch;
         });
-    }, [searchQuery, selectedCategory]);
+    }, [posts, searchQuery, selectedCategory]);
 
     const featuredPost = useMemo(() => {
-        return blogPosts.find((post) => post.featured) || blogPosts[0];
-    }, []);
+        return posts.find((post) => post.featured) || posts[0];
+    }, [posts]);
 
     const handlePostClick = (slug: string) => {
         window.scrollTo(0, 0);
@@ -103,7 +120,11 @@ const Blog: React.FC = () => {
                     )}
 
                     {/* Blog Posts Grid */}
-                    {filteredPosts.length > 0 ? (
+                    {isLoading ? (
+                        <div style={{ textAlign: 'center', padding: '4rem 1rem', color: 'var(--text-secondary)' }}>
+                            <p>Loading legal articles & insights...</p>
+                        </div>
+                    ) : filteredPosts.length > 0 ? (
                         <div className="blog-grid">
                             {filteredPosts.map((post) => (
                                 <article 
