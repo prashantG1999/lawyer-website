@@ -102,6 +102,50 @@ const PracticeAreaDetail: React.FC = () => {
                                 </p>
                             ))}
                         </div>
+
+                        {/* Core Legal Services */}
+                        {area.services && area.services.length > 0 && (
+                            <div className="practice-area-section-block">
+                                <h2 className="practice-area-block-title">
+                                    <span className="block-title-icon">⚖️</span>
+                                    Core Legal &amp; Litigation Services
+                                </h2>
+                                <ul className="practice-area-services-list">
+                                    {area.services.map((srv, idx) => (
+                                        <li key={idx} className="practice-area-service-item">
+                                            <span className="service-bullet-icon">✦</span>
+                                            <span>{srv}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        )}
+
+                        {/* Courts, Tribunals & Forums */}
+                        {area.forums && (
+                            <div className="practice-area-section-block">
+                                <h2 className="practice-area-block-title">
+                                    <span className="block-title-icon">🏛️</span>
+                                    Courts, Tribunals &amp; Jurisdictional Forums
+                                </h2>
+                                <div className="practice-area-badge-box">
+                                    <p className="practice-area-forum-text">{area.forums}</p>
+                                </div>
+                            </div>
+                        )}
+
+                        {/* Key Governing Legislation */}
+                        {area.laws && (
+                            <div className="practice-area-section-block">
+                                <h2 className="practice-area-block-title">
+                                    <span className="block-title-icon">📜</span>
+                                    Key Governing Legislation &amp; Statutory Framework
+                                </h2>
+                                <div className="practice-area-badge-box laws-box">
+                                    <p className="practice-area-laws-text">{area.laws}</p>
+                                </div>
+                            </div>
+                        )}
                         
                         <div className="practice-area-footer-nav">
                             <Link to="/services" className="back-link">
