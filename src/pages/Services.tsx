@@ -44,9 +44,10 @@ const Services: React.FC = () => {
                                     src={service.image} 
                                     alt={service.title} 
                                     className="service-card-image" 
-                                    width="220"
-                                    height="220"
-                                    loading="lazy" 
+                                    width="200"
+                                    height="200"
+                                    loading={index < 2 ? "eager" : "lazy"} 
+                                    fetchPriority={index === 0 ? "high" : "auto"}
                                     decoding="async"
                                 />
                             </div>

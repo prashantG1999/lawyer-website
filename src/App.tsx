@@ -4,18 +4,16 @@ import { HelmetProvider } from 'react-helmet-async';
 import Layout from './components/Layout.tsx';
 import ScrollToTop from './components/ScrollToTop.tsx';
 
-// Landing page is statically imported for instant initial paint & zero CLS
+// Public pages statically imported for instant initial paint & zero CLS
 import Home from './pages/Home.tsx';
+import About from './pages/About.tsx';
+import Services from './pages/Services.tsx';
+import Contact from './pages/Contact.tsx';
+import PracticeAreaDetail from './pages/practice-areas/PracticeAreaDetail.tsx';
+import Blog from './pages/Blog.tsx';
+import BlogPostDetail from './pages/BlogPostDetail.tsx';
 
-// Code-split secondary routes on-demand
-const About = lazy(() => import('./pages/About.tsx'));
-const Services = lazy(() => import('./pages/Services.tsx'));
-const Contact = lazy(() => import('./pages/Contact.tsx'));
-const PracticeAreaDetail = lazy(() => import('./pages/practice-areas/PracticeAreaDetail.tsx'));
-const Blog = lazy(() => import('./pages/Blog.tsx'));
-const BlogPostDetail = lazy(() => import('./pages/BlogPostDetail.tsx'));
-
-// Code-split admin and Firebase infrastructure
+// Code-split admin and Firebase infrastructure (heavy dependencies loaded only for owner)
 const AdminRouteWrapper = lazy(() => import('./components/AdminRouteWrapper.tsx'));
 const AdminLogin = lazy(() => import('./pages/admin/AdminLogin.tsx'));
 const AdminDashboard = lazy(() => import('./pages/admin/AdminDashboard.tsx'));

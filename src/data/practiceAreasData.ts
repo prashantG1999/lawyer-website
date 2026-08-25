@@ -1,12 +1,12 @@
 // Auto-generated practice areas data from Update.docx & downloaded assets
-import bankingImg from '../assets/services/01_banking_financial_laws_light.png';
-import civilImg from '../assets/services/02_civil_litigation_light.png';
-import criminalImg from '../assets/services/03_criminal_law_light.png';
-import revenueImg from '../assets/services/04_revenue_land_law_light.png';
-import niActImg from '../assets/services/05_negotiable_instruments_act_light.png';
-import familyImg from '../assets/services/06_family_matrimonial_law_light.png';
-import personalLawImg from '../assets/services/07_personal_law_succession_light.png';
-import arbitrationImg from '../assets/services/08_arbitration_adr_light.png';
+import bankingImg from '../assets/services/01_banking_financial_laws_light.webp';
+import civilImg from '../assets/services/02_civil_litigation_light.webp';
+import criminalImg from '../assets/services/03_criminal_law_light.webp';
+import revenueImg from '../assets/services/04_revenue_land_law_light.webp';
+import niActImg from '../assets/services/05_negotiable_instruments_act_light.webp';
+import familyImg from '../assets/services/06_family_matrimonial_law_light.webp';
+import personalLawImg from '../assets/services/07_personal_law_succession_light.webp';
+import arbitrationImg from '../assets/services/08_arbitration_adr_light.webp';
 
 export interface PracticeAreaMaxim {
   latin: string;
