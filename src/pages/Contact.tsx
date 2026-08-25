@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import emailjs from 'emailjs-com';
 import './Contact.css';
 
@@ -35,6 +36,13 @@ const Contact: React.FC = () => {
 
     return (
         <section className="contact">
+            <Helmet>
+                <title>Contact Chamber | Juriva Legal, Kota, Rajasthan</title>
+                <meta 
+                    name="description" 
+                    content="Contact Juriva Legal chamber in Kota, Rajasthan to schedule a confidential legal consultation for civil, criminal, banking, corporate, or matrimonial matters." 
+                />
+            </Helmet>
             <div className="contact-wrapper-container">
                 <div className="contact-header">
                     <h1>Contact <span>Chamber</span></h1>

@@ -49,13 +49,17 @@
     font-weight: 500 !important;
 }
 
+.about-details {
+    text-align: left;
+}
+
 .about-details p {
-    font-size: 1.15rem;
+    font-size: 1.12rem;
     color: var(--text-secondary);
-    line-height: 1.8;
-    margin-bottom: 2rem;
+    line-height: 1.85;
+    margin-bottom: 1.75rem;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
 }
 
 .about-details p:last-child {
@@ -65,6 +69,11 @@
 .about-details strong {
     color: var(--text-primary);
     font-weight: 600;
+}
+
+.about-details em {
+    color: var(--text-primary);
+    font-style: italic;
 }
 
 @media (max-width: 768px) {

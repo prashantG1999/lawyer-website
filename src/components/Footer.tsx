@@ -9,7 +9,15 @@ const Footer: React.FC = () => {
             <div className="footer-container">
                 <div className="footer-info">
                     <h3 className="footer-logo">
-                        <img src={logoImage} alt="Juriva Legal" className="footer-logo-img" />
+                        <img 
+                            src={logoImage} 
+                            alt="Juriva Legal" 
+                            className="footer-logo-img" 
+                            width="32" 
+                            height="32" 
+                            loading="lazy" 
+                            decoding="async" 
+                        />
                         Juriva <span>Legal</span>
                     </h3>
                     <p>

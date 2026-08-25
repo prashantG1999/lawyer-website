@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import './Home.css';
 import { NavLink, useNavigate } from 'react-router-dom';
 import logoImage from '../assets/Juriva_Logo.png';
@@ -8,20 +9,40 @@ const Home: React.FC = () => {
     const navigate = useNavigate();
     return (
         <div className="home-page">
+            <Helmet>
+                <title>Juriva Legal | Advocates & Legal Consultants in Kota, Rajasthan</title>
+                <meta 
+                    name="description" 
+                    content="Juriva Legal delivers strategic legal counsel and robust litigation representation in Kota, Rajasthan across District Courts, DRT, and High Court." 
+                />
+                <meta property="og:title" content="Juriva Legal | Advocates & Legal Consultants in Kota, Rajasthan" />
+                <meta property="og:description" content="Comprehensive legal expertise you can trust in Kota, Rajasthan and across Indian courts and tribunals." />
+                <meta property="og:type" content="website" />
+                <meta name="twitter:title" content="Juriva Legal | Advocates & Legal Consultants in Kota, Rajasthan" />
+                <meta name="twitter:description" content="Comprehensive legal expertise you can trust in Kota, Rajasthan and across Indian courts and tribunals." />
+            </Helmet>
+
             {/* Hero Section */}
             <section className="hero-section">
                 <div className="hero-overlay"></div>
                 <div className="hero-content">
                     <h1>
                         <span className="hero-logo-wrapper">
-                            <img src={logoImage} alt="Juriva Legal Logo" className="hero-logo-large" />
+                            <img 
+                                src={logoImage} 
+                                alt="Juriva Legal Logo" 
+                                className="hero-logo-large" 
+                                width="200" 
+                                height="200" 
+                                fetchPriority="high"
+                                decoding="async"
+                            />
                             <span>Juriva <span style={{ color: 'var(--secondary-color)' }}>Legal</span></span>
                         </span>
                         Comprehensive Legal Expertise You Can Trust
                     </h1>
                     <p className="font-bookman">
-                        With years of extensive experience practicing across various courts and tribunals in India,
-                        providing robust legal representation and strategic counsel tailored to your unique situation.
+                        With years of extensive experience practicing before various courts, tribunals, and quasi-judicial forums across India, we provide robust legal representation and strategic counsel, carefully tailored to the unique facts, objectives, and legal requirements of each client and matter.
                     </p>
                     <div className="cta-group">
                         <NavLink to="/contact" className="cta-button">Book a Consultation</NavLink>
@@ -46,10 +67,10 @@ const Home: React.FC = () => {
                         <div className="intro-quote">
                             <div className="quote-wrapper">
                                 <blockquote>
-                                    "Justice delayed is justice denied."
+                                    "Ubi Jus, Ibi Remedium"
                                 </blockquote>
                                 <p className="quote-desc">
-                                    We focus on providing efficient, result-oriented legal strategies, prioritizing mediation and settlement where possible, and fierce litigation when necessary.
+                                    Where there is a right, there is a remedy. We craft bespoke legal strategies tailored to the unique facts, goals, and challenges of each client. No two matters are alike, and neither are our solutions. We listen, understand, and adapt, delivering precise, practical, and effective legal pathways that seek not just to represent, but to resolve.
                                 </p>
                             </div>
                         </div>
@@ -95,8 +116,8 @@ const Home: React.FC = () => {
 
                     <div className="blog-grid">
                         {blogPosts.slice(0, 3).map((post) => (
-                            <article 
-                                key={post.id} 
+                            <article
+                                key={post.id}
                                 className="blog-card"
                                 onClick={() => {
                                     window.scrollTo(0, 0);

@@ -33,7 +33,7 @@ const PracticeAreaDetail: React.FC = () => {
     }
 
     const relatedAreas = practiceAreasList
-        .filter(item => item.id !== id)
+        .filter(item => item.id !== area.id)
         .slice(0, 3);
 
     return (
@@ -41,12 +41,12 @@ const PracticeAreaDetail: React.FC = () => {
             <section className="practice-area-page">
                 <div className="practice-area-container">
                     <Helmet>
-                        <title>{area.title} | Juriva Legal</title>
-                        <meta name="description" content={area.description} />
-                        <meta property="og:title" content={`${area.title} | Juriva Legal`} />
+                        <title>{area.title} | Juriva Legal, Kota, Rajasthan</title>
+                        <meta name="description" content={`${area.title} legal representation & strategic advocacy by Juriva Legal in Kota, Rajasthan. ${area.description}`} />
+                        <meta property="og:title" content={`${area.title} | Juriva Legal, Kota, Rajasthan`} />
                         <meta property="og:description" content={area.description} />
                         <meta property="og:type" content="website" />
-                        <meta name="twitter:title" content={`${area.title} | Juriva Legal`} />
+                        <meta name="twitter:title" content={`${area.title} | Juriva Legal, Kota, Rajasthan`} />
                         <meta name="twitter:description" content={area.description} />
                     </Helmet>
                     
@@ -59,57 +59,53 @@ const PracticeAreaDetail: React.FC = () => {
                         <span className="current" aria-current="page">{area.title}</span>
                     </nav>
 
-                    <h1>{area.title}</h1>
-                    <p className="practice-area-subtitle">{area.subtitle}</p>
+                    {/* Header with Image on Left */}
+                    <div className="practice-area-header-with-image">
+                        {area.image && (
+                            <div className="practice-area-header-img-wrap">
+                                <img 
+                                    src={area.image} 
+                                    alt={area.title} 
+                                    className="practice-area-header-img" 
+                                    width="140"
+                                    height="140"
+                                    loading="eager"
+                                    decoding="async"
+                                />
+                            </div>
+                        )}
+                        <div className="practice-area-header-text">
+                            <h1>{area.title}</h1>
+                            <p className="practice-area-subtitle">{area.subtitle}</p>
+                        </div>
+                    </div>
                     
                     <div className="practice-area-details">
-                        <p className="practice-area-intro">{area.intro}</p>
+                        {/* Legal Maxim Highlight */}
+                        {area.maxim && area.maxim.latin && (
+                            <div className="practice-area-maxim-box">
+                                <div className="maxim-quote-mark">&ldquo;</div>
+                                <div className="maxim-content">
+                                    <p className="maxim-latin">{area.maxim.latin}</p>
+                                    {area.maxim.meaning && (
+                                        <p className="maxim-meaning">{area.maxim.meaning}</p>
+                                    )}
+                                </div>
+                            </div>
+                        )}
                         
-                        <div className="practice-area-section">
-                            <h2>Core Services</h2>
-                            <ul className="services-bullet-list">
-                                {area.services.map((service, index) => {
-                                    const colonIndex = service.indexOf(':');
-                                    if (colonIndex !== -1) {
-                                        const title = service.substring(0, colonIndex + 1);
-                                        const description = service.substring(colonIndex + 1);
-                                        return (
-                                            <li key={index} className="service-bullet-item">
-                                                <span className="service-bullet-diamond" aria-hidden="true"></span>
-                                                <p>
-                                                    <strong className="service-item-title">{title}</strong>
-                                                    {description}
-                                                </p>
-                                            </li>
-                                        );
-                                    }
-                                    return (
-                                        <li key={index} className="service-bullet-item">
-                                            <span className="service-bullet-diamond" aria-hidden="true"></span>
-                                            <p>{service}</p>
-                                        </li>
-                                    );
-                                })}
-                            </ul>
+                        {/* Main Body Paragraphs */}
+                        <div className="practice-area-paragraphs">
+                            {area.paragraphs.map((para, index) => (
+                                <p key={index} className={index === 0 ? "practice-area-lead-para" : ""}>
+                                    {para}
+                                </p>
+                            ))}
                         </div>
-
-                        {area.forums && (
-                            <div className="practice-area-section forums-panel">
-                                <h2>Practice Forums</h2>
-                                <p className="section-panel-text">{area.forums}</p>
-                            </div>
-                        )}
-
-                        {area.laws && (
-                            <div className="practice-area-section laws-panel">
-                                <h2>Key Laws & Statutes</h2>
-                                <p className="section-panel-text">{area.laws}</p>
-                            </div>
-                        )}
                         
-                        <div style={{ marginTop: '3.5rem', borderTop: '1px solid var(--glass-border)', paddingTop: '2rem' }}>
-                            <Link to="/services" style={{ textDecoration: 'none', color: 'var(--secondary-color)', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-                                ← Back to All Practice Areas
+                        <div className="practice-area-footer-nav">
+                            <Link to="/services" className="back-link">
+                                &larr; Back to All Practice Areas
                             </Link>
                         </div>
                     </div>
@@ -129,9 +125,21 @@ const PracticeAreaDetail: React.FC = () => {
                                     to={`/services/${related.id}`} 
                                     className="related-card"
                                 >
-                                    <span className="related-icon" role="img" aria-hidden="true">{related.icon}</span>
-                                    <h3>{related.title}</h3>
-                                    <p>{related.description}</p>
+                                    <div className="related-card-img-wrap">
+                                        <img 
+                                            src={related.image} 
+                                            alt={related.title} 
+                                            width="120"
+                                            height="120"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                    <div className="related-card-body">
+                                        <h3>{related.title}</h3>
+                                        <p>{related.description}</p>
+                                        <span className="related-card-arrow">Read More &rarr;</span>
+                                    </div>
                                 </Link>
                             ))}
                         </div>
@@ -143,3 +151,4 @@ const PracticeAreaDetail: React.FC = () => {
 };
 
 export default PracticeAreaDetail;
+

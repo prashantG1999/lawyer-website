@@ -11,24 +11,22 @@
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2.25rem;
     margin-top: 4rem;
 }
 
 .service-card {
     background: var(--card-bg);
     border: 1px solid var(--glass-border);
-    padding: 3.5rem 2.5rem;
     border-radius: var(--border-radius);
-    transition: var(--transition);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     cursor: pointer;
+    box-shadow: var(--shadow-sm);
 }
 
 .service-card::before {
@@ -38,51 +36,104 @@
     left: 0;
     width: 100%;
     height: 3px;
-    background: var(--secondary-color);
+    background: linear-gradient(90deg, var(--secondary-color), #dfba73);
     transform: scaleX(0);
     transform-origin: left;
-    transition: var(--transition);
+    transition: transform 0.35s ease;
+    z-index: 2;
 }
 
 .service-card:hover {
-    transform: translateY(-10px);
-    background: rgba(168, 137, 91, 0.12);
-    border-color: rgba(168, 137, 91, 0.3);
-    box-shadow: var(--shadow-lg);
+    transform: translateY(-6px);
+    background: rgba(168, 137, 91, 0.08);
+    border-color: rgba(168, 137, 91, 0.4);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.2);
 }
 
 .service-card:hover::before {
     transform: scaleX(1);
 }
 
-.service-icon {
-    font-size: 3.5rem;
-    margin-bottom: 2rem;
-    filter: drop-shadow(0 0 15px rgba(197, 160, 89, 0.15));
-    transition: var(--transition);
+/* Service Card Image */
+.service-card-image-wrapper {
+    width: 100%;
+    padding: 2rem 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
 }
 
-.service-card:hover .service-icon {
-    transform: scale(1.1);
+.service-card-image {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.service-card:hover .service-card-image {
+    transform: scale(1.04);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+}
+
+/* Service Card Content */
+.service-card-content {
+    padding: 1.25rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.service-card-maxim {
+    display: inline-block;
+    font-size: 0.84rem;
+    color: var(--secondary-color);
+    font-family: var(--font-heading);
+    font-style: italic;
+    letter-spacing: 0.3px;
+    margin-bottom: 0.65rem;
+    line-height: 1.4;
 }
 
 .service-card h3 {
-    font-size: 1.6rem;
-    margin-bottom: 1.25rem;
+    font-size: 1.3rem;
+    margin-bottom: 0.85rem;
     color: var(--text-primary);
     font-family: var(--font-heading);
+    line-height: 1.35;
 }
 
 .service-card p {
-    font-size: 1.05rem;
+    font-size: 0.96rem;
     color: var(--text-secondary);
-    line-height: 1.8;
-    margin-bottom: 0;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.service-card-link {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: gap 0.2s ease, color 0.2s ease;
+    margin-top: auto;
+}
+
+.service-card:hover .service-card-link {
+    gap: 0.75rem;
+    color: #dfba73;
 }
 
 @media (max-width: 1024px) {
     .services-grid {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
         gap: 2rem;
     }
 }
@@ -93,7 +144,15 @@
         gap: 2rem;
     }
 
-    .service-card {
-        padding: 3rem 2rem;
+    .service-card-image-wrapper {
+        padding: 1.75rem 1.5rem 0.5rem;
+    }
+
+    .service-card-image {
+        max-width: 190px;
+    }
+
+    .service-card-content {
+        padding: 1.25rem 1.5rem 1.75rem;
     }
 }

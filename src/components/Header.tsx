@@ -37,7 +37,14 @@ const Header: React.FC = () => {
         <>
             <header className={`site-header ${scrolled ? 'scrolled' : ''} ${isOpen ? 'menu-open' : ''}`}>
                 <NavLink to="/" className="logo">
-                    <img src={logoImage} alt="Juriva Legal" className="logo-icon-img" />
+                    <img 
+                        src={logoImage} 
+                        alt="Juriva Legal" 
+                        className="logo-icon-img" 
+                        width="36" 
+                        height="36" 
+                        decoding="async" 
+                    />
                     Juriva <span>Legal</span>
                 </NavLink>
                 
