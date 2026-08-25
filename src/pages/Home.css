@@ -247,6 +247,101 @@
     margin-bottom: 0;
 }
 
+/* Home Blog Section */
+.home-blog-section {
+    background-color: rgba(62, 75, 49, 0.02);
+    padding: 7rem 0 8rem;
+    border-top: 1px solid var(--glass-border);
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.blog-card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--glass-border);
+    padding: 2.25rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--shadow-sm);
+    cursor: pointer;
+    text-align: left;
+}
+
+.blog-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--secondary-color);
+    background: rgba(168, 137, 91, 0.12);
+}
+
+.card-category {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 0.3rem 0.85rem;
+    background-color: rgba(168, 137, 91, 0.14);
+    color: var(--primary-color);
+    font-size: 0.78rem;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-bottom: 1.25rem;
+    letter-spacing: 0.4px;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: var(--text-primary);
+    margin-bottom: 0.9rem;
+    font-family: var(--font-heading);
+    transition: color 0.2s ease;
+}
+
+.blog-card:hover .card-title {
+    color: var(--secondary-color);
+}
+
+.card-summary {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.65;
+    margin-bottom: 1.75rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(168, 137, 91, 0.15);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.read-more-link {
+    color: var(--secondary-color);
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    transition: gap 0.2s ease, color 0.2s ease;
+}
+
+.blog-card:hover .read-more-link {
+    color: #dfba73;
+    gap: 0.55rem;
+}
+
 /* Home CTA Section */
 .home-cta-section {
     background-color: var(--bg-color);
