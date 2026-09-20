@@ -575,17 +575,45 @@ nav.nav-links a.active {
   }
 }
 
+@media (max-width: 540px) {
+  .top-banner-container {
+    padding: 0 0.75rem;
+  }
+
+  /* Hide social/scanner icons from the narrow mobile top bar to prevent overflow */
+  .banner-whatsapp,
+  .banner-instagram,
+  .banner-qr-trigger,
+  .top-banner-right .banner-separator {
+    display: none !important;
+  }
+
+  .top-banner-right {
+    justify-content: space-between;
+  }
+
+  .banner-phone {
+    font-size: 0.78rem;
+  }
+
+  .banner-phone svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  .banner-cta-btn {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+  }
+}
+
 @media (max-width: 480px) {
   .top-banner-container {
-    padding: 0 0.65rem;
+    padding: 0 0.5rem;
   }
 
-  .banner-phone span {
-    font-size: 0.75rem;
-  }
-
-  .top-banner-right .banner-separator {
-    display: none;
+  .banner-phone {
+    font-size: 0.74rem;
   }
 
   .banner-cta-btn {

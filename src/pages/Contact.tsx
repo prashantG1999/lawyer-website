@@ -1,9 +1,8 @@
 import React, { useRef, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import emailjs from 'emailjs-com';
-import instagramQr from '../assets/instagram-qr.jpg';
-import whatsappQr from '../assets/whatsapp-qr.jpg';
-import QrModal, { type QrTabType } from '../components/QrModal.tsx';
+import instagramQr from '../assets/instagram-qr-cropped.png';
+import whatsappQr from '../assets/whatsapp-qr-cropped.png';
 import './Contact.css';
 
 const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || ''; 
@@ -13,8 +12,6 @@ const USER_ID = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || '';
 const Contact: React.FC = () => {
     const formRef = useRef<HTMLFormElement>(null);
     const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
-    const [isQrOpen, setIsQrOpen] = useState(false);
-    const [qrTab, setQrTab] = useState<QrTabType>('whatsapp');
 
     const sendEmail = (e: React.FormEvent) => {
         e.preventDefault();
@@ -51,21 +48,21 @@ const Contact: React.FC = () => {
             <div className="contact-wrapper-container">
                 <div className="contact-header">
                     <h1>Contact <span>Chamber</span></h1>
-                    <p>Protect your rights and secure your peace of mind. Get in touch to schedule a confidential consultation.</p>
                 </div>
 
                 <div className="contact-grid">
                     <div className="contact-info-panel">
                         <h2>Chamber Details</h2>
-                        <p>Reach out directly to schedule an appointment or for urgent legal assistance across our Kota chambers:</p>
 
                         <div className="contact-info-card">
                             <div className="info-icon">📍</div>
                             <div className="info-text">
-                                <h3>Sogaria Chamber</h3>
+                                <h3>Sogaria</h3>
                                 <p>Sogaria, Kota, Rajasthan, India</p>
-                                <p style={{ marginTop: '0.35rem', fontSize: '0.98rem' }}>
-                                    <a href="tel:+919664281653">+91 96642 81653</a> &nbsp;|&nbsp; <a href="tel:+919660460445">+91 96604 60445</a>
+                                <p className="contact-phone-links">
+                                    <a href="tel:+919664281653">+91 96642 81653</a>
+                                    <span className="contact-phone-sep">&nbsp;|&nbsp;</span>
+                                    <a href="tel:+919660460445">+91 96604 60445</a>
                                 </p>
                             </div>
                         </div>
@@ -73,7 +70,7 @@ const Contact: React.FC = () => {
                         <div className="contact-info-card">
                             <div className="info-icon">📍</div>
                             <div className="info-text">
-                                <h3>R.K Puram Chamber</h3>
+                                <h3>R.K Puram</h3>
                                 <p>R.K Puram, Kota, Rajasthan, India</p>
                                 <p style={{ marginTop: '0.35rem', fontSize: '0.98rem' }}>
                                     <a href="tel:+918824770804">+91 88247 70804</a>
@@ -84,38 +81,31 @@ const Contact: React.FC = () => {
                         <div className="contact-info-card whatsapp-qr-card">
                             <div className="info-icon">💬</div>
                             <div className="info-text">
-                                <h3>WhatsApp & Scanner</h3>
+                                <h3>WhatsApp</h3>
                                 <p>
                                     <a href="https://wa.me/919664281653" target="_blank" rel="noopener noreferrer">
                                         Chat with us: +91 96642 81653
                                     </a>
                                 </p>
                                 <div className="contact-scanner-container">
-                                    <button 
-                                        type="button" 
-                                        className="contact-scanner-preview" 
-                                        onClick={() => { setQrTab('whatsapp'); setIsQrOpen(true); }}
-                                        title="Click to enlarge WhatsApp scanner"
-                                    >
+                                    <div className="contact-scanner-frame">
                                         <img 
                                             src={whatsappQr} 
-                                            alt="WhatsApp Scanner for Advocate Nishant Giri" 
-                                            className="contact-scanner-thumb" 
+                                            alt="WhatsApp QR Scanner for Advocate Nishant Giri" 
+                                            className="contact-scanner-img" 
                                         />
-                                        <span className="contact-scanner-badge">
-                                            🔍 Click to Enlarge
-                                        </span>
-                                    </button>
-                                    <div className="contact-scanner-notes">
-                                        <p>Scan with WhatsApp or camera to chat directly with Advocate Nishant Giri.</p>
-                                        <button 
-                                            type="button" 
-                                            className="contact-scanner-expand-btn"
-                                            onClick={() => { setQrTab('whatsapp'); setIsQrOpen(true); }}
-                                        >
-                                            Open WhatsApp Scanner &rarr;
-                                        </button>
                                     </div>
+                                    <a 
+                                        href="https://wa.me/919664281653"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="contact-scanner-direct-link contact-wa-link"
+                                    >
+                                        <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" aria-hidden="true">
+                                            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.44 0-2.85-.38-4.08-1.1l-.29-.17-3.03.8 1.15-2.96-.19-.3a8.19 8.19 0 0 1-1.26-4.32c0-4.54 3.7-8.23 8.24-8.23m4.52 11.59c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.7 4.29 3.78.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.29z"/>
+                                        </svg>
+                                        <span>Open WhatsApp Chat &rarr;</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -123,38 +113,33 @@ const Contact: React.FC = () => {
                         <div className="contact-info-card instagram-qr-card">
                             <div className="info-icon">📸</div>
                             <div className="info-text">
-                                <h3>Instagram & Scanner</h3>
+                                <h3>Instagram</h3>
                                 <p>
                                     <a href="https://www.instagram.com/jurivalegalco?stkn=NzZhNzF3bWd4NzN6" target="_blank" rel="noopener noreferrer">
                                         @jurivalegalco
                                     </a>
                                 </p>
                                 <div className="contact-scanner-container">
-                                    <button 
-                                        type="button" 
-                                        className="contact-scanner-preview" 
-                                        onClick={() => { setQrTab('instagram'); setIsQrOpen(true); }}
-                                        title="Click to enlarge Instagram scanner"
-                                    >
+                                    <div className="contact-scanner-frame">
                                         <img 
                                             src={instagramQr} 
-                                            alt="Instagram Scanner for @jurivalegalco" 
-                                            className="contact-scanner-thumb" 
+                                            alt="Instagram QR Scanner for @jurivalegalco" 
+                                            className="contact-scanner-img" 
                                         />
-                                        <span className="contact-scanner-badge">
-                                            🔍 Click to Enlarge
-                                        </span>
-                                    </button>
-                                    <div className="contact-scanner-notes">
-                                        <p>Scan with smartphone camera or Instagram app to follow our official chamber.</p>
-                                        <button 
-                                            type="button" 
-                                            className="contact-scanner-expand-btn"
-                                            onClick={() => { setQrTab('instagram'); setIsQrOpen(true); }}
-                                        >
-                                            Open Instagram Scanner &rarr;
-                                        </button>
                                     </div>
+                                    <a 
+                                        href="https://www.instagram.com/jurivalegalco?stkn=NzZhNzF3bWd4NzN6"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="contact-scanner-direct-link contact-ig-link"
+                                    >
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="15" height="15" aria-hidden="true">
+                                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                        </svg>
+                                        <span>Visit Instagram Profile &rarr;</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -221,8 +206,6 @@ const Contact: React.FC = () => {
                     </div>
                 </div>
             )}
-
-            <QrModal isOpen={isQrOpen} initialTab={qrTab} onClose={() => setIsQrOpen(false)} />
         </section>
     );
 };

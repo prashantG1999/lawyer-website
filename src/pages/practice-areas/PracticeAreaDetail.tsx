@@ -42,7 +42,7 @@ const PracticeAreaDetail: React.FC = () => {
                 <div className="practice-area-container">
                     <Helmet>
                         <title>{area.title} | Juriva Legal, Kota, Rajasthan</title>
-                        <meta name="description" content={`${area.title} legal representation & strategic advocacy by Juriva Legal in Kota, Rajasthan. ${area.description}`} />
+                        <meta name="description" content={`${area.title} legal representation and practice details by Juriva Legal in Kota, Rajasthan. ${area.description}`} />
                         <meta property="og:title" content={`${area.title} | Juriva Legal, Kota, Rajasthan`} />
                         <meta property="og:description" content={area.description} />
                         <meta property="og:type" content="website" />

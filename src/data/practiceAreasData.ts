@@ -32,29 +32,29 @@ export const practiceAreasList: PracticeArea[] = [
   {
     id: "banking-law",
     title: "Banking & Financial Laws (DRT/DRAT & SARFAESI)",
-    subtitle: "Debt Recovery Tribunals & Financial Asset Enforcement",
-    description: "We represent companies, borrowers, guarantors, lenders, and individuals in a wide range of banking and financial disputes, providing strategic legal assistance from the inception of a dispute through recovery, enforcement, and appellate proceedings.",
+    subtitle: "Debt Recovery Tribunals, SARFAESI Enforcement & Appellate Proceedings",
+    description: "Legal representation and advisory in banking and financial matters, encompassing proceedings under the SARFAESI Act, Recovery of Debts and Bankruptcy (RDB) Act, and related regulatory frameworks before Debt Recovery Tribunals, Appellate Tribunals, and High Courts.",
     icon: "🏦",
     image: bankingImg,
     maxim: {
       latin: "Vigilantibus non dormientibus jura subveniunt",
       meaning: "The law assists those who are vigilant, not those who sleep on their rights.",
     },
-    intro: "We represent companies, borrowers, guarantors, lenders, and individuals in a wide range of banking and financial disputes, providing strategic legal assistance from the inception of a dispute through recovery, enforcement, and appellate proceedings. Our practice encompasses the full spectrum of banking litigation, including recovery proceedings, enforcement of security interests, borrower and guarantor defence, loan and financing documentation disputes, and challenges to measures taken by financial institutions.",
+    intro: "The practice encompasses legal representation and advisory in banking and financial disputes, including proceedings concerning the enforcement of security interests, debt recovery, borrower and guarantor representation, and challenges to measures initiated by banks and financial institutions.",
     paragraphs: [
-      "We represent companies, borrowers, guarantors, lenders, and individuals in a wide range of banking and financial disputes, providing strategic legal assistance from the inception of a dispute through recovery, enforcement, and appellate proceedings. Our practice encompasses the full spectrum of banking litigation, including recovery proceedings, enforcement of security interests, borrower and guarantor defence, loan and financing documentation disputes, and challenges to measures taken by financial institutions.",
-      "We advise and represent clients in matters concerning loan defaults, classification of accounts, recovery of outstanding dues, invocation of guarantees, mortgage and hypothecation disputes, possession and sale of secured assets, and enforcement proceedings under applicable banking and securitisation laws. We also assist borrowers and guarantors in scrutinising the legality and procedural validity of recovery measures and in pursuing appropriate remedies against unlawful, excessive, or procedurally defective actions.",
-      "We advise and represent clients in matters involving SARFAESI demand notices under Section 13(2), measures under Section 13(4), possession proceedings, assistance for taking possession under Section 14, enforcement and sale of secured assets, auction proceedings, valuation disputes, and challenges to recovery and enforcement measures. We also assist clients in examining the legality, validity, and procedural compliance of actions undertaken by banks and financial institutions and in pursuing appropriate remedies against unlawful or defective enforcement.",
-      "Our practice extends to proceedings before the Debt Recovery Tribunal (DRT), Debt Recovery Appellate Tribunal (DRAT), High Courts, and other competent judicial and quasi-judicial forums, including matters involving original, appellate, revisional, supervisory, and writ jurisdiction. We handle applications under Section 17 of the SARFAESI Act, appeals under Section 17(1), challenges to orders of the DRT/DRAT, and constitutional remedies under Articles 226 and 227, wherever legally maintainable.",
-      "We further represent clients in recovery proceedings under the Recovery of Debts and Bankruptcy Act, 1993 (RDB Act), proceedings relating to recovery certificates, invocation of guarantees, mortgages, hypothecation, attachment and sale of secured assets, and disputes concerning loan restructuring, settlement, and financing arrangements.",
-      "We also advise on disputes arising from loan agreements, sanction letters, security documents, guarantees, mortgages, settlement arrangements, restructuring and recovery proposals, and other financing instruments. Whether acting for a financial institution seeking effective recovery or for a borrower or guarantor seeking to protect their legal and commercial interests, our approach combines detailed examination of the underlying documentation with focused statutory and procedural analysis."
+      "The practice encompasses legal representation and advisory in banking and financial disputes, including proceedings concerning the enforcement of security interests, debt recovery, borrower and guarantor representation, and challenges to measures initiated by banks and financial institutions before competent judicial and quasi-judicial forums.",
+      "Matters undertaken include proceedings relating to loan defaults, classification of accounts, recovery of outstanding dues, invocation of guarantees, mortgage and hypothecation disputes, and attachment, possession, and sale of secured assets under applicable banking and securitisation statutes.",
+      "Representation is provided in proceedings arising under the SARFAESI Act, 2002, including demand notices under Section 13(2), objections under Section 13(3A), enforcement measures under Section 13(4), applications for taking possession under Section 14 before the Chief Metropolitan Magistrate or District Magistrate, and Securitisation Applications under Section 17 before the Debt Recovery Tribunal.",
+      "The practice includes original and appellate litigation before the Debt Recovery Tribunal (DRT) and Debt Recovery Appellate Tribunal (DRAT), as well as writ petitions under Articles 226 and 227 of the Constitution of India before the High Court where maintainable under law.",
+      "Work also includes proceedings under the Recovery of Debts and Bankruptcy Act, 1993 (RDB Act) concerning Original Applications (OAs), recovery certificates, warrant of attachment, and sale of movable and immovable mortgaged properties.",
+      "Legal work includes the examination and scrutiny of loan agreements, sanction letters, guarantee deeds, mortgage documents, restructuring proposals, settlement terms, and regulatory compliance under Reserve Bank of India (RBI) circulars and prudential guidelines."
     ],
     services: [
-      "Representation in Original Applications (OAs) and recovery certificate proceedings filed by banks and financial institutions.",
-      "Securitisation Applications (SAs) challenging enforcement measures under the SARFAESI Act (Section 13(2), 13(4), 14, and 17).",
-      "Stay proceedings, urgent interim relief, and appellate challenges before the Debt Recovery Tribunal (DRT) and Debt Recovery Appellate Tribunal (DRAT).",
-      "Auction disputes, valuation irregularities, borrower & guarantor defense, and strategic One-Time Settlement (OTS) structuring.",
-      "Litigation concerning loan agreements, sanction letters, mortgage enforcement, and constitutional writ remedies before the High Court."
+      "Original Applications (OAs) and recovery certificate proceedings under the Recovery of Debts and Bankruptcy Act (RDB Act).",
+      "Securitisation Applications (SAs) challenging enforcement measures under Sections 13(2), 13(4), 14, and 17 of the SARFAESI Act.",
+      "Interim stay proceedings and appellate challenges before the Debt Recovery Tribunal (DRT) and Debt Recovery Appellate Tribunal (DRAT).",
+      "Legal examination of auction notices, valuation disputes, possession proceedings, and statutory settlement proposals.",
+      "Litigation concerning loan agreements, mortgages, invocation of guarantees, and constitutional writ remedies before the High Court."
     ],
     forums: "Debt Recovery Tribunal (DRT) Jaipur, Debt Recovery Appellate Tribunal (DRAT) Delhi, District & Sessions Courts, and the Rajasthan High Court.",
     laws: "Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest Act (SARFAESI Act, 2002); Recovery of Debts and Bankruptcy Act (RDB Act, 1993); Banking Regulation Act (1949); RBI Prudential Guidelines; Transfer of Property Act (1882); Indian Contract Act (1872)."
@@ -62,29 +62,29 @@ export const practiceAreasList: PracticeArea[] = [
   {
     id: "civil-litigation",
     title: "Civil Litigation",
-    subtitle: "Comprehensive Civil Suits, Injunctions & Property Litigation",
-    description: "We provide comprehensive legal representation across a broad spectrum of civil disputes, with a strategic and solution oriented approach to every stage of litigation.",
+    subtitle: "Civil Suits, Injunctions, Property Disputes & Appellate Proceedings",
+    description: "Legal representation in civil proceedings, encompassing original suits, property disputes, injunctions, specific performance, contractual claims, appeals, and execution of decrees before competent civil courts and appellate forums.",
     icon: "⚖️",
     image: civilImg,
     maxim: {
       latin: "Res judicata pro veritate accipitur",
       meaning: "A matter adjudicated is accepted as true.",
     },
-    intro: "We provide comprehensive legal representation across a broad spectrum of civil disputes, with a strategic and solution-oriented approach to every stage of litigation. Our practice encompasses the full lifecycle of a civil dispute—from initial assessment, strategy formulation, and pre-litigation correspondence through to trial, appellate, revisional, and execution proceedings.",
+    intro: "The practice encompasses legal representation across various categories of civil disputes before civil courts, commercial courts, and appellate authorities, covering every stage of litigation from pleadings and trial to appeals, revisions, and execution proceedings.",
     paragraphs: [
-      "We provide comprehensive legal representation across a broad spectrum of civil disputes, with a strategic and solution-oriented approach to every stage of litigation. Our practice encompasses the full lifecycle of a civil dispute—from initial assessment, strategy formulation, and pre-litigation correspondence through to trial, appellate, revisional, and execution proceedings.",
-      "We advise and represent clients in suits concerning declaration of rights, title, and legal status; permanent, mandatory, and temporary injunctions; specific performance of contracts; partition and separate possession; cancellation and setting aside of instruments, deeds, and decrees; recovery of possession of immovable property; mesne profits and damages; boundary and easement disputes; mortgage and charge-related claims; and other matters governing proprietary and contractual interests.",
-      "Our practice also extends to monetary and commercial claims, including suits for recovery of money, damages for breach of contract, indemnity claims, rendition of accounts, disputes arising out of supply agreements, construction contracts, agency relationships, commercial transactions, and related contractual and business arrangements.",
-      "We handle every phase of civil trial practice with meticulous attention to detail, including drafting of plaints, written statements, replications, and interlocutory applications; framing of issues; discovery and inspection of documents; preparation and filing of evidence affidavits; comprehensive examination and cross-examination of witnesses; and advance preparation of final arguments.",
-      "Our appellate practice includes first and second appeals, civil revisions, review petitions, transfer applications, and restoration proceedings before District and Appellate Courts, the High Court, and other competent appellate authorities. We also represent clients in execution proceedings to ensure that decrees, orders, and awards obtained in civil litigation are effectively enforced through attachment, sale, delivery of possession, arrest, and other statutory mechanisms.",
-      "We approach every civil matter by identifying the precise legal and factual issues, assessing the evidentiary record, ensuring procedural and statutory compliance, and crafting a tailored litigation strategy designed to protect the client's rights while pursuing a timely and effective resolution."
+      "The practice encompasses legal representation across various categories of civil disputes before civil courts, commercial courts, and appellate authorities, covering every stage of litigation from pleadings and trial to appeals, revisions, and execution proceedings.",
+      "Matters undertaken include suits for declaration of title, rights, and legal status; permanent, mandatory, and temporary injunctions under the Code of Civil Procedure and Specific Relief Act; suits for partition and separate possession of ancestral or joint family properties; cancellation or setting aside of registered deeds, instruments, and decrees; and suits for recovery of possession of immovable property.",
+      "The practice includes monetary and commercial claims, encompassing suits for recovery of money, damages for breach of contract, rendition of accounts, mesne profits, and disputes arising out of commercial agreements, partnership deeds, construction contracts, and business transactions under the Commercial Courts Act, 2015.",
+      "Trial proceedings include drafting of plaints, written statements, replications, and interlocutory applications; framing of issues; discovery, production, and inspection of documents; filing of evidence affidavits; examination and cross-examination of witnesses; and advance preparation of final arguments under the Code of Civil Procedure, 1908.",
+      "Appellate and revisional work includes regular first appeals (RFA), second appeals (RSA), civil revisions, review petitions, transfer applications, and restoration applications before District Courts, Appellate Courts, and the High Court.",
+      "Representation is also undertaken in execution proceedings under Order XXI of the Code of Civil Procedure for enforcement of decrees, orders, and awards, including attachment of property, warrant of possession, arrest and detention, and precept proceedings."
     ],
     services: [
-      "Property & Title Litigation: Declaration of title, partition of ancestral/joint property, possession suits, boundary disputes, and easement rights.",
-      "Injunctions & Contractual Enforcement: Temporary/permanent/mandatory injunctions, specific performance of agreements to sell, and rescission of contracts.",
-      "Financial & Commercial Claims: Recovery of money, commercial damages, mesne profits, settlement of accounts, and contractual breach remedies.",
-      "Pleadings & Trial Advocacy: Drafting plaints, written statements, interlocutory applications, discovery, and detailed witness cross-examination.",
-      "Appellate & Execution: First and second appeals, civil revisions, review petitions, and execution proceedings for decree enforcement."
+      "Property & Title Suits: Declaration of title, partition of ancestral and joint property, possession suits, boundary disputes, and easement rights.",
+      "Injunctions & Contract Enforcement: Temporary, permanent, and mandatory injunctions, specific performance of agreements to sell, and rescission of contracts.",
+      "Money & Commercial Claims: Recovery of money, contractual damages, mesne profits, settlement of accounts, and commercial suits.",
+      "Pleadings & Trial Procedure: Drafting plaints, written statements, interlocutory applications, evidence affidavits, and examination of witnesses.",
+      "Appeals, Revisions & Execution: First and second appeals, civil revisions, review petitions, and execution proceedings under Order XXI CPC."
     ],
     forums: "Civil Courts (Junior/Senior Division), Commercial Courts, District & Sessions Courts, Appellate Courts, Tribunals, and the Rajasthan High Court.",
     laws: "Code of Civil Procedure (1908); Specific Relief Act (1963); Indian Contract Act (1872); Transfer of Property Act (1882); Indian Easements Act (1882); Registration Act (1908); Limitation Act (1963); Commercial Courts Act (2015); Indian Stamp Act (1899)."
@@ -92,30 +92,29 @@ export const practiceAreasList: PracticeArea[] = [
   {
     id: "criminal-law",
     title: "Criminal Law",
-    subtitle: "Defense, Trials, Bail, Appeals & Special Offenses",
-    description: "We provide comprehensive and committed legal representation in criminal matters, defending the rights of individuals, corporate entities, and other stakeholders across every stage of the criminal justice process.",
+    subtitle: "Criminal Defense, Trials, Bail, Appeals & Statutory Offenses",
+    description: "Legal representation in criminal proceedings, encompassing defense during investigation, bail applications, trial proceedings, criminal appeals, revisions, and quashing petitions under the Bharatiya Nagarik Suraksha Sanhita (BNSS) and substantive criminal statutes.",
     icon: "🛡️",
     image: criminalImg,
     maxim: {
       latin: "Ei incumbit probatio qui dicit, non qui negat",
       meaning: "The burden of proof lies upon him who asserts, not upon him who denies.",
     },
-    intro: "We provide comprehensive and committed legal representation in criminal matters, defending the rights of individuals, corporate entities, and other stakeholders across every stage of the criminal justice process. Our practice encompasses the full spectrum of criminal proceedings—from the inception of an investigation and pre-charge proceedings through to trial, appellate, revisional, and post-conviction remedies.",
+    intro: "The practice encompasses legal representation in criminal matters across all stages of proceedings, from pre-trial investigations and bail to trial before Magistrate Courts, Sessions Courts, and appellate and revisional proceedings before the High Court.",
     paragraphs: [
-      "We provide comprehensive and committed legal representation in criminal matters, defending the rights of individuals, corporate entities, and other stakeholders across every stage of the criminal justice process. Our practice encompasses the full spectrum of criminal proceedings—from the inception of an investigation and pre-charge proceedings through to trial, appellate, revisional, and post-conviction remedies.",
-      "We advise and represent clients in bail and pre-trial proceedings, including anticipatory bail applications under Section 482 of the Bharatiya Nagarik Suraksha Sanhita (BNSS) (and corresponding provisions of the Code of Criminal Procedure), regular bail applications under Sections 480 and 483, interim bail, transit bail, modification or relaxation of bail conditions, and defense against applications for cancellation of bail.",
-      "We represent clients at every stage of police and investigative proceedings, including advising during ongoing investigations, responding to summonses and notices, seeking protection against coercive steps, filing applications under Section 175(3) of the BNSS (and Section 156(3) CrPC) for registration of FIRs, and preparing and filing private complaints and protest petitions before competent Magistrate Courts.",
-      "Our trial practice encompasses comprehensive defense and prosecution representation in criminal trials before Judicial Magistrates, Metropolitan Magistrates, Sessions Courts, and Special Courts. We handle matters involving discharge applications under Sections 250, 262, and 257 of the BNSS, framing of charges, handling of documentary and electronic evidence, thorough examination and cross-examination of prosecution and defense witnesses, and final arguments.",
-      "We represent clients in appellate and revisional proceedings before Sessions Courts and the High Court, including appeals against conviction or acquittal, criminal revision petitions, applications for suspension of sentence and grant of bail pending appeal, and applications for compounding of offenses and quashing of proceedings based on settlements.",
-      "Our practice also encompasses petitions for quashing of FIRs, charge-sheets, and criminal proceedings under Section 528 of the BNSS (and Section 482 CrPC), writ petitions under Articles 226 and 227 of the Constitution of India, and representation in specialized criminal matters involving economic offenses, cyber crimes, commercial fraud, Negotiable Instruments Act proceedings, Prevention of Corruption matters, and proceedings under other special penal statutes.",
-      "We recognize the profound personal, professional, and liberty-related consequences of criminal proceedings, and therefore approach each matter with rigorous preparation, careful evidentiary analysis, and strategic defense planning designed to protect the client's rights at every stage."
+      "The practice encompasses legal representation in criminal matters across all stages of proceedings, from pre-trial investigations and bail to trial before Magistrate Courts, Sessions Courts, and appellate and revisional proceedings before the High Court.",
+      "Matters undertaken include applications for anticipatory bail under Section 482 of the Bharatiya Nagarik Suraksha Sanhita, 2023 (BNSS) (corresponding to Section 438 CrPC), regular bail under Sections 480 and 483 BNSS (Sections 437 and 439 CrPC), interim bail, transit bail, modification or relaxation of bail conditions, and defense against applications for cancellation of bail.",
+      "Representation is provided during investigation and inquiry proceedings, including responding to statutory notices and summonses, applications under Section 175(3) BNSS (Section 156(3) CrPC) for registration of FIRs, and preparation and filing of private criminal complaints and protest petitions before competent Magistrate Courts.",
+      "Trial representation encompasses proceedings before Courts of Judicial Magistrate, Chief Judicial Magistrate, Courts of Session, and Special Courts. This includes discharge applications under Sections 250, 262, and 257 BNSS, framing of charges, handling of documentary and electronic evidence under the Bharatiya Sakshya Adhiniyam, 2023 (BSA), examination and cross-examination of witnesses, and final arguments.",
+      "Appellate and revisional practice includes criminal appeals against conviction or acquittal, criminal revision petitions, applications for suspension of sentence and grant of bail pending appeal, and applications for compounding of compoundable offenses under Section 359 BNSS.",
+      "The practice also includes petitions for quashing of FIRs, charge-sheets, and criminal proceedings under Section 528 BNSS (Section 482 CrPC), writ petitions under Articles 226 and 227 of the Constitution of India, and matters arising under special penal statutes including the Information Technology Act, Prevention of Corruption Act, and economic offenses."
     ],
     services: [
-      "Bail & Liberty Protection: Anticipatory bail, regular bail, interim bail, transit bail, and defense against bail cancellation applications.",
-      "Quashing & Constitutional Remedies: Petitions for quashing of FIRs, charge-sheets, and criminal complaints under Section 528 BNSS / 482 CrPC and High Court Writs.",
-      "Trial Advocacy: Discharge applications, framing of charges, handling documentary/electronic evidence, aggressive cross-examination, and final defense arguments.",
-      "Investigation Advisory: Assisting during police inquiries, notices, Section 175(3) BNSS / 156(3) CrPC applications, and protest petitions.",
-      "Appeals & Revisions: Criminal appeals against conviction/acquittal, revision petitions, suspension of sentences, and compounding of offenses."
+      "Bail Proceedings: Anticipatory bail, regular bail, interim bail, transit bail, and responses to cancellation of bail applications under the BNSS.",
+      "Quashing & Inherent Powers: Petitions for quashing of FIRs, police reports, charge-sheets, and criminal complaints under Section 528 BNSS (Section 482 CrPC).",
+      "Criminal Trial Practice: Discharge applications, framing of charges, evidence under Bharatiya Sakshya Adhiniyam, examination of witnesses, and final defense arguments.",
+      "Pre-Trial & Investigative Inquiries: Representation during investigative summonses, applications under Section 175(3) BNSS, and filing of protest petitions.",
+      "Appeals & Revisions: Criminal appeals against conviction or acquittal, revision petitions, applications for suspension of sentence, and compounding of offenses."
     ],
     forums: "Courts of Judicial Magistrate (JMFC/CJM), Courts of Session, Special Criminal Courts (CBI/ACB/POCSO), Appellate Courts, and the Rajasthan High Court.",
     laws: "Bharatiya Nyaya Sanhita (BNS, 2023); Bharatiya Nagarik Suraksha Sanhita (BNSS, 2023); Bharatiya Sakshya Adhiniyam (BSA, 2023); Indian Penal Code (1860); Code of Criminal Procedure (1973); Indian Evidence Act (1872); Information Technology Act (2000); Prevention of Corruption Act (1988)."
@@ -124,29 +123,28 @@ export const practiceAreasList: PracticeArea[] = [
     id: "revenue-law",
     title: "Revenue & Land Laws",
     subtitle: "Land Tenancy, Khatedari Rights, Mutations & Revenue Appeals",
-    description: "We provide dedicated and comprehensive legal representation in agricultural and non-agricultural land disputes, tenancy matters, and revenue litigation.",
+    description: "Legal representation in agricultural and revenue matters, including tenancy disputes, khatedari rights, mutation proceedings, partition of agricultural holdings, and appeals before revenue courts and authorities.",
     icon: "🌾",
     image: revenueImg,
     maxim: {
       latin: "Nemo dat quod non habet",
       meaning: "No one gives what they do not have.",
     },
-    intro: "We provide dedicated and comprehensive legal representation in agricultural and non-agricultural land disputes, tenancy matters, and revenue litigation, assisting landowners, khatedars, tenants, buyers, developers, institutions, and families in protecting and enforcing their rights in land.",
+    intro: "The practice encompasses legal representation in land, tenancy, and revenue matters arising under the Rajasthan Tenancy Act, Rajasthan Land Revenue Act, and related statutory enactments governing agricultural and non-agricultural land.",
     paragraphs: [
-      "We provide dedicated and comprehensive legal representation in agricultural and non-agricultural land disputes, tenancy matters, and revenue litigation, assisting landowners, khatedars, tenants, buyers, developers, institutions, and families in protecting and enforcing their rights in land.",
-      "Our practice encompasses proceedings before all levels of the revenue hierarchy, from original proceedings before the Tehsildar, Sub-Divisional Officer (SDO), Assistant Collector, and Collector, through appellate and revisional proceedings before the Revenue Appellate Authority (RAA), Divisional Commissioner, and the Board of Revenue, as well as writ petitions before the High Court.",
-      "We advise and represent clients in suits concerning declaration of khatedari and tenancy rights; partition of agricultural holdings; correction of revenue records, jamabandi, and khasra entries; demarcation, measurement, and boundary disputes; disputes relating to right of way, easements, and passage over agricultural land; suits for possession and prevention of unlawful dispossession; and matters involving succession, transfer, and alienation of agricultural land.",
-      "We handle matters relating to revenue administration and land transactions, including mutation proceedings, challenges to mutation entries, cancellation of illegal or fraudulent mutations, conversion of agricultural land for non-agricultural or commercial purposes under Section 90-A and applicable conversion rules, regularization of land use, and proceedings involving ceiling, resumption, and government land grants.",
-      "Our litigation practice covers original revenue proceedings, first and second appeals, revisions, review applications, restoration proceedings, and writ petitions under Articles 226 and 227 of the Constitution of India. Where revenue orders have significant consequences for title, possession, or proprietary rights, we carefully assess the appropriate forum and remedy, including whether the matter requires proceedings before a civil court or invocation of the supervisory or writ jurisdiction of the High Court.",
-      "We also assist in property due diligence and documentation, including examination of title documents, revenue records, allotment documents, conversion orders, sale deeds, lease deeds, inheritance documents, and other instruments affecting rights in land. Where disputes arise in connection with development, construction, acquisition, transfer, or use of land, we provide legal advice designed to identify potential risks and protect the client's interests at the earliest possible stage.",
-      "Land disputes frequently involve overlapping questions of title, possession, revenue records, statutory restrictions, government action, and competing claims, making a carefully structured legal strategy essential. We therefore approach each matter by examining the underlying title and documentary record, the applicable statutory framework, the jurisdiction of the concerned authority, limitation and procedural requirements, and the most effective remedy available."
+      "The practice encompasses legal representation in land, tenancy, and revenue matters arising under the Rajasthan Tenancy Act, Rajasthan Land Revenue Act, and related statutory enactments governing agricultural and non-agricultural land.",
+      "Proceedings are undertaken across the revenue administrative and judicial hierarchy, including before the Tehsildar, Sub-Divisional Officer (SDO), Assistant Collector, Collector, Divisional Commissioner, Revenue Appellate Authority (RAA), and the Board of Revenue for Rajasthan at Ajmer.",
+      "Matters include suits for declaration of khatedari and tenancy rights; partition of agricultural holdings under Section 53 of the Rajasthan Tenancy Act; suits for possession and prevention of dispossession; demarcation, boundary, and measurement disputes; and disputes concerning right of way, easement pathways, and access to agricultural fields.",
+      "The practice covers revenue administrative proceedings, including mutation proceedings (namantaran), challenges to contested or erroneous mutation entries, correction of revenue records including jamabandi and khasra girdawari entries, and proceedings relating to land conversion under Section 90-A of the Rajasthan Land Revenue Act.",
+      "Litigation encompasses first appeals, second appeals, revisions, references, and review applications before the Revenue Appellate Authority and the Board of Revenue, as well as writ petitions before the High Court under Articles 226 and 227 of the Constitution of India challenging revenue orders.",
+      "Work also includes examination and verification of revenue records, trace maps, revenue entries, conversion orders, allotment conditions, and inheritance records in connection with agricultural land titles and tenancy succession."
     ],
     services: [
-      "Khatedari & Tenancy Rights: Declaration of agricultural khatedari rights, tenancy disputes, partition of holdings, and possession restoration.",
-      "Record Corrections & Mutations: Mutation entry proceedings, challenging illegal/fraudulent mutations, correction of jamabandi, and khasra record entries.",
-      "Demarcation & Land Disputes: Boundary disputes, official demarcation, right of way, easement pathways, and agricultural land transfers.",
-      "Statutory Conversions & Compliance: Land use conversion for non-agricultural/commercial use (Section 90-A), regularization, and land acquisition claims.",
-      "Revenue Appeals & Writs: First/second appeals before RAA & Board of Revenue, revisions, and High Court writ petitions under Articles 226/227."
+      "Khatedari & Tenancy Proceedings: Declaration of khatedari rights, tenancy disputes, partition of agricultural land, and restoration of possession.",
+      "Revenue Records & Mutation: Mutation entry proceedings (namantaran), cancellation of disputed mutations, and correction of jamabandi and khasra records.",
+      "Demarcation & Right of Way: Official land demarcation, boundary settlement, easement pathways, and disputes regarding agricultural access.",
+      "Land Conversion & Statutory Compliance: Applications and proceedings relating to agricultural land conversion (Section 90-A) and regularization.",
+      "Revenue Appeals & High Court Writs: First and second appeals before the RAA and Board of Revenue, revisions, and writ petitions under Articles 226/227."
     ],
     forums: "Tehsildar, Sub-Divisional Officer (SDO), Assistant Collector, Collector, Divisional Commissioner, Revenue Appellate Authority (RAA), Board of Revenue (Ajmer), and Rajasthan High Court.",
     laws: "Rajasthan Tenancy Act (1955); Rajasthan Land Revenue Act (1956); Rajasthan Land Revenue (Conversion of Agricultural Land) Rules; Rajasthan Colonisation Act (1954); Right to Fair Compensation and Transparency in Land Acquisition Act (2013); Registration Act (1908); Transfer of Property Act (1882)."
@@ -154,30 +152,29 @@ export const practiceAreasList: PracticeArea[] = [
   {
     id: "cheque-bounce",
     title: "Negotiable Instruments Act (Cheque Dishonour / Section 138)",
-    subtitle: "Section 138 Prosecution, Defense & Financial Dispute Resolution",
-    description: "We provide focused and comprehensive legal representation in financial and commercial disputes arising under the Negotiable Instruments Act, 1881, with particular emphasis on cheque dishonour proceedings under Section 138.",
+    subtitle: "Section 138 Proceedings, Statutory Demands, Defense & Appellate Practice",
+    description: "Legal representation in proceedings under the Negotiable Instruments Act, 1881, encompassing statutory demand notices, complaint filing, defense in cheque dishonour trials under Section 138, and related appellate proceedings.",
     icon: "🖋️",
     image: niActImg,
     maxim: {
       latin: "Consensus facit legem",
       meaning: "Agreement makes the law",
     },
-    intro: "We provide focused and comprehensive legal representation in financial and commercial disputes arising under the Negotiable Instruments Act, 1881, with particular emphasis on cheque dishonour proceedings under Section 138. We represent individuals, companies, commercial establishments, partnership firms, financial institutions, creditors, and other stakeholders, providing strategic assistance from the earliest stage of a dispute through trial, appellate and revisional proceedings.",
+    intro: "The practice encompasses legal representation in matters arising under the Negotiable Instruments Act, 1881, specifically concerning cheque dishonour proceedings under Section 138, covering statutory notice compliance, trial practice, and appellate remedies.",
     paragraphs: [
-      "We provide focused and comprehensive legal representation in financial and commercial disputes arising under the Negotiable Instruments Act, 1881, with particular emphasis on cheque dishonour proceedings under Section 138. We represent individuals, companies, commercial establishments, partnership firms, financial institutions, creditors, and other stakeholders, providing strategic assistance from the earliest stage of a dispute through trial, appellate and revisional proceedings.",
-      "Our practice begins with careful assessment of the underlying transaction, liability, cheque, supporting documentation, correspondence, and statutory requirements, followed by preparation and issuance of legally compliant statutory demand notices. We advise clients on the appropriate course of action following dishonour of a cheque, including preservation of evidence, computation of legally recoverable amounts, limitation requirements, and preparation of the complaint.",
-      "We represent complainants and accused persons in Section 138 proceedings, including matters concerning legally enforceable debt or liability, issuance and presentation of cheques, dishonour, statutory notices, presumptions under the Negotiable Instruments Act, replies to demand notices, filing and defence of complaints, service of process, appearance, bail, evidence, examination and cross-examination, statements of the accused, and final arguments.",
-      "Our practice also encompasses disputes involving commercial loans, business transactions, supply of goods and services, partnership and proprietary business dealings, security cheques, repayment arrangements, settlements, invoices, accounts, and other commercial transactions where negotiable instruments form part of the underlying financial relationship.",
-      "We also assist clients in matters concerning interim compensation under Section 143A, compensation upon conviction under Section 357 of the Code of Criminal Procedure and corresponding provisions Section 395 of Bharatiya Nagarik Suraksha Sanhita, suspension of sentence, recovery and execution of monetary awards, and enforcement of orders passed by competent courts, wherever applicable.",
-      "For accused persons, our approach involves a detailed examination of the existence and enforceability of the alleged debt, statutory compliance, issuance and presentation of the cheque, notice requirements, limitation, presumptions and rebuttal, documentary evidence, and the complainant's evidence and testimony. For complainants and creditors, we focus on establishing the statutory ingredients of the offence, effectively presenting documentary and oral evidence, and pursuing appropriate remedies for recovery and compensation.",
-      "We understand that cheque dishonour litigation frequently involves an underlying commercial or financial dispute, and therefore approach each matter not merely as a statutory prosecution but as part of the broader legal and commercial relationship between the parties. Our objective is to develop a focused, evidence-driven, and strategically appropriate litigation plan aimed at protecting the client's financial interests while pursuing every legally available remedy."
+      "The practice encompasses legal representation in matters arising under the Negotiable Instruments Act, 1881, specifically concerning cheque dishonour proceedings under Section 138, covering statutory notice compliance, trial practice, and appellate remedies.",
+      "Matters include the drafting, issuance, and legal reply to statutory demand notices under Section 138(b) of the Negotiable Instruments Act, examination of statutory timelines, service requirements, and evaluation of legally enforceable debt or liability.",
+      "Representation is undertaken in complaint proceedings instituted before Special NI Act Courts and Courts of Judicial Magistrate, including filing of criminal complaints, verification of complainants, recording of preliminary evidence, summoning of accused, and appearance proceedings.",
+      "Trial proceedings cover framing of notice under Section 251 CrPC / Section 274 BNSS, applications for interim compensation under Section 143A of the Negotiable Instruments Act, examination and cross-examination of witnesses, production of banking and transactional evidence, examination of the accused under Section 351 BNSS (Section 313 CrPC), and final arguments.",
+      "The practice addresses questions concerning statutory presumptions under Sections 118 and 139 of the Negotiable Instruments Act, standard of proof required for rebuttal, commercial transactions, business agreements, security cheques, and account reconciliation.",
+      "Appellate and revisional work includes criminal appeals against conviction or acquittal, applications for suspension of sentence under Section 430 BNSS (Section 389 CrPC), deposit of appellate compensation under Section 148 of the Act, compounding of offenses under Section 147, and settlement proceedings before Lok Adalats and mediation centers."
     ],
     services: [
-      "Statutory Demand Notices: Drafting, issuing, and legally replying to statutory demand notices under Section 138 of the NI Act.",
-      "Complaint Filing & Defense: Filing complaints for creditors and comprehensive defense for accused persons in Section 138 proceedings.",
-      "Interim Compensation & Bail: Representing clients on Section 143A interim compensation applications, bail, and personal appearance exemptions.",
-      "Trial Advocacy & Rebuttal: Cross-examination of complainants, establishing security cheque defenses, and rebutting statutory presumptions under Sections 118 & 139.",
-      "Compounding & Appellate Defense: Negotiated compounding of offenses, appeals against conviction, suspension of sentences, and monetary recovery."
+      "Statutory Demand Notices: Drafting, issuance, and replies to demand notices under Section 138(b) within statutory limitation periods.",
+      "Complaint Filing & Defense: Institution of complaints for complainants and trial defense for accused persons before Special NI Act Courts.",
+      "Interim Compensation & Bail: Representation concerning Section 143A interim compensation applications, appearance, and regular bail proceedings.",
+      "Trial Procedure & Presumption Rebuttal: Evidence presentation, cross-examination, and legal arguments regarding statutory presumptions under Sections 118 and 139.",
+      "Compounding & Appellate Proceedings: Compounding of offenses under Section 147, appeals against conviction, suspension of sentence, and Section 148 deposits."
     ],
     forums: "Special NI Act Courts, Courts of Judicial Magistrate (JMFC/Metropolitan Magistrate), Courts of Session, Appellate Courts, and the Rajasthan High Court.",
     laws: "Negotiable Instruments Act (1881); Bharatiya Nagarik Suraksha Sanhita (BNSS, 2023); Bharatiya Sakshya Adhiniyam (BSA, 2023); Code of Criminal Procedure (1973); Indian Contract Act (1872); Limitation Act (1963)."
@@ -185,30 +182,29 @@ export const practiceAreasList: PracticeArea[] = [
   {
     id: "family-law",
     title: "Family & Matrimonial Law",
-    subtitle: "Divorce, Maintenance, Custody, Domestic Violence & Family Settlements",
-    description: "We provide comprehensive, sensitive, and strategic legal representation in family and matrimonial matters, assisting individuals and families through some of the most challenging and personal legal disputes they may face.",
+    subtitle: "Matrimonial Proceedings, Maintenance, Custody, Domestic Violence & Family Settlements",
+    description: "Legal representation in family and matrimonial matters, including divorce proceedings, maintenance, child custody, guardianship, proceedings under the Protection of Women from Domestic Violence Act, and family settlement arrangements.",
     icon: "👨‍👩‍👧‍👦",
     image: familyImg,
     maxim: {
       latin: "Salus populi suprema lex esto",
       meaning: "The welfare of the people shall be the supreme law.",
     },
-    intro: "We provide comprehensive, sensitive, and strategic legal representation in family and matrimonial matters, assisting individuals and families through some of the most challenging and personal legal disputes they may face. Our matrimonial practice is committed to delivering thoughtful counsel and effective advocacy, balancing the need for firm protection of our clients' legal and financial interests with a practical approach aimed at minimizing emotional and familial disruption.",
+    intro: "The practice encompasses legal representation in matrimonial and family disputes under personal and secular laws, covering proceedings before Family Courts, Magistrate Courts, and appellate jurisdictions.",
     paragraphs: [
-      "We provide comprehensive, sensitive, and strategic legal representation in family and matrimonial matters, assisting individuals and families through some of the most challenging and personal legal disputes they may face. Our matrimonial practice is committed to delivering thoughtful counsel and effective advocacy, balancing the need for firm protection of our clients' legal and financial interests with a practical approach aimed at minimizing emotional and familial disruption.",
-      "We advise and represent clients in matrimonial proceedings under applicable personal and secular laws, including petitions for dissolution of marriage by mutual consent; contested divorce proceedings on grounds of cruelty, desertion, adultery, and other statutory grounds; petitions for restitution of conjugal rights; judicial separation; and nullity and annulment of marriage.",
-      "Our practice encompasses all aspects of financial provision and matrimonial property claims, including applications for interim maintenance, permanent alimony, maintenance under Section 144 of the Bharatiya Nagarik Suraksha Sanhita (and corresponding Section 125 CrPC), maintenance under personal laws, litigation concerning streedhan and return of matrimonial property, execution of maintenance orders, and proceedings relating to matrimonial settlements.",
-      "We represent parents and guardians in sensitive matters involving child custody, care and control, visitation rights, relocation, international child custody disputes, guardianship petitions, and adoption proceedings under applicable statutory and personal laws, keeping the best interests and welfare of the child as the paramount consideration.",
-      "We also handle proceedings under the Protection of Women from Domestic Violence Act, 2005 (PWDV Act), including applications for protection orders, residence orders, monetary relief, and custody orders, as well as defending against unwarranted or retaliatory domestic violence proceedings.",
-      "Our practice extends to pre-litigation counseling, negotiated matrimonial settlements, mediation, drafting of comprehensive settlement agreements, family arrangements, and resolution of ancillary disputes arising from matrimonial breakdown.",
-      "We recognize that matrimonial and family disputes require a balanced approach combining strong courtroom advocacy with discretion, sensitivity, and strategic perspective, and we work closely with each client to achieve outcomes that safeguard their dignity, financial security, and future well-being."
+      "The practice encompasses legal representation in matrimonial and family disputes under personal and secular laws, covering proceedings before Family Courts, Magistrate Courts, and appellate jurisdictions.",
+      "Matrimonial proceedings include petitions for dissolution of marriage by mutual consent under Section 13B of the Hindu Marriage Act, 1955 and corresponding personal laws; contested divorce petitions on statutory grounds including cruelty and desertion; restitution of conjugal rights under Section 9; judicial separation; and nullity or annulment of marriage.",
+      "The practice covers claims for financial maintenance and alimony, including applications for interim maintenance, permanent alimony under personal laws, proceedings under Section 144 of the Bharatiya Nagarik Suraksha Sanhita, 2023 (BNSS) (corresponding to Section 125 CrPC), recovery and return of streedhan, and execution of maintenance orders.",
+      "Matters involving child custody and welfare include petitions for custody, visitation arrangements, guardianship under the Guardians and Wards Act, 1890 and Hindu Minority and Guardianship Act, 1956, and related custody proceedings governed by the paramount welfare of the minor.",
+      "Representation is also undertaken in proceedings under the Protection of Women from Domestic Violence Act, 2005 (PWDV Act), including applications and defense regarding protection orders, residence orders, monetary relief, and custody orders before Magistrate Courts.",
+      "The practice also encompasses participation in court-directed mediation, conciliation proceedings, and the drafting of formal family settlements and memorandum of understanding (MoU) relating to matrimonial separation."
     ],
     services: [
-      "Divorce Proceedings: Contested divorce, mutual consent divorce, annulment of marriage, judicial separation, and restitution of conjugal rights.",
-      "Maintenance & Alimony: Interim and permanent maintenance claims under Section 144 BNSS / 125 CrPC and personal laws, streedhan recovery, and order execution.",
-      "Child Custody & Guardianship: Child custody petitions, visitation arrangements, guardianship proceedings, and child welfare litigation.",
-      "Domestic Violence Protection: Proceedings under the Protection of Women from Domestic Violence Act (PWDV Act, 2005) for protection and residence orders.",
-      "Mediation & Family Settlements: Pre-litigation counseling, alternative dispute resolution, and drafting binding matrimonial settlement deeds."
+      "Divorce Proceedings: Petitions for mutual consent divorce, contested divorce, judicial separation, annulment of marriage, and restitution of conjugal rights.",
+      "Maintenance & Alimony: Applications for interim maintenance and permanent alimony under Section 144 BNSS / Section 125 CrPC and personal laws.",
+      "Child Custody & Guardianship: Petitions concerning custody, visitation schedules, and guardianship under the Guardians and Wards Act.",
+      "Domestic Violence Proceedings: Applications and defense under the Protection of Women from Domestic Violence Act (PWDV Act, 2005).",
+      "Mediation & Settlement Deeds: Representation in matrimonial mediation and drafting of formal settlement agreements and memorandum of understanding."
     ],
     forums: "Family Courts, Courts of Judicial Magistrate, District & Sessions Courts, Appellate Courts, and the Rajasthan High Court.",
     laws: "Hindu Marriage Act (1955); Hindu Adoption and Maintenance Act (1956); Guardians and Wards Act (1890); Protection of Women from Domestic Violence Act (2005); Special Marriage Act (1954); Muslim Personal Law / Dissolution of Muslim Marriages Act (1939); Bharatiya Nagarik Suraksha Sanhita (2023)."
@@ -216,29 +212,29 @@ export const practiceAreasList: PracticeArea[] = [
   {
     id: "personal-law",
     title: "Personal Laws & Succession",
-    subtitle: "Wills, Probates, Succession Certificates & Ancestral Property Partition",
-    description: "We provide comprehensive legal services in personal laws, succession, inheritance, and estate planning, assisting individuals, families, executors, trustees, and beneficiaries in managing and protecting their proprietary and personal rights.",
+    subtitle: "Testamentary Succession, Probates, Succession Certificates & Estate Devolution",
+    description: "Legal representation and advisory in personal laws, succession, and inheritance, covering testamentary and intestate devolution, probate petitions, letters of administration, succession certificates, partition of coparcenary property, and estate documentation.",
     icon: "📜",
     image: personalLawImg,
     maxim: {
       latin: "Nemo potest plus juris ad alium transferre quam ipse habet",
       meaning: "No one can transfer more right to another than he himself has.",
     },
-    intro: "We provide comprehensive legal services in personal laws, succession, inheritance, and estate planning, assisting individuals, families, executors, trustees, and beneficiaries in managing and protecting their proprietary and personal rights across generations.",
+    intro: "The practice encompasses legal advisory and representation in matters governing inheritance, personal laws, and testamentary and intestate succession under applicable personal and civil statutes.",
     paragraphs: [
-      "We provide comprehensive legal services in personal laws, succession, inheritance, and estate planning, assisting individuals, families, executors, trustees, and beneficiaries in managing and protecting their proprietary and personal rights across generations.",
-      "Our succession and estate practice encompasses both testamentary and intestate succession under the Indian Succession Act, 1925, the Hindu Succession Act, 1956, and other applicable personal laws. We advise and represent clients in proceedings for the grant of probate of wills, letters of administration with or without will annexed, succession certificates for debts and securities, legal heir declarations, and challenges to the validity, execution, or genuineness of testamentary instruments.",
-      "We represent clients in disputes concerning ancestral property, coparcenary rights, partition of joint family and inherited property, claims of exclusion from inheritance, shares of female heirs under the Hindu Succession Act (including post-2005 coparcenary rights), nomination disputes relating to bank accounts, shares, insurance policies, and immovable property, and disputes between co-heirs and legal representatives.",
-      "Our practice also includes comprehensive estate planning and documentation services, including drafting and execution of wills, codicils, family settlement deeds, relinquishment deeds, gift deeds, partition deeds, and instruments creating private family trusts, designed to ensure orderly devolution of assets and minimize potential for future disputes.",
-      "We represent clients in contentious succession and inheritance litigation before Civil Courts, Family Courts, Revenue Courts, and Appellate Courts, handling complex questions involving validity of wills, suspicious circumstances, capacity and undue influence, interpretation of testamentary provisions, rights of adopted children, succession under customary law, and administration of estates.",
-      "We approach every personal law and succession matter with sensitivity, meticulous attention to documentary and genealogical evidence, and a clear focus on achieving legally sound and sustainable outcomes that protect our clients' inheritance and family wealth."
+      "The practice encompasses legal advisory and representation in matters governing inheritance, personal laws, and testamentary and intestate succession under applicable personal and civil statutes.",
+      "Matters include testamentary and intestate succession under the Indian Succession Act, 1925, the Hindu Succession Act, 1956, and other personal laws, encompassing petitions for grant of probate of wills, letters of administration with or without will annexed, succession certificates for debts and securities, and legal heir declarations.",
+      "The practice covers contentious litigation concerning the validity, execution, and interpretation of wills, including disputes involving allegations of lack of testamentary capacity, undue influence, fraud, coercion, and suspicious circumstances surrounding testamentary instruments.",
+      "Representation is provided in disputes regarding coparcenary rights, ancestral property partition, shares of female coparceners under Section 6 of the Hindu Succession Act, exclusion claims, and partition suits before Civil Courts.",
+      "The practice also encompasses disputes concerning nomination rights versus legal heir succession regarding immovable property, bank accounts, deposits, shares, and insurance policies.",
+      "Advisory services include drafting of testamentary instruments including wills and codicils, family settlement deeds, relinquishment deeds, gift deeds, partition deeds, and private trust instruments under the Indian Trusts Act, 1882."
     ],
     services: [
-      "Probate & Succession: Applications for probate of wills, letters of administration, succession certificates for bank assets/securities, and legal heir declarations.",
-      "Will Disputes & Validity: Challenging and defending wills on grounds of genuineness, capacity, suspicious circumstances, or undue influence.",
-      "Ancestral & Coparcenary Partition: Litigation over ancestral property, coparcenary rights of daughters/female heirs, and joint family property division.",
-      "Estate Planning & Documentation: Drafting wills, codicils, family settlement agreements, release/relinquishment deeds, gift deeds, and private family trusts.",
-      "Nomination & Estate Administration: Resolution of nomination conflicts vs legal heir rights across immovable property, bank accounts, and shares."
+      "Probate & Succession: Petitions for probate of wills, letters of administration, succession certificates, and legal heir certificates.",
+      "Will Litigation: Suits and objections regarding testamentary capacity, validity of wills, and suspicious circumstances.",
+      "Coparcenary & Ancestral Partition: Litigation concerning Hindu undivided family (HUF) property, ancestral shares, and partition suits.",
+      "Estate & Devolution Documentation: Drafting wills, codicils, family settlement agreements, relinquishment deeds, and private family trust deeds.",
+      "Nomination & Succession Disputes: Legal resolution of nomination claims versus statutory succession rights across movable and immovable assets."
     ],
     forums: "Civil Courts, District & Sessions Courts, Family Courts, Revenue Courts, Appellate Courts, and the Rajasthan High Court.",
     laws: "Indian Succession Act (1925); Hindu Succession Act (1956); Hindu Marriage Act (1955); Special Marriage Act (1954); Muslim Personal Law (Shariat) Application Act (1937); Indian Trusts Act (1882); Transfer of Property Act (1882); Registration Act (1908)."
@@ -246,32 +242,29 @@ export const practiceAreasList: PracticeArea[] = [
   {
     id: "arbitration",
     title: "Arbitration & Alternative Dispute Resolution (ADR)",
-    subtitle: "Domestic & Commercial Arbitration, Section 9/11/34 Proceedings",
-    description: "Our Arbitration and Alternative Dispute Resolution (ADR) practice is designed to help corporate entities, partnerships, financial institutions, businesses, and individuals resolve complex commercial and contractual disputes efficiently, strategically, and cost-effectively.",
+    subtitle: "Domestic & Commercial Arbitration, Section 9, 11, 34 & 37 Proceedings",
+    description: "Legal representation in domestic and commercial arbitration proceedings, mediation, and conciliation under the Arbitration and Conciliation Act, 1996 and the Mediation Act, 2023, including court proceedings under Sections 9, 11, 34, and 37.",
     icon: "🤝",
     image: arbitrationImg,
     maxim: {
       latin: "Pacta sunt servanda",
       meaning: "Agreements must be kept",
     },
-    intro: "Our Arbitration and Alternative Dispute Resolution (ADR) practice is designed to help corporate entities, partnerships, financial institutions, businesses, and individuals resolve complex commercial and contractual disputes efficiently, strategically, and cost-effectively, while minimising prolonged court litigation and protecting our clients' legal and commercial interests.",
+    intro: "The practice encompasses legal representation in domestic and commercial arbitration and alternative dispute resolution mechanisms, covering proceedings before arbitral tribunals as well as related court proceedings under the Arbitration and Conciliation Act, 1996.",
     paragraphs: [
-      "Our Arbitration and Alternative Dispute Resolution (ADR) practice is designed to help corporate entities, partnerships, financial institutions, businesses, and individuals resolve complex commercial and contractual disputes efficiently, strategically, and cost-effectively, while minimising prolonged court litigation and protecting our clients' legal and commercial interests.",
-      "We provide comprehensive representation throughout the entire arbitration lifecycle, beginning with the identification and invocation of an arbitration agreement and continuing through constitution of the arbitral tribunal, pleadings, evidence, hearings, interim measures, final award, and post-award proceedings.",
-      "Our practice includes drafting and issuing notices invoking arbitration under the applicable provisions of the Arbitration and Conciliation Act, 1996, including notices concerning commencement of arbitral proceedings and appointment of arbitrators. We also assist clients in filing applications under Section 11 of the Arbitration and Conciliation Act, 1996 before the competent High Court or other appropriate forum for appointment of arbitrators where the agreed appointment mechanism has failed or the opposing party has failed to act in accordance with the arbitration agreement.",
-      "We represent clients before Arbitral Tribunals and institutional and ad hoc arbitration forums, handling the full range of proceedings including statement of claim, statement of defence, counterclaims, rejoinders, interim applications, documentary evidence, examination and cross-examination of witnesses, written submissions, oral arguments, and final hearings. We also assist in matters concerning the jurisdiction and competence of the tribunal, validity and interpretation of arbitration agreements, limitation, admissibility of claims, procedural objections, and evidentiary issues.",
-      "Our practice includes proceedings for interim relief and protection of assets, including applications under Section 9 before courts and Section 17 before the Arbitral Tribunal, where appropriate. We advise clients on urgent protective measures, preservation of assets and evidence, security for claims, injunctions, and other interim remedies available under the arbitration framework.",
-      "We further represent clients in challenges to arbitral awards under Section 34, appeals under Section 37, and proceedings concerning enforcement and execution of arbitral awards. Where appropriate, we assist with proceedings concerning setting aside, modification-related issues, stay of enforcement, and resistance to enforcement on legally recognised grounds.",
-      "Our ADR practice also encompasses mediation, conciliation, negotiated settlements, commercial negotiations, and other consensual dispute-resolution mechanisms, with a focus on achieving commercially viable outcomes without unnecessarily escalating disputes.",
-      "We approach every arbitration by carefully examining the underlying contract, arbitration clause, correspondence, financial records, supporting documentation, chronology of events, and applicable contractual and statutory provisions. This enables us to formulate a focused strategy concerning jurisdiction, claims, counterclaims, evidence, limitation, interim relief, and the ultimate relief sought.",
-      "Whether assisting with issuance of an arbitration notice, filing a Section 11 application, constitution of an arbitral tribunal, representation before the Tribunal, seeking interim protection, challenging an adverse award, or enforcing a favourable award, we provide end-to-end arbitration and ADR representation designed to protect our client's position while pursuing the most efficient and effective resolution available in law."
+      "The practice encompasses legal representation in domestic and commercial arbitration and alternative dispute resolution mechanisms, covering proceedings before arbitral tribunals as well as related court proceedings under the Arbitration and Conciliation Act, 1996.",
+      "Pre-arbitral and invocation proceedings include drafting and issuing statutory notices invoking arbitration, notices for appointment of arbitrators under Section 21 of the Act, and applications under Section 11 before the High Court for appointment of arbitrators where parties fail to agree on an arbitral tribunal.",
+      "Representation is provided in interim measure proceedings, including applications under Section 9 of the Arbitration and Conciliation Act before Commercial and Civil Courts, and applications under Section 17 before Arbitral Tribunals for interim protection, preservation of assets, and injunctive relief.",
+      "Tribunal proceedings cover representation before sole arbitrators and arbitral panels in institutional and ad-hoc arbitrations, including drafting statement of claim, statement of defence, counterclaims, interlocutory applications, handling of documentary evidence, witness examination, and final arguments.",
+      "Post-award litigation encompasses petitions under Section 34 of the Act for setting aside arbitral awards before competent courts, appeals under Section 37, and execution and enforcement proceedings of arbitral awards as decrees of the civil court under Section 36.",
+      "The practice also covers consensual dispute resolution under the Mediation Act, 2023, conciliation proceedings, structured negotiations, and the drafting of binding settlement agreements arising from alternative dispute resolution processes."
     ],
     services: [
-      "Arbitration Invocation & Section 11: Drafting notices of arbitration and filing Section 11 petitions before the High Court for arbitrator appointment.",
-      "Tribunal Representation: Statement of claims, statement of defense, counterclaims, witness examination, and arguments before ad-hoc & institutional tribunals.",
-      "Interim Protection: Section 9 petitions before Commercial/Civil Courts and Section 17 applications before Arbitral Tribunals for asset protection and injunctions.",
-      "Award Challenges & Enforcement: Setting aside arbitral awards under Section 34, appeals under Section 37, and execution/enforcement of arbitral awards.",
-      "Commercial Mediation & Conciliation: Structured pre-litigation settlement negotiations, mediation proceedings, and drafting binding settlement terms."
+      "Arbitration Invocation & Section 11: Drafting notices of arbitration, appointment notices, and filing Section 11 petitions before the High Court.",
+      "Tribunal Proceedings: Pleadings, statement of claims, defense, counterclaims, evidence presentation, and final arguments before arbitral tribunals.",
+      "Interim Measures: Petitions under Section 9 before Commercial Courts and Section 17 applications before Arbitral Tribunals for interim protection.",
+      "Award Challenges & Enforcement: Setting aside petitions under Section 34, appeals under Section 37, and execution of arbitral awards under Section 36.",
+      "Mediation & Conciliation: Representation in statutory mediation and conciliation proceedings, and drafting of binding commercial settlement agreements."
     ],
     forums: "Arbitral Tribunals (Sole Arbitrators & Panels), Commercial Courts, Civil Courts, Appellate Courts, and the Rajasthan High Court.",
     laws: "Arbitration and Conciliation Act (1996); Mediation Act (2023); Commercial Courts Act (2015); Indian Contract Act (1872); Specific Relief Act (1963); Code of Civil Procedure (1908)."

@@ -11,7 +11,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem;
+    padding: 1.25rem;
+    overflow-y: auto;
     animation: qrFadeIn 0.25s ease-out forwards;
 }
 
@@ -20,31 +21,44 @@
     border-radius: 20px;
     max-width: 440px;
     width: 100%;
-    padding: 1.75rem 2rem 2.25rem;
+    max-height: min(92vh, 660px);
+    overflow-y: auto;
+    margin: auto;
+    padding: 1.25rem 1.75rem 1.75rem;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(168, 137, 91, 0.25);
     text-align: center;
     position: relative;
     animation: qrPopIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
+/* Dedicated Top Bar for Close Button */
+.qr-modal-top-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
 .qr-modal-close {
-    position: absolute;
-    top: 0.85rem;
-    right: 1rem;
-    background: transparent;
-    border: none;
-    font-size: 2rem;
-    line-height: 1;
-    color: var(--text-muted);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(168, 137, 91, 0.12);
+    border: 1px solid rgba(168, 137, 91, 0.22);
+    color: var(--text-secondary);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    transition: color 0.2s ease, transform 0.2s ease;
-    padding: 0.25rem 0.5rem;
-    z-index: 2;
+    transition: all 0.2s ease;
+    padding: 0;
+    flex-shrink: 0;
 }
 
 .qr-modal-close:hover {
+    background: rgba(168, 137, 91, 0.25);
     color: var(--primary-color);
-    transform: scale(1.15);
+    transform: scale(1.08);
 }
 
 /* Tabs */
@@ -121,14 +135,17 @@
 }
 
 .qr-modal-image {
-    max-width: 260px;
-    width: 100%;
-    max-height: 380px;
+    width: 220px;
+    height: 220px;
+    aspect-ratio: 1 / 1;
     object-fit: contain;
     border-radius: 14px;
+    background: #ffffff;
+    padding: 0.65rem;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-    border: 1px solid rgba(168, 137, 91, 0.2);
+    border: 1px solid rgba(168, 137, 91, 0.25);
     display: block;
+    box-sizing: border-box;
 }
 
 .qr-modal-instruction {
@@ -190,5 +207,31 @@
     to {
         opacity: 1;
         transform: scale(1) translateY(0);
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    .qr-modal-overlay {
+        padding: 1rem;
+    }
+
+    .qr-modal-dialog {
+        padding: 1rem 1.25rem 1.75rem;
+        border-radius: 16px;
+    }
+
+    .qr-modal-top-row {
+        margin-bottom: 0.65rem;
+    }
+
+    .qr-modal-tab {
+        padding: 0.5rem 0.5rem;
+        font-size: 0.82rem;
+    }
+
+    .qr-modal-image {
+        max-width: 220px;
+        max-height: 320px;
     }
 }

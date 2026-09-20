@@ -10,7 +10,7 @@ const Services: React.FC = () => {
     return (
         <section className="services-page">
             <Helmet>
-                <title>Practice Areas | Juriva Legal - Advocates in Kota, Rajasthan</title>
+                <title>Areas of Practice | Juriva Legal - Advocates in Kota, Rajasthan</title>
                 <meta 
                     name="description" 
                     content="Comprehensive legal practice in Kota, Rajasthan: Banking Laws (DRT/SARFAESI), Civil Litigation, Criminal Defense, Revenue & Land Laws, NI Act, Family Law, Succession, and Arbitration." 
@@ -18,8 +18,7 @@ const Services: React.FC = () => {
             </Helmet>
             <div className="container">
                 <div className="section-header">
-                    <h1>Our Practice Areas</h1>
-                    <p>Delivering specialized legal solutions with precision, strategic rigor, and dedicated advocacy.</p>
+                    <h1>Areas of Practice</h1>
                 </div>
                 <div className="services-grid">
                     {practiceAreasList.map((service, index) => (

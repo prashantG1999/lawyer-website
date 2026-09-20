@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
                 <div className="footer-contact">
                     <h4>Contact & Chambers</h4>
                     <div className="footer-chamber-entry">
-                        <p className="footer-chamber-name"><strong>📍 Sogaria Chamber</strong></p>
+                        <p className="footer-chamber-name"><strong>📍 Sogaria</strong></p>
                         <p className="footer-chamber-detail">Sogaria, Kota, Rajasthan</p>
                         <p className="footer-chamber-phones">
                             <a href="tel:+919664281653">+91 96642 81653</a> &nbsp;|&nbsp; <a href="tel:+919660460445">+91 96604 60445</a>
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
                     </div>
 
                     <div className="footer-chamber-entry" style={{ marginTop: '0.85rem' }}>
-                        <p className="footer-chamber-name"><strong>📍 R.K Puram Chamber</strong></p>
+                        <p className="footer-chamber-name"><strong>📍 R.K Puram</strong></p>
                         <p className="footer-chamber-detail">R.K Puram, Kota, Rajasthan</p>
                         <p className="footer-chamber-phones">
                             <a href="tel:+918824770804">+91 88247 70804</a>

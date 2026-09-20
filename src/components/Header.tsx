@@ -105,8 +105,8 @@ const Header: React.FC = () => {
                                 </svg>
                                 <span>jurivalegal@gmail.com</span>
                             </a>
-                            <NavLink to="/contact" className="banner-cta-btn" title="Schedule Consultation">
-                                Book Consultation
+                            <NavLink to="/contact" className="banner-cta-btn" title="Contact Us">
+                                Contact Us
                             </NavLink>
                         </div>
                     </div>

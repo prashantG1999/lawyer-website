@@ -1,104 +1,207 @@
-.about {
-    padding: calc(var(--header-height) + 8rem) 2rem 8rem;
+/* About Us Page Styling - Juriva Legal */
+.about-page {
+    padding: calc(var(--header-height) + 4rem) 1.5rem 6rem;
     min-height: 100vh;
     background-color: var(--bg-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.about-container {
-    max-width: 900px;
+.about-wrapper {
+    max-width: 960px;
     margin: 0 auto;
+}
+
+/* Header */
+.about-header {
     text-align: center;
-    position: relative;
-    padding: 5rem;
+    margin-bottom: 3.5rem;
+}
+
+.about-badge {
+    display: inline-block;
+    padding: 0.35rem 1.1rem;
+    background-color: rgba(168, 137, 91, 0.12);
+    color: var(--secondary-color);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 999px;
+    border: 1px solid rgba(168, 137, 91, 0.28);
+    margin-bottom: 1.25rem;
+}
+
+.about-header h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.4rem, 5vw, 3.6rem);
+    color: var(--text-primary);
+    line-height: 1.18;
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.5px;
+}
+
+.about-header h1 span {
+    color: var(--secondary-color);
+}
+
+.about-lead {
+    font-size: 1.18rem;
+    color: var(--text-secondary);
+    line-height: 1.75;
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.about-lead-subtitle {
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.about-header-divider {
+    height: 2px;
+    width: 90px;
+    background: linear-gradient(90deg, transparent, var(--secondary-color), transparent);
+    margin: 2.25rem auto 0;
+}
+
+/* Content & Section Blocks */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.85rem;
+}
+
+.about-section {
     background: var(--card-bg);
     border: 1px solid var(--glass-border);
+    border-left: 3px solid rgba(168, 137, 91, 0.4);
     border-radius: var(--border-radius);
+    padding: 2.25rem 2.75rem;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
 }
 
-.about-container::before {
-    content: '"';
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
+.about-section:hover {
+    border-left-color: var(--secondary-color);
+    border-color: rgba(168, 137, 91, 0.25);
+    background: rgba(168, 137, 91, 0.05);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    transform: translateY(-2px);
+}
+
+.about-section h2 {
     font-family: var(--font-heading);
-    font-size: 8rem;
-    color: var(--secondary-color);
-    opacity: 0.1;
-    line-height: 1;
-}
-
-.about h1 {
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    color: var(--text-primary);
-    margin-bottom: 2.5rem;
+    font-size: 1.45rem;
+    color: var(--primary-color);
+    margin-bottom: 1.15rem;
     position: relative;
+    letter-spacing: -0.2px;
 }
 
-.about h1 span {
-    color: var(--secondary-color);
-}
-
-.about-subtitle {
-    font-size: 1.5rem !important;
-    color: var(--secondary-color) !important;
-    font-family: var(--font-heading);
-    margin-bottom: 3rem !important;
-    font-weight: 500 !important;
-}
-
-.about-details {
-    text-align: left;
-}
-
-.about-details p {
-    font-size: 1.12rem;
+.about-body p {
+    font-size: 1.05rem;
     color: var(--text-secondary);
-    line-height: 1.85;
-    margin-bottom: 1.75rem;
+    line-height: 1.82;
+    margin-bottom: 1.15rem;
     font-weight: 400;
-    text-align: left;
 }
 
-.about-details p:last-child {
+.about-body p:last-child {
     margin-bottom: 0;
 }
 
-.about-details strong {
+.about-body strong {
     color: var(--text-primary);
     font-weight: 600;
 }
 
-.about-details em {
-    color: var(--text-primary);
-    font-style: italic;
+/* Professional Information Notice Card */
+.about-professional-card {
+    background: rgba(168, 137, 91, 0.08);
+    border: 1px solid rgba(168, 137, 91, 0.32);
+    border-left: 4px solid var(--secondary-color);
+    margin-top: 1rem;
+    box-shadow: 0 8px 28px rgba(168, 137, 91, 0.1);
 }
 
+.about-professional-card:hover {
+    background: rgba(168, 137, 91, 0.12);
+    border-color: var(--secondary-color);
+}
+
+.professional-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    margin-bottom: 1.25rem;
+}
+
+.professional-card-header h2 {
+    margin-bottom: 0;
+    color: var(--primary-color);
+}
+
+.professional-card-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(168, 137, 91, 0.18);
+    color: var(--secondary-color);
+    flex-shrink: 0;
+}
+
+.professional-disclaimer {
+    font-size: 0.96rem !important;
+    font-style: italic;
+    color: var(--text-secondary);
+    line-height: 1.75;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: 1px dashed rgba(168, 137, 91, 0.3);
+}
+
+/* Responsive Breakpoints */
 @media (max-width: 768px) {
-    .about {
-        padding: calc(var(--header-height) + 3rem) 1rem 4rem;
-        min-height: auto;
+    .about-page {
+        padding: calc(var(--header-height) + 2.5rem) 1rem 4rem;
     }
 
-    .about-container {
-        padding: 2.5rem 1.25rem;
+    .about-header {
+        margin-bottom: 2.5rem;
     }
-    
-    .about h1 {
-        font-size: 2.2rem;
-        margin-bottom: 1.5rem;
-    }
-    
-    .about-subtitle {
-        font-size: 1.25rem !important;
-        margin-bottom: 2rem !important;
-    }
-    
-    .about-details p {
+
+    .about-lead {
         font-size: 1.05rem;
-        line-height: 1.7;
-        margin-bottom: 1.5rem;
+        line-height: 1.65;
+    }
+
+    .about-section {
+        padding: 1.75rem 1.5rem;
+    }
+
+    .about-section h2 {
+        font-size: 1.25rem;
+    }
+
+    .about-body p {
+        font-size: 0.98rem;
+        line-height: 1.75;
+        margin-bottom: 1rem;
+    }
+
+    .professional-card-header {
+        gap: 0.65rem;
+    }
+
+    .professional-card-icon {
+        width: 32px;
+        height: 32px;
     }
 }

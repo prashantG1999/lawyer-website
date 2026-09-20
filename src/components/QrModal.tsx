@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import instagramQr from '../assets/instagram-qr.jpg';
-import whatsappQr from '../assets/whatsapp-qr.jpg';
+import instagramQr from '../assets/instagram-qr-cropped.png';
+import whatsappQr from '../assets/whatsapp-qr-cropped.png';
 import './QrModal.css';
 
 export type QrTabType = 'whatsapp' | 'instagram';
@@ -44,13 +44,20 @@ const QrModal: React.FC<QrModalProps> = ({ isOpen, onClose, initialTab = 'whatsa
                 aria-label="Direct QR Scanner"
                 onClick={(e) => e.stopPropagation()}
             >
-                <button 
-                    className="qr-modal-close" 
-                    onClick={onClose} 
-                    aria-label="Close QR Scanner"
-                >
-                    &times;
-                </button>
+                {/* Header Row with Close Button */}
+                <div className="qr-modal-top-row">
+                    <button 
+                        type="button"
+                        className="qr-modal-close" 
+                        onClick={onClose} 
+                        aria-label="Close QR Scanner"
+                    >
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
 
                 {/* Tab Switcher */}
                 <div className="qr-modal-tabs">
@@ -110,7 +117,7 @@ const QrModal: React.FC<QrModalProps> = ({ isOpen, onClose, initialTab = 'whatsa
                 ) : (
                     <div className="qr-modal-tab-content">
                         <div className="qr-modal-header">
-                            <h3>Instagram Scanner</h3>
+                            <h3>Instagram</h3>
                             <p className="qr-modal-handle instagram-handle">@jurivalegalco</p>
                         </div>
 

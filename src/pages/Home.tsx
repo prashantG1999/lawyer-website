@@ -10,16 +10,16 @@ const Home: React.FC = () => {
     return (
         <div className="home-page">
             <Helmet>
-                <title>Juriva Legal | Advocates & Legal Consultants in Kota, Rajasthan</title>
+                <title>Juriva Legal | Advocates &amp; Solicitors in Kota, Rajasthan</title>
                 <meta 
                     name="description" 
-                    content="Juriva Legal delivers strategic legal counsel and robust litigation representation in Kota, Rajasthan across District Courts, DRT, and High Court." 
+                    content="JURIVA LEGAL is a legal practice based in Rajasthan, with practice areas including civil and criminal litigation, banking and financial laws, revenue and land law, negotiable instruments law, family and matrimonial law, personal law and succession, and arbitration and alternative dispute resolution." 
                 />
-                <meta property="og:title" content="Juriva Legal | Advocates & Legal Consultants in Kota, Rajasthan" />
-                <meta property="og:description" content="Comprehensive legal expertise you can trust in Kota, Rajasthan and across Indian courts and tribunals." />
+                <meta property="og:title" content="Juriva Legal | Advocates &amp; Solicitors in Kota, Rajasthan" />
+                <meta property="og:description" content="JURIVA LEGAL is a legal practice based in Rajasthan, with practice areas including civil and criminal litigation, banking and financial laws, revenue and land law, negotiable instruments law, family and matrimonial law, personal law and succession, and arbitration and alternative dispute resolution." />
                 <meta property="og:type" content="website" />
-                <meta name="twitter:title" content="Juriva Legal | Advocates & Legal Consultants in Kota, Rajasthan" />
-                <meta name="twitter:description" content="Comprehensive legal expertise you can trust in Kota, Rajasthan and across Indian courts and tribunals." />
+                <meta name="twitter:title" content="Juriva Legal | Advocates &amp; Solicitors in Kota, Rajasthan" />
+                <meta name="twitter:description" content="JURIVA LEGAL is a legal practice based in Rajasthan, with practice areas including civil and criminal litigation, banking and financial laws, revenue and land law, negotiable instruments law, family and matrimonial law, personal law and succession, and arbitration and alternative dispute resolution." />
             </Helmet>
 
             {/* Hero Section */}
@@ -37,12 +37,12 @@ const Home: React.FC = () => {
                                 fetchPriority="high"
                                 decoding="async"
                             />
-                            <span>Juriva <span style={{ color: 'var(--secondary-color)' }}>Legal</span></span>
+                            <span>JURIVA <span style={{ color: 'var(--secondary-color)' }}>LEGAL</span></span>
                         </span>
-                        Comprehensive Legal Expertise You Can Trust
+                        Advocates &amp; Solicitors
                     </h1>
                     <p className="font-bookman">
-                        With years of extensive experience practicing before various courts, tribunals, and quasi-judicial forums across India, we provide robust legal representation and strategic counsel, carefully tailored to the unique facts, objectives, and legal requirements of each client and matter.
+                        JURIVA LEGAL is a legal practice based in Rajasthan, with practice areas including civil and criminal litigation, banking and financial laws, revenue and land law, negotiable instruments law, family and matrimonial law, personal law and succession, and arbitration and alternative dispute resolution.
                     </p>
                     <div className="cta-group">
                         <NavLink to="/contact" className="cta-button">Book a Consultation</NavLink>
@@ -73,32 +73,6 @@ const Home: React.FC = () => {
                                     Where there is a right, there is a remedy. We craft bespoke legal strategies tailored to the unique facts, goals, and challenges of each client. No two matters are alike, and neither are our solutions. We listen, understand, and adapt, delivering precise, practical, and effective legal pathways that seek not just to represent, but to resolve.
                                 </p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Why Choose My Practice Section */}
-            <section className="why-choose-section">
-                <div className="container">
-                    <div className="section-title">
-                        <h2>Why Choose <span>Our Practice?</span></h2>
-                    </div>
-                    <div className="why-choose-grid">
-                        <div className="why-card">
-                            <div className="why-card-icon">⚖️</div>
-                            <h3>Years of Experience</h3>
-                            <p>Deep understanding of Indian courtroom dynamics, procedural nuances, and judicial precedents.</p>
-                        </div>
-                        <div className="why-card">
-                            <div className="why-card-icon">🤝</div>
-                            <h3>Client-Centric Approach</h3>
-                            <p>Clear communication without confusing legal jargon. You will always be kept informed about the progress of your case.</p>
-                        </div>
-                        <div className="why-card">
-                            <div className="why-card-icon">🎯</div>
-                            <h3>Tailored Legal Strategies</h3>
-                            <p>No two cases are the same. We analyze your specific situation to build a customized roadmap toward a favorable resolution.</p>
                         </div>
                     </div>
                 </div>
@@ -145,11 +119,11 @@ const Home: React.FC = () => {
                 </div>
             </section>
 
-            {/* Need Legal Assistance CTA Section */}
+            {/* Get in Touch CTA Section */}
             <section className="home-cta-section">
                 <div className="container">
                     <div className="cta-box">
-                        <h2>Need Legal Assistance?</h2>
+                        <h2>Get in Touch</h2>
                         <p>Protect your rights and secure your peace of mind. Contact the chamber today to schedule a confidential consultation.</p>
 
                         <div className="cta-info-grid">
