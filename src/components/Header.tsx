@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import logoImage from '../assets/Juriva_Logo.png';
-import QrModal from './QrModal.tsx';
 import './Header.css';
 
 const Header: React.FC = () => {
     const [scrolled, setScrolled] = useState(() => typeof window !== 'undefined' && window.scrollY > 50);
     const [isOpen, setIsOpen] = useState(false);
-    const [isQrOpen, setIsQrOpen] = useState(false);
 
     useEffect(() => {
         let isScrolled = window.scrollY > 50;
@@ -82,21 +80,6 @@ const Header: React.FC = () => {
                                 </svg>
                                 <span>Instagram</span>
                             </a>
-                            <span className="banner-separator">•</span>
-                            <button 
-                                type="button" 
-                                onClick={() => setIsQrOpen(true)}
-                                className="banner-item banner-link banner-qr-trigger" 
-                                title="View Instagram QR Scanner"
-                            >
-                                <svg className="banner-svg-icon banner-qr-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                    <rect x="3" y="3" width="7" height="7"></rect>
-                                    <rect x="14" y="3" width="7" height="7"></rect>
-                                    <rect x="14" y="14" width="7" height="7"></rect>
-                                    <rect x="3" y="14" width="7" height="7"></rect>
-                                </svg>
-                                <span>Scanner</span>
-                            </button>
                             <span className="banner-separator">•</span>
                             <a href="mailto:jurivalegal@gmail.com" className="banner-item banner-link banner-email" title="Email Chamber">
                                 <svg className="banner-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -238,20 +221,6 @@ const Header: React.FC = () => {
                                 </svg>
                                 <span>Instagram</span>
                             </a>
-                            <button 
-                                type="button" 
-                                onClick={() => { setIsOpen(false); setIsQrOpen(true); }} 
-                                className="sidebar-social-pill sidebar-qr-pill" 
-                                title="View Instagram QR Scanner"
-                            >
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                    <rect x="3" y="3" width="7" height="7"></rect>
-                                    <rect x="14" y="3" width="7" height="7"></rect>
-                                    <rect x="14" y="14" width="7" height="7"></rect>
-                                    <rect x="3" y="14" width="7" height="7"></rect>
-                                </svg>
-                                <span>Scanner</span>
-                            </button>
                         </div>
 
                         <a href="mailto:jurivalegal@gmail.com" className="sidebar-contact-item sidebar-email-link">
@@ -264,8 +233,6 @@ const Header: React.FC = () => {
                     </div>
                 </nav>
             </header>
-
-            <QrModal isOpen={isQrOpen} onClose={() => setIsQrOpen(false)} />
 
             {/* Overlay */}
             {isOpen && <div className="sidebar-overlay" onClick={() => setIsOpen(false)}></div>}

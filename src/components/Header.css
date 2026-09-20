@@ -377,8 +377,8 @@ nav.nav-links a.active {
 
 .sidebar-social-actions {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.4rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
   margin-top: 0.25rem;
 }
 
@@ -387,17 +387,17 @@ nav.nav-links a.active {
   align-items: center;
   justify-content: center;
   gap: 0.35rem;
-  padding: 0.45rem 0.3rem;
+  padding: 0.5rem 0.5rem;
   border-radius: 6px;
-  font-size: 0.76rem;
+  font-size: 0.78rem;
   font-weight: 600;
   text-decoration: none;
   transition: var(--transition);
 }
 
 .sidebar-social-pill svg {
-  width: 14px;
-  height: 14px;
+  width: 15px;
+  height: 15px;
   flex-shrink: 0;
 }
 
@@ -420,19 +420,6 @@ nav.nav-links a.active {
 
 .sidebar-ig-pill:hover {
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  color: #ffffff;
-}
-
-.sidebar-qr-pill {
-  background: rgba(168, 137, 91, 0.12);
-  color: var(--secondary-color);
-  border: 1px solid rgba(168, 137, 91, 0.3);
-  cursor: pointer;
-  font-family: inherit;
-}
-
-.sidebar-qr-pill:hover {
-  background: var(--secondary-color);
   color: #ffffff;
 }
 
@@ -476,24 +463,6 @@ nav.nav-links a.active {
 
 .banner-link:hover .banner-ig-icon {
   color: #fd1d1d;
-}
-
-.banner-qr-trigger {
-  background: transparent;
-  border: none;
-  font-family: inherit;
-  font-size: inherit;
-  cursor: pointer;
-  padding: 0;
-}
-
-.banner-qr-icon {
-  color: var(--secondary-color);
-}
-
-.banner-qr-trigger:hover .banner-qr-icon {
-  color: var(--secondary-hover);
-  transform: scale(1.15);
 }
 
 /* ==========================================================================
@@ -544,14 +513,12 @@ nav.nav-links a.active {
   }
 
   .banner-whatsapp span,
-  .banner-instagram span,
-  .banner-qr-trigger span {
+  .banner-instagram span {
     display: none;
   }
 
   .banner-whatsapp svg,
-  .banner-instagram svg,
-  .banner-qr-trigger svg {
+  .banner-instagram svg {
     width: 16px;
     height: 16px;
   }
@@ -580,10 +547,9 @@ nav.nav-links a.active {
     padding: 0 0.75rem;
   }
 
-  /* Hide social/scanner icons from the narrow mobile top bar to prevent overflow */
+  /* Hide social icons from the narrow mobile top bar to prevent overflow */
   .banner-whatsapp,
   .banner-instagram,
-  .banner-qr-trigger,
   .top-banner-right .banner-separator {
     display: none !important;
   }

@@ -155,24 +155,6 @@ footer.site-footer {
     box-shadow: 0 4px 10px rgba(225, 48, 108, 0.25);
 }
 
-.footer-qr-btn {
-    background: rgba(168, 137, 91, 0.12);
-    color: var(--secondary-color) !important;
-    border: 1px solid rgba(168, 137, 91, 0.3);
-    cursor: pointer;
-    font-family: inherit;
-}
-
-.footer-qr-btn svg {
-    stroke: currentColor;
-}
-
-.footer-qr-btn:hover {
-    background: var(--secondary-color);
-    color: #ffffff !important;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(168, 137, 91, 0.25);
-}
 
 .footer-bottom {
     max-width: var(--max-width);

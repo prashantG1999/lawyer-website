@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Footer.css';
 import { NavLink } from 'react-router-dom';
 import logoImage from '../assets/Juriva_Logo.png';
-import QrModal from './QrModal.tsx';
 
 const Footer: React.FC = () => {
-    const [isQrOpen, setIsQrOpen] = useState(false);
     return (
         <footer className="site-footer">
             <div className="footer-container">
@@ -88,20 +86,6 @@ const Footer: React.FC = () => {
                             </svg>
                             <span>Instagram</span>
                         </a>
-                        <button 
-                            type="button" 
-                            className="footer-social-btn footer-qr-btn" 
-                            onClick={() => setIsQrOpen(true)}
-                            title="Scan Instagram QR Code"
-                        >
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="16" height="16" aria-hidden="true">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                            <span>QR Scanner</span>
-                        </button>
                     </div>
                 </div>
             </div>
@@ -116,8 +100,6 @@ const Footer: React.FC = () => {
                     <p>&copy; {new Date().getFullYear()} Juriva Legal. All rights reserved.</p>
                 </div>
             </div>
-
-            <QrModal isOpen={isQrOpen} onClose={() => setIsQrOpen(false)} />
         </footer>
     );
 };
