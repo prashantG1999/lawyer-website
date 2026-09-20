@@ -74,7 +74,7 @@ const Home: React.FC = () => {
                     <div className="section-header" style={{ textAlign: 'center', marginBottom: '3rem' }}>
                         <h2>Latest Legal <span>Insights</span></h2>
                         <p style={{ color: 'var(--text-secondary)', maxWidth: '600px', margin: '0.5rem auto 0' }}>
-                            Stay updated with our latest legal analyses, practical guidance, and case updates.
+                            Legal analyses, commentary, and information on matters relating to Indian law and practice.
                         </p>
                     </div>
 

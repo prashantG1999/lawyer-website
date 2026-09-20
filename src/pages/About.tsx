@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { NavLink } from 'react-router-dom';
 import './About.css';
 
 const About: React.FC = () => {
@@ -7,9 +8,9 @@ const About: React.FC = () => {
         <section className="about-page">
             <Helmet>
                 <title>About Juriva Legal | Advocates & Solicitors, Kota, Rajasthan</title>
-                <meta 
-                    name="description" 
-                    content="JURIVA LEGAL is a legal practice based in Rajasthan, with practice areas including civil and criminal litigation, banking and financial laws, revenue and land law, negotiable instruments law, family and matrimonial law, personal law and succession, and arbitration and alternative dispute resolution." 
+                <meta
+                    name="description"
+                    content="Juriva Legal is a legal practice based in Kota, Rajasthan, headed by Advocate Nishant Giri. The practice undertakes civil, criminal, banking, revenue, family, and arbitration matters before courts and tribunals."
                 />
             </Helmet>
 
@@ -19,215 +20,126 @@ const About: React.FC = () => {
                     <h1>JURIVA <span>LEGAL</span></h1>
                     <p className="about-lead about-lead-subtitle">Advocates &amp; Solicitors</p>
                     <p className="about-lead">
-                        JURIVA LEGAL is a legal practice based in Rajasthan, with practice areas including civil and criminal litigation, banking and financial laws, revenue and land law, negotiable instruments law, family and matrimonial law, personal law and succession, and arbitration and alternative dispute resolution.
+                        A legal practice based in Kota, Rajasthan, undertaking matters before courts, tribunals, statutory authorities and legally constituted forums across a range of civil and criminal jurisdictions.
                     </p>
                     <div className="about-header-divider"></div>
                 </header>
 
                 <div className="about-content">
-                    {/* Section 1: Legal Practice */}
-                    <article className="about-section">
-                        <h2>Legal Practice</h2>
-                        <div className="about-body">
-                            <p>
-                                <strong>JURIVA LEGAL</strong> is a legal practice based in Rajasthan, undertaking matters before courts, tribunals, statutory authorities and other legally constituted forums, subject to the applicable jurisdiction, statutory framework and procedural requirements.
-                            </p>
-                            <p>
-                                The practice encompasses matters relating to civil and criminal litigation, banking and financial laws, revenue and land law, negotiable instruments law, family and matrimonial law, personal law and succession, and arbitration and alternative dispute resolution.
-                            </p>
-                            <p>
-                                The nature of legal work undertaken in any matter depends upon the facts and circumstances of the matter, the applicable law, the jurisdiction of the concerned forum and the procedural requirements governing the proceedings.
-                            </p>
+
+                    {/* Section 1: The Advocate */}
+                    <article className="about-section about-advocate-card">
+                        <div className="advocate-card-inner">
+                            <div className="advocate-avatar">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="12" cy="7" r="4"/>
+                                </svg>
+                            </div>
+                            <div className="advocate-details">
+                                <h2>Adv. Nishant Giri</h2>
+                                <p className="advocate-designation">Advocate — Enrolled with the Bar Council of Rajasthan</p>
+                                <p>
+                                    Advocate Nishant Giri is the principal advocate of Juriva Legal, practising before the District and Sessions Courts of Kota, Revenue Courts and Authorities, Debt Recovery Tribunals, Family Courts, and the Rajasthan High Court, subject to applicable jurisdiction.
+                                </p>
+                                <p>
+                                    The practice was established with chambers in Kota, Rajasthan, and undertakes matters in the fields of civil litigation, criminal law, banking and financial law, revenue and land law, negotiable instruments law, family and matrimonial law, personal law and succession, and arbitration and alternative dispute resolution.
+                                </p>
+                            </div>
                         </div>
                     </article>
 
-                    {/* Section 2: Areas of Legal Practice */}
+                    {/* Section 2: Chambers */}
                     <article className="about-section">
-                        <h2>Areas of Legal Practice</h2>
+                        <h2>Chambers</h2>
                         <div className="about-body">
                             <p>
-                                The practice includes matters arising under various branches of substantive and procedural law. These include civil proceedings, criminal proceedings, property and land-related matters, banking and financial disputes, proceedings relating to negotiable instruments, family and matrimonial proceedings, succession and personal-law matters, and proceedings relating to arbitration and other forms of alternative dispute resolution.
+                                The practice maintains two chambers in Kota, Rajasthan — at <strong>Sogaria</strong> and at <strong>R.K. Puram</strong>. Client meetings, consultations, and instructions may be received at either chamber, subject to prior appointment and the availability of the advocate.
                             </p>
                             <p>
-                                The practice also encompasses proceedings arising at different stages of the legal process, including proceedings at the original, appellate, revisional, supervisory and writ jurisdictions, wherever applicable.
+                                Kota, situated in Rajasthan, is a significant district headquarters with an active judicial infrastructure comprising District and Sessions Courts, Family Courts, Revenue Courts, and other subordinate judicial forums. The proximity of Kota to the Rajasthan High Court at Jodhpur (and its Principal Seat at Jodhpur and Bench at Jaipur) facilitates representation across multiple appellate jurisdictions where required.
                             </p>
-                            <p>
-                                Legal work may include legal research, examination of relevant statutory provisions and precedents, preparation and drafting of pleadings and other legal documents, representation in proceedings, and consideration of remedies available under the applicable legal and procedural framework.
-                            </p>
+                            <div className="about-chambers-grid">
+                                <div className="about-chamber-card">
+                                    <span className="about-chamber-icon">📍</span>
+                                    <div>
+                                        <strong>Sogaria Chamber</strong>
+                                        <p>Sogaria, Kota, Rajasthan</p>
+                                        <p><a href="tel:+919664281653">+91 96642 81653</a>&nbsp;|&nbsp;<a href="tel:+919660460445">+91 96604 60445</a></p>
+                                    </div>
+                                </div>
+                                <div className="about-chamber-card">
+                                    <span className="about-chamber-icon">📍</span>
+                                    <div>
+                                        <strong>R.K. Puram Chamber</strong>
+                                        <p>R.K. Puram, Kota, Rajasthan</p>
+                                        <p><a href="tel:+918824770804">+91 88247 70804</a></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </article>
 
-                    {/* Section 3: Courts, Tribunals and Other Forums */}
+                    {/* Section 3: Scope of Practice */}
                     <article className="about-section">
-                        <h2>Courts, Tribunals and Other Forums</h2>
+                        <h2>Scope of Practice</h2>
                         <div className="about-body">
                             <p>
-                                Matters may be undertaken before District Courts, Sessions Courts, Commercial Courts, Family Courts, Magistrate Courts and other subordinate courts, subject to the jurisdiction and applicable procedural requirements of the concerned forum.
+                                The practice undertakes matters before courts, tribunals, statutory authorities and other legally constituted forums, subject to the applicable jurisdiction, statutory framework and procedural requirements. The legal work undertaken may span original proceedings, appellate proceedings, revisional proceedings, supervisory jurisdiction, and writ jurisdiction under Articles 226 and 227 of the Constitution of India.
                             </p>
                             <p>
-                                Where legally permissible and within the applicable jurisdiction, matters may also involve proceedings before High Courts and the Supreme Court of India, including proceedings arising from orders or judgments of subordinate courts, tribunals and other legally constituted authorities.
+                                The matters undertaken by the practice span the following principal areas of law:
                             </p>
-                            <p>
-                                The practice also encompasses proceedings before specialised tribunals, statutory authorities, regulatory bodies and quasi-judicial forums, where applicable to the subject matter of the proceedings and the jurisdiction conferred upon the concerned authority or forum.
-                            </p>
+                            <ul className="about-practice-list">
+                                <li>Civil litigation, including property disputes, injunctions, specific performance, partition, and contractual matters before civil and commercial courts</li>
+                                <li>Criminal law, including bail proceedings, trial representation, and appellate matters before Magistrate and Sessions Courts and the High Court</li>
+                                <li>Banking and financial laws, including proceedings under the SARFAESI Act, 2002 and the Recovery of Debts and Bankruptcy Act, 1993 before the Debt Recovery Tribunal and Debt Recovery Appellate Tribunal</li>
+                                <li>Revenue and land laws, including tenancy rights, mutation proceedings, and appeals before revenue authorities and the Board of Revenue for Rajasthan</li>
+                                <li>Negotiable instruments law, including cheque dishonour proceedings under Section 138 of the Negotiable Instruments Act, 1881</li>
+                                <li>Family and matrimonial law, including divorce, maintenance, custody, and domestic violence proceedings before Family Courts and Magistrate Courts</li>
+                                <li>Personal law and succession, including probate, letters of administration, succession certificates, and inheritance disputes</li>
+                                <li>Arbitration and alternative dispute resolution under the Arbitration and Conciliation Act, 1996 and the Mediation Act, 2023</li>
+                            </ul>
                         </div>
                     </article>
 
-                    {/* Section 4: Nature and Stages of Proceedings */}
+                    {/* Section 4: Courts & Forums */}
                     <article className="about-section">
-                        <h2>Nature and Stages of Proceedings</h2>
+                        <h2>Courts and Forums</h2>
                         <div className="about-body">
                             <p>
-                                Legal proceedings may arise at different stages and under different jurisdictions depending upon the nature of the matter.
+                                Depending upon the nature of the matter and applicable law, representation is undertaken before the following forums, subject to jurisdiction:
                             </p>
-                            <p>
-                                The practice includes matters involving original jurisdiction, where proceedings are instituted before the forum having jurisdiction over the subject matter; appellate jurisdiction, where an order or judgment is challenged before an appellate forum; and revisional or supervisory jurisdiction, where such jurisdiction is available under the applicable law.
-                            </p>
-                            <p>
-                                The practice may also include proceedings invoking the writ jurisdiction of High Courts under Articles 226 and 227 of the Constitution of India, where the facts, circumstances and applicable law provide for such a remedy.
-                            </p>
-                            <p>
-                                The availability, maintainability and scope of any particular legal remedy depend upon the governing legislation, jurisdiction of the concerned forum, procedural requirements, limitation and the facts of the individual matter.
-                            </p>
+                            <div className="about-forums-grid">
+                                <div className="about-forum-item">
+                                    <strong>Civil &amp; Commercial Courts</strong>
+                                    <span>District Courts, Commercial Courts, Munsiff Courts</span>
+                                </div>
+                                <div className="about-forum-item">
+                                    <strong>Criminal Courts</strong>
+                                    <span>Courts of Judicial Magistrate, Chief Judicial Magistrate, Courts of Session</span>
+                                </div>
+                                <div className="about-forum-item">
+                                    <strong>Family Courts</strong>
+                                    <span>Family Courts and Magistrate Courts for matrimonial proceedings</span>
+                                </div>
+                                <div className="about-forum-item">
+                                    <strong>Revenue Authorities</strong>
+                                    <span>Tehsildar, SDO, Collector, RAA, Board of Revenue (Ajmer)</span>
+                                </div>
+                                <div className="about-forum-item">
+                                    <strong>Debt Recovery Tribunals</strong>
+                                    <span>DRT Jaipur &amp; DRAT Delhi (SARFAESI / RDB Act matters)</span>
+                                </div>
+                                <div className="about-forum-item">
+                                    <strong>High Court</strong>
+                                    <span>Rajasthan High Court — writ, appellate, and revisional jurisdiction</span>
+                                </div>
+                            </div>
                         </div>
                     </article>
 
-                    {/* Section 5: Banking, Financial and Commercial Matters */}
-                    <article className="about-section">
-                        <h2>Banking, Financial and Commercial Matters</h2>
-                        <div className="about-body">
-                            <p>
-                                The practice includes matters arising in the field of banking and financial laws, including proceedings concerning applicable debt-recovery, securitisation and financial-recovery frameworks.
-                            </p>
-                            <p>
-                                Commercial and business-related matters may include proceedings arising from contractual, financial and commercial relationships and disputes, subject to the jurisdiction and statutory framework applicable to the particular matter.
-                            </p>
-                            <p>
-                                Where proceedings involve specialised tribunals, statutory authorities or other designated forums, the nature and scope of representation depend upon the jurisdiction conferred upon the relevant forum and the applicable procedural law.
-                            </p>
-                        </div>
-                    </article>
-
-                    {/* Section 6: Civil, Property and Revenue Matters */}
-                    <article className="about-section">
-                        <h2>Civil, Property and Revenue Matters</h2>
-                        <div className="about-body">
-                            <p>
-                                The practice includes civil litigation and property-related proceedings, including matters concerning rights, obligations, contracts, property and other civil disputes arising under applicable law.
-                            </p>
-                            <p>
-                                Revenue and land-related matters may include proceedings concerning land records, revenue proceedings, land-related rights and disputes, and proceedings before competent revenue authorities and judicial forums, depending upon the nature of the matter and the jurisdiction prescribed by law.
-                            </p>
-                            <p>
-                                The legal issues arising in such matters are examined with reference to the applicable statutes, rules, notifications, records, documents and judicial precedents relevant to the proceedings.
-                            </p>
-                        </div>
-                    </article>
-
-                    {/* Section 7: Criminal Proceedings */}
-                    <article className="about-section">
-                        <h2>Criminal Proceedings</h2>
-                        <div className="about-body">
-                            <p>
-                                The practice also encompasses matters arising under criminal law and criminal procedure, including proceedings before competent criminal courts and other forums having jurisdiction under applicable law.
-                            </p>
-                            <p>
-                                Depending upon the nature and stage of the proceedings, such matters may include proceedings before Magistrate Courts, Sessions Courts, High Courts and other legally constituted forums, subject to applicable jurisdiction and procedural requirements.
-                            </p>
-                            <p>
-                                The nature of proceedings and available remedies depend upon the allegations, applicable statutory provisions, stage of proceedings and jurisdiction of the concerned forum.
-                            </p>
-                        </div>
-                    </article>
-
-                    {/* Section 8: Family and Matrimonial Matters */}
-                    <article className="about-section">
-                        <h2>Family and Matrimonial Matters</h2>
-                        <div className="about-body">
-                            <p>
-                                The practice includes matters arising under applicable family and matrimonial laws, including proceedings relating to marriage, matrimonial disputes, maintenance, custody, succession and other connected legal issues, wherever applicable.
-                            </p>
-                            <p>
-                                Such proceedings may involve original proceedings as well as appeals, revisions or other remedies available under the applicable statutory and procedural framework.
-                            </p>
-                            <p>
-                                The nature of the proceedings and the legal remedies available depend upon the applicable personal law, statutory provisions, jurisdiction and facts of the matter.
-                            </p>
-                        </div>
-                    </article>
-
-                    {/* Section 9: Negotiable Instruments Matters */}
-                    <article className="about-section">
-                        <h2>Negotiable Instruments Matters</h2>
-                        <div className="about-body">
-                            <p>
-                                The practice includes matters arising under the Negotiable Instruments Act and other applicable laws, including proceedings concerning dishonour of cheques and related legal proceedings.
-                            </p>
-                            <p>
-                                Such matters may involve proceedings before competent courts as well as appellate, revisional or other forums where a remedy is available under the applicable law.
-                            </p>
-                        </div>
-                    </article>
-
-                    {/* Section 10: Personal Law and Succession */}
-                    <article className="about-section">
-                        <h2>Personal Law and Succession</h2>
-                        <div className="about-body">
-                            <p>
-                                The practice includes matters concerning personal laws, succession, inheritance and related legal proceedings, subject to the personal law and statutory framework applicable to the particular matter.
-                            </p>
-                            <p>
-                                Proceedings may involve determination of rights, succession-related questions, inheritance, testamentary and other connected issues before the forum having jurisdiction over the matter.
-                            </p>
-                        </div>
-                    </article>
-
-                    {/* Section 11: Arbitration and Alternative Dispute Resolution */}
-                    <article className="about-section">
-                        <h2>Arbitration and Alternative Dispute Resolution</h2>
-                        <div className="about-body">
-                            <p>
-                                The practice also encompasses matters relating to arbitration and alternative dispute resolution, including proceedings arising under the applicable arbitration law and related procedural provisions.
-                            </p>
-                            <p>
-                                Depending upon the circumstances of the matter, proceedings may arise in relation to arbitration agreements, arbitral proceedings, interim measures, challenges to arbitral awards, enforcement and other remedies available under the applicable statutory framework.
-                            </p>
-                        </div>
-                    </article>
-
-                    {/* Section 12: Legal Research, Drafting and Representation */}
-                    <article className="about-section">
-                        <h2>Legal Research, Drafting and Representation</h2>
-                        <div className="about-body">
-                            <p>
-                                Legal work undertaken in a matter may involve examination of the relevant statutory provisions, rules, regulations, notifications, judicial precedents and documentary material applicable to the dispute or proceeding.
-                            </p>
-                            <p>
-                                The practice also includes preparation and drafting of pleadings, applications, replies, written submissions, appeals, revisions, petitions and other legal documents, as applicable to the nature and stage of the proceedings.
-                            </p>
-                            <p>
-                                Representation in proceedings is undertaken before the forum having jurisdiction over the particular matter and in accordance with the applicable procedural requirements.
-                            </p>
-                        </div>
-                    </article>
-
-                    {/* Section 13: Jurisdiction and Applicable Law */}
-                    <article className="about-section">
-                        <h2>Jurisdiction and Applicable Law</h2>
-                        <div className="about-body">
-                            <p>
-                                The jurisdiction in which a matter may be instituted or defended depends upon the applicable substantive and procedural law, territorial and pecuniary jurisdiction, subject-matter jurisdiction, limitation requirements and other conditions prescribed by law.
-                            </p>
-                            <p>
-                                The availability of an appeal, revision, review, supervisory remedy, writ proceeding or other legal remedy similarly depends upon the statutory framework and the facts and circumstances of the matter.
-                            </p>
-                            <p>
-                                Accordingly, the legal course applicable to a particular matter is determined with reference to the relevant law, jurisdiction, procedural requirements and factual circumstances.
-                            </p>
-                        </div>
-                    </article>
-
-                    {/* Section 14: Professional Information & Notice */}
+                    {/* Section 5: Professional Disclaimer */}
                     <article className="about-section about-professional-card">
                         <div className="professional-card-header">
                             <div className="professional-card-icon">
@@ -236,17 +148,21 @@ const About: React.FC = () => {
                                     <circle cx="12" cy="11" r="3"/>
                                 </svg>
                             </div>
-                            <h2>Professional Information</h2>
+                            <h2>Professional Information &amp; Disclaimer</h2>
                         </div>
                         <div className="about-body">
                             <p>
-                                <strong>JURIVA LEGAL</strong> undertakes legal practice in the areas stated above. Details concerning the advocate, professional qualifications, enrolment particulars, office details and areas of practice may be provided separately on this website.
+                                <strong>JURIVA LEGAL</strong> is the professional name of the practice of Advocate Nishant Giri, enrolled with the Bar Council of Rajasthan. The practice is subject to the Bar Council of India Rules and the Advocates Act, 1961 and their amendments from time to time.
                             </p>
                             <p className="professional-disclaimer">
-                                The information contained on this website is intended to provide general information concerning the legal practice and its areas of practice. It is not intended to constitute legal advice or to create an advocate-client relationship in the absence of a professional engagement in accordance with applicable law and professional requirements.
+                                As per the rules of the Bar Council of India, advocates are not permitted to solicit work or advertise. This website has been created solely to provide factual information about the legal practice and its areas of work to persons seeking such information. Nothing on this website constitutes legal advice or creates an advocate-client relationship. The information provided is general in nature and is not a substitute for advice from a qualified legal professional in respect of any specific matter.
                             </p>
+                            <NavLink to="/contact" className="cta-button" style={{ display: 'inline-block', marginTop: '1.5rem' }} onClick={() => window.scrollTo(0, 0)}>
+                                Contact Chamber
+                            </NavLink>
                         </div>
                     </article>
+
                 </div>
             </div>
         </section>

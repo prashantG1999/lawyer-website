@@ -78,6 +78,30 @@ const Contact: React.FC = () => {
 
 
                         <div className="contact-info-card">
+                            <div className="info-icon">💬</div>
+                            <div className="info-text">
+                                <h3>WhatsApp</h3>
+                                <p>
+                                    <a href="https://wa.me/919664281653" target="_blank" rel="noopener noreferrer">
+                                        +91 96642 81653
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="contact-info-card">
+                            <div className="info-icon">📸</div>
+                            <div className="info-text">
+                                <h3>Instagram</h3>
+                                <p>
+                                    <a href="https://www.instagram.com/jurivalegalco" target="_blank" rel="noopener noreferrer">
+                                        @jurivalegalco
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="contact-info-card">
                             <div className="info-icon">✉️</div>
                             <div className="info-text">
                                 <h3>Email</h3>

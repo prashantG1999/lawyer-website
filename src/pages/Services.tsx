@@ -13,7 +13,7 @@ const Services: React.FC = () => {
                 <title>Areas of Practice | Juriva Legal - Advocates in Kota, Rajasthan</title>
                 <meta 
                     name="description" 
-                    content="Comprehensive legal practice in Kota, Rajasthan: Banking Laws (DRT/SARFAESI), Civil Litigation, Criminal Defense, Revenue & Land Laws, NI Act, Family Law, Succession, and Arbitration." 
+                    content="Areas of practice of Juriva Legal, Kota, Rajasthan: banking and financial laws (DRT/SARFAESI), civil litigation, criminal law, revenue and land laws, negotiable instruments law, family and matrimonial law, personal law and succession, and arbitration and ADR." 
                 />
             </Helmet>
             <div className="container">
