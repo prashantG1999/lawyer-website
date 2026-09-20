@@ -194,9 +194,9 @@ const BlogPostDetail: React.FC = () => {
                         <aside className="post-sidebar">
                             {/* Consultation CTA Widget */}
                             <div className="sidebar-widget cta-widget">
-                                <h4>Need Legal Advice?</h4>
+                                <h4>Get in Touch</h4>
                                 <p>
-                                    Get strategic counsel and experienced representation tailored to your unique legal matter.
+                                    Contact the chamber to schedule a consultation or to obtain information regarding the practice and its areas of work.
                                 </p>
                                 <NavLink to="/contact" className="cta-widget-btn">
                                     Get In Touch

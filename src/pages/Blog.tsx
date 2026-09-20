@@ -53,13 +53,13 @@ const Blog: React.FC = () => {
                 <title>Legal Insights & Blog | Juriva Legal</title>
                 <meta 
                     name="description" 
-                    content="Stay informed with expert legal analysis, practical advice, and updates on Indian SARFAESI Act, Civil Litigation, Criminal Defense, and Property Laws." 
+                    content="Legal analyses, commentary, and information on matters relating to Indian law, including the SARFAESI Act, civil litigation, criminal proceedings, and land and revenue laws." 
                 />
                 <meta property="og:title" content="Legal Insights & Blog | Juriva Legal" />
-                <meta property="og:description" content="Stay informed with expert legal analysis, practical advice, and updates on Indian SARFAESI Act, Civil Litigation, Criminal Defense, and Property Laws." />
+                <meta property="og:description" content="Legal analyses, commentary, and information on matters relating to Indian law, including the SARFAESI Act, civil litigation, criminal proceedings, and land and revenue laws." />
                 <meta property="og:type" content="blog" />
                 <meta name="twitter:title" content="Legal Insights & Blog | Juriva Legal" />
-                <meta name="twitter:description" content="Stay informed with expert legal analysis, practical advice, and updates on Indian SARFAESI Act, Civil Litigation, Criminal Defense, and Property Laws." />
+                <meta name="twitter:description" content="Legal analyses, commentary, and information on matters relating to Indian law, including the SARFAESI Act, civil litigation, criminal proceedings, and land and revenue laws." />
             </Helmet>
 
             <div className="blog-page">
@@ -68,7 +68,7 @@ const Blog: React.FC = () => {
                     <div className="container">
                         <h1>Legal <span>Insights</span> & Articles</h1>
                         <p className="blog-subtitle">
-                            Expert commentary, legal analyses, and strategic updates on Indian judicial procedures, banking litigation, and dispute resolution.
+                            Legal analyses, commentary, and information on matters relating to Indian law, practice areas, courts, tribunals, and applicable statutory frameworks.
                         </p>
                     </div>
                 </header>

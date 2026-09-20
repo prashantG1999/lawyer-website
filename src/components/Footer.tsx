@@ -23,8 +23,7 @@ const Footer: React.FC = () => {
                         Juriva <span>Legal</span>
                     </h3>
                     <p>
-                        Established in 2019, providing expert legal representation with 
-                        unwavering commitment and integrity across various courts and tribunals in India.
+                        A legal practice based in Kota, Rajasthan, undertaking matters before courts, tribunals, statutory authorities and legally constituted forums.
                     </p>
                 </div>
                 

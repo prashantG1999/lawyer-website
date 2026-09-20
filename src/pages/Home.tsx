@@ -60,7 +60,7 @@ const Home: React.FC = () => {
                                 "Ubi Jus, Ibi Remedium"
                             </blockquote>
                             <p className="quote-desc">
-                                Where there is a right, there is a remedy. We craft bespoke legal strategies tailored to the unique facts, goals, and challenges of each client. No two matters are alike, and neither are our solutions. We listen, understand, and adapt, delivering precise, practical, and effective legal pathways that seek not just to represent, but to resolve.
+                                Where there is a right, there is a remedy. The practice is guided by the applicable law, facts, and procedural framework of each matter, with representation undertaken before competent courts, tribunals, and legally constituted forums.
                             </p>
                         </div>
                     </div>
@@ -114,7 +114,7 @@ const Home: React.FC = () => {
                 <div className="container">
                     <div className="cta-box">
                         <h2>Get in Touch</h2>
-                        <p>Protect your rights and secure your peace of mind. Contact the chamber today to schedule a confidential consultation.</p>
+                        <p>Contact the chamber to schedule a consultation or to obtain information regarding the practice and its areas of work.</p>
 
                         <div className="cta-info-grid">
                             <div className="cta-info-item">
