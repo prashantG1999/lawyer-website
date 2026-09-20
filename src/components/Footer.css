@@ -67,7 +67,111 @@ footer.site-footer {
 
 .footer-contact p {
     font-size: 0.95rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.4rem;
+}
+
+.footer-chamber-entry {
+    margin-bottom: 0.75rem;
+}
+
+.footer-chamber-name {
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    margin-bottom: 0.15rem !important;
+}
+
+.footer-chamber-detail {
+    font-size: 0.88rem !important;
+    color: var(--text-muted) !important;
+    margin-bottom: 0.2rem !important;
+}
+
+.footer-chamber-phones {
+    font-size: 0.9rem !important;
+}
+
+.footer-chamber-phones a,
+.footer-email-line a {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-chamber-phones a:hover,
+.footer-email-line a:hover {
+    color: var(--secondary-color);
+}
+
+.footer-social-links {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.footer-social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.45rem 0.95rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-wa-btn {
+    background: rgba(37, 211, 102, 0.12);
+    color: #128c7e !important;
+    border: 1px solid rgba(37, 211, 102, 0.3);
+}
+
+.footer-wa-btn svg {
+    fill: currentColor;
+}
+
+.footer-wa-btn:hover {
+    background: #25d366;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.25);
+}
+
+.footer-ig-btn {
+    background: rgba(225, 48, 108, 0.1);
+    color: #c13584 !important;
+    border: 1px solid rgba(225, 48, 108, 0.3);
+}
+
+.footer-ig-btn svg {
+    stroke: currentColor;
+}
+
+.footer-ig-btn:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(225, 48, 108, 0.25);
+}
+
+.footer-qr-btn {
+    background: rgba(168, 137, 91, 0.12);
+    color: var(--secondary-color) !important;
+    border: 1px solid rgba(168, 137, 91, 0.3);
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.footer-qr-btn svg {
+    stroke: currentColor;
+}
+
+.footer-qr-btn:hover {
+    background: var(--secondary-color);
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(168, 137, 91, 0.25);
 }
 
 .footer-bottom {
