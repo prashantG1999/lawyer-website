@@ -199,7 +199,7 @@ const BlogPostDetail: React.FC = () => {
                                     Get strategic counsel and experienced representation tailored to your unique legal matter.
                                 </p>
                                 <NavLink to="/contact" className="cta-widget-btn">
-                                    Book a Consultation
+                                    Get In Touch
                                 </NavLink>
                             </div>
 
@@ -208,8 +208,8 @@ const BlogPostDetail: React.FC = () => {
                                 <div className="sidebar-widget related-posts-widget">
                                     <h4>Related Articles</h4>
                                     {relatedPosts.map((rel) => (
-                                        <div 
-                                            key={rel.id} 
+                                        <div
+                                            key={rel.id}
                                             className="related-post-item"
                                             onClick={() => {
                                                 window.scrollTo(0, 0);

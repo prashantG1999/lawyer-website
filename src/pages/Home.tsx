@@ -11,9 +11,9 @@ const Home: React.FC = () => {
         <div className="home-page">
             <Helmet>
                 <title>Juriva Legal | Advocates &amp; Solicitors in Kota, Rajasthan</title>
-                <meta 
-                    name="description" 
-                    content="JURIVA LEGAL is a legal practice based in Rajasthan, with practice areas including civil and criminal litigation, banking and financial laws, revenue and land law, negotiable instruments law, family and matrimonial law, personal law and succession, and arbitration and alternative dispute resolution." 
+                <meta
+                    name="description"
+                    content="JURIVA LEGAL is a legal practice based in Rajasthan, with practice areas including civil and criminal litigation, banking and financial laws, revenue and land law, negotiable instruments law, family and matrimonial law, personal law and succession, and arbitration and alternative dispute resolution."
                 />
                 <meta property="og:title" content="Juriva Legal | Advocates &amp; Solicitors in Kota, Rajasthan" />
                 <meta property="og:description" content="JURIVA LEGAL is a legal practice based in Rajasthan, with practice areas including civil and criminal litigation, banking and financial laws, revenue and land law, negotiable instruments law, family and matrimonial law, personal law and succession, and arbitration and alternative dispute resolution." />
@@ -28,24 +28,24 @@ const Home: React.FC = () => {
                 <div className="hero-content">
                     <h1>
                         <span className="hero-logo-wrapper">
-                            <img 
-                                src={logoImage} 
-                                alt="Juriva Legal Logo" 
-                                className="hero-logo-large" 
-                                width="200" 
-                                height="200" 
+                            <img
+                                src={logoImage}
+                                alt="Juriva Legal Logo"
+                                className="hero-logo-large"
+                                width="200"
+                                height="200"
                                 fetchPriority="high"
                                 decoding="async"
                             />
                             <span>JURIVA <span style={{ color: 'var(--secondary-color)' }}>LEGAL</span></span>
                         </span>
-                        Advocates &amp; Solicitors
+                        <span className="hero-tagline">Advocates &amp; Solicitors</span>
                     </h1>
                     <p className="font-bookman">
                         JURIVA LEGAL is a legal practice based in Rajasthan, with practice areas including civil and criminal litigation, banking and financial laws, revenue and land law, negotiable instruments law, family and matrimonial law, personal law and succession, and arbitration and alternative dispute resolution.
                     </p>
                     <div className="cta-group">
-                        <NavLink to="/contact" className="cta-button">Book a Consultation</NavLink>
+                        <NavLink to="/contact" className="cta-button">Get In Touch</NavLink>
                         <NavLink to="/services" className="cta-button secondary">Explore Practice Areas</NavLink>
                     </div>
                 </div>
@@ -54,29 +54,19 @@ const Home: React.FC = () => {
             {/* Intro Section */}
             <section className="intro-section">
                 <div className="container">
-                    <div className="intro-grid">
-                        <div className="intro-text">
-                            <h2>Dedicated to Securing <span>Justice</span></h2>
-                            <p>
-                                Navigating the complexities of the Indian legal system requires more than just knowledge of the law—it demands strategy, empathy, and dedicated advocacy.
+                    <div className="intro-quote-centered">
+                        <div className="quote-wrapper">
+                            <blockquote>
+                                "Ubi Jus, Ibi Remedium"
+                            </blockquote>
+                            <p className="quote-desc">
+                                Where there is a right, there is a remedy. We craft bespoke legal strategies tailored to the unique facts, goals, and challenges of each client. No two matters are alike, and neither are our solutions. We listen, understand, and adapt, delivering precise, practical, and effective legal pathways that seek not just to represent, but to resolve.
                             </p>
-                            <p>
-                                Our practice is built on the pillars of integrity, transparency, and an unwavering commitment to securing justice for our clients. Whether you are facing a high-stakes corporate dispute, a sensitive family matter, or require a strong defense in a criminal proceeding, your case will be handled with the highest level of professionalism.
-                            </p>
-                        </div>
-                        <div className="intro-quote">
-                            <div className="quote-wrapper">
-                                <blockquote>
-                                    "Ubi Jus, Ibi Remedium"
-                                </blockquote>
-                                <p className="quote-desc">
-                                    Where there is a right, there is a remedy. We craft bespoke legal strategies tailored to the unique facts, goals, and challenges of each client. No two matters are alike, and neither are our solutions. We listen, understand, and adapt, delivering precise, practical, and effective legal pathways that seek not just to represent, but to resolve.
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+
 
             {/* Latest Legal Insights Section */}
             <section className="home-blog-section">
@@ -159,7 +149,7 @@ const Home: React.FC = () => {
                             <div className="cta-info-item">
                                 <div className="cta-item-icon" aria-hidden="true">
                                     <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.44 0-2.85-.38-4.08-1.1l-.29-.17-3.03.8 1.15-2.96-.19-.3a8.19 8.19 0 0 1-1.26-4.32c0-4.54 3.7-8.23 8.24-8.23m4.52 11.59c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.7 4.29 3.78.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.29z"/>
+                                        <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.44 0-2.85-.38-4.08-1.1l-.29-.17-3.03.8 1.15-2.96-.19-.3a8.19 8.19 0 0 1-1.26-4.32c0-4.54 3.7-8.23 8.24-8.23m4.52 11.59c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.7 4.29 3.78.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.29z" />
                                     </svg>
                                 </div>
                                 <div className="cta-item-content">
