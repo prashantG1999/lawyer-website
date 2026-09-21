@@ -302,131 +302,6 @@ nav.nav-links a.active {
   padding-left: 10px;
 }
 
-/* Mobile Drawer Chamber Contact Card */
-.sidebar-contact-card {
-  margin-top: auto;
-  padding-top: 1.5rem;
-  border-top: 1px solid rgba(62, 75, 49, 0.15);
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.sidebar-contact-title {
-  font-family: var(--font-heading);
-  font-size: 0.88rem;
-  font-weight: 700;
-  color: var(--primary-color);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 0.2rem;
-}
-
-.sidebar-chamber-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-  background: rgba(168, 137, 91, 0.06);
-  padding: 0.65rem 0.85rem;
-  border-radius: 6px;
-  border: 1px solid rgba(62, 75, 49, 0.08);
-}
-
-.sidebar-chamber-title {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.88rem;
-  color: var(--primary-color);
-}
-
-.sidebar-chamber-title svg {
-  width: 14px;
-  height: 14px;
-  color: var(--secondary-color);
-  flex-shrink: 0;
-}
-
-.sidebar-phone-links {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  padding-left: 1.25rem;
-}
-
-.sidebar-contact-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.84rem;
-  color: var(--text-secondary);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.sidebar-contact-item svg {
-  width: 14px;
-  height: 14px;
-  color: var(--secondary-color);
-  flex-shrink: 0;
-}
-
-.sidebar-contact-item:hover {
-  color: var(--secondary-color);
-}
-
-.sidebar-social-actions {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.5rem;
-  margin-top: 0.25rem;
-}
-
-.sidebar-social-pill {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.35rem;
-  padding: 0.5rem 0.5rem;
-  border-radius: 6px;
-  font-size: 0.78rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: var(--transition);
-}
-
-.sidebar-social-pill svg {
-  width: 15px;
-  height: 15px;
-  flex-shrink: 0;
-}
-
-.sidebar-wa-pill {
-  background: rgba(37, 211, 102, 0.12);
-  color: #128c7e;
-  border: 1px solid rgba(37, 211, 102, 0.3);
-}
-
-.sidebar-wa-pill:hover {
-  background: #25d366;
-  color: #ffffff;
-}
-
-.sidebar-ig-pill {
-  background: rgba(225, 48, 108, 0.1);
-  color: #c13584;
-  border: 1px solid rgba(225, 48, 108, 0.3);
-}
-
-.sidebar-ig-pill:hover {
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  color: #ffffff;
-}
-
-.sidebar-email-link {
-  margin-top: 0.25rem;
-}
-
 /* Sidebar Overlay */
 .sidebar-overlay {
   position: fixed;
@@ -470,7 +345,7 @@ nav.nav-links a.active {
    ========================================================================== */
 @media (max-width: 1180px) {
   .banner-item.banner-email,
-  .top-banner-right .banner-separator:nth-of-type(4) {
+  .banner-sep-email {
     display: none;
   }
 }
@@ -550,7 +425,7 @@ nav.nav-links a.active {
   /* Hide social icons from the narrow mobile top bar to prevent overflow */
   .banner-whatsapp,
   .banner-instagram,
-  .top-banner-right .banner-separator {
+  .top-banner-right .banner-separator:not(.banner-phone-separator) {
     display: none !important;
   }
 
@@ -578,13 +453,17 @@ nav.nav-links a.active {
     padding: 0 0.5rem;
   }
 
+  .banner-phone-icon-secondary {
+    display: none;
+  }
+
   .banner-phone {
-    font-size: 0.74rem;
+    font-size: 0.72rem;
   }
 
   .banner-cta-btn {
     font-size: 0.68rem;
-    padding: 0.18rem 0.55rem;
+    padding: 0.18rem 0.52rem;
   }
 
   .site-header-nav {
@@ -599,5 +478,16 @@ nav.nav-links a.active {
 
   .logo-icon-img {
     width: 1.8rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .banner-phone {
+    font-size: 0.68rem;
+  }
+
+  .banner-cta-btn {
+    font-size: 0.64rem;
+    padding: 0.16rem 0.44rem;
   }
 }
