@@ -47,10 +47,15 @@ const RouteLoadingFallback = () => (
   </div>
 );
 
+// Automatically detect repository subpath (GitHub Pages) vs custom root domain
+const basename = typeof window !== 'undefined' && window.location.pathname.startsWith('/lawyer-website')
+  ? '/lawyer-website'
+  : '/';
+
 const App: React.FC = () => {
   return (
     <HelmetProvider>
-      <Router>
+      <Router basename={basename}>
         <ScrollToTop />
         <Layout>
           <Suspense fallback={<RouteLoadingFallback />}>

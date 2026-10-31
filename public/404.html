@@ -7,7 +7,9 @@
       // Single Page App redirect for GitHub Pages
       // Converts the path into a query-string parameter so index.html can restore it.
       // See: https://github.com/rafgraph/spa-github-pages
-      var pathSegmentsToKeep = 0;
+      // Keep 1 segment for GitHub Pages project subpaths (/lawyer-website), 0 for custom root domain (jurivalegal.in)
+      var isGithubPagesRepo = window.location.hostname.indexOf('github.io') > -1 && window.location.pathname.indexOf('/lawyer-website') === 0;
+      var pathSegmentsToKeep = isGithubPagesRepo ? 1 : 0;
       var l = window.location;
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
