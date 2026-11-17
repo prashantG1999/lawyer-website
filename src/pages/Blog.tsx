@@ -50,16 +50,18 @@ const Blog: React.FC = () => {
     return (
         <>
             <Helmet>
-                <title>Legal Insights & Blog | Juriva Legal</title>
+                <title>Legal Insights &amp; Rajasthan Law Commentary | Juriva Legal</title>
                 <meta 
                     name="description" 
-                    content="Legal analyses, commentary, and information on matters relating to Indian law, including the SARFAESI Act, civil litigation, criminal proceedings, and land and revenue laws." 
+                    content="Legal analyses, case law commentaries, and authoritative articles on Rajasthan judicial practice and Indian law by advocates in Kota, Rajasthan." 
                 />
-                <meta property="og:title" content="Legal Insights & Blog | Juriva Legal" />
-                <meta property="og:description" content="Legal analyses, commentary, and information on matters relating to Indian law, including the SARFAESI Act, civil litigation, criminal proceedings, and land and revenue laws." />
+                <link rel="canonical" href="https://jurivalegal.in/blog" />
+                <meta property="og:title" content="Legal Insights &amp; Rajasthan Law Commentary | Juriva Legal" />
+                <meta property="og:description" content="Legal analyses, case law commentaries, and authoritative articles on Rajasthan judicial practice by advocates in Kota." />
+                <meta property="og:url" content="https://jurivalegal.in/blog" />
                 <meta property="og:type" content="blog" />
-                <meta name="twitter:title" content="Legal Insights & Blog | Juriva Legal" />
-                <meta name="twitter:description" content="Legal analyses, commentary, and information on matters relating to Indian law, including the SARFAESI Act, civil litigation, criminal proceedings, and land and revenue laws." />
+                <meta name="twitter:title" content="Legal Insights &amp; Rajasthan Law Commentary | Juriva Legal" />
+                <meta name="twitter:description" content="Legal analyses, case law commentaries, and authoritative articles on Rajasthan judicial practice by advocates in Kota." />
             </Helmet>
 
             <div className="blog-page">

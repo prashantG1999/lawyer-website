@@ -37,11 +37,15 @@ const Contact: React.FC = () => {
     return (
         <section className="contact">
             <Helmet>
-                <title>Contact Chamber | Juriva Legal, Kota, Rajasthan</title>
+                <title>Contact Chamber | Juriva Legal - Lawyers in Kota, Rajasthan</title>
                 <meta 
                     name="description" 
-                    content="Contact Juriva Legal chamber in Kota, Rajasthan to schedule a confidential legal consultation for civil, criminal, banking, corporate, or matrimonial matters." 
+                    content="Contact Juriva Legal to schedule a confidential legal consultation with experienced lawyers in Kota and advocates in Rajasthan for civil litigation, criminal defense, banking (DRT Jaipur), and land disputes." 
                 />
+                <link rel="canonical" href="https://jurivalegal.in/contact" />
+                <meta property="og:title" content="Contact Chamber | Juriva Legal - Lawyers in Kota, Rajasthan" />
+                <meta property="og:description" content="Schedule a confidential legal consultation with advocates and lawyers in Kota, Rajasthan at Juriva Legal." />
+                <meta property="og:url" content="https://jurivalegal.in/contact" />
             </Helmet>
             <div className="contact-wrapper-container">
                 <div className="contact-header">

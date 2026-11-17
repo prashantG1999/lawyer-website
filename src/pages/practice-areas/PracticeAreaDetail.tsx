@@ -41,12 +41,14 @@ const PracticeAreaDetail: React.FC = () => {
             <section className="practice-area-page">
                 <div className="practice-area-container">
                     <Helmet>
-                        <title>{area.title} | Juriva Legal, Kota, Rajasthan</title>
-                        <meta name="description" content={`${area.title} legal representation and practice details by Juriva Legal in Kota, Rajasthan. ${area.description}`} />
-                        <meta property="og:title" content={`${area.title} | Juriva Legal, Kota, Rajasthan`} />
+                        <title>{`${area.title} | Juriva Legal - Lawyers in Kota, Rajasthan`}</title>
+                        <meta name="description" content={`${area.title} legal representation by Juriva Legal, experienced advocates and lawyers in Kota, Rajasthan. ${area.description}`} />
+                        <link rel="canonical" href={`https://jurivalegal.in/services/${area.id}`} />
+                        <meta property="og:title" content={`${area.title} | Juriva Legal - Lawyers in Kota, Rajasthan`} />
                         <meta property="og:description" content={area.description} />
+                        <meta property="og:url" content={`https://jurivalegal.in/services/${area.id}`} />
                         <meta property="og:type" content="website" />
-                        <meta name="twitter:title" content={`${area.title} | Juriva Legal, Kota, Rajasthan`} />
+                        <meta name="twitter:title" content={`${area.title} | Juriva Legal - Lawyers in Kota, Rajasthan`} />
                         <meta name="twitter:description" content={area.description} />
                     </Helmet>
                     

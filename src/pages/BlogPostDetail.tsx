@@ -122,12 +122,14 @@ const BlogPostDetail: React.FC = () => {
     return (
         <>
             <Helmet>
-                <title>{`${post.title} | Juriva Legal Insights`}</title>
+                <title>{`${post.title} | Juriva Legal - Lawyers in Kota, Rajasthan`}</title>
                 <meta name="description" content={post.summary} />
-                <meta property="og:title" content={`${post.title} | Juriva Legal Insights`} />
+                <link rel="canonical" href={`https://jurivalegal.in/blog/${post.slug}`} />
+                <meta property="og:title" content={`${post.title} | Juriva Legal - Lawyers in Kota, Rajasthan`} />
                 <meta property="og:description" content={post.summary} />
+                <meta property="og:url" content={`https://jurivalegal.in/blog/${post.slug}`} />
                 <meta property="og:type" content="article" />
-                <meta name="twitter:title" content={`${post.title} | Juriva Legal Insights`} />
+                <meta name="twitter:title" content={`${post.title} | Juriva Legal - Lawyers in Kota, Rajasthan`} />
                 <meta name="twitter:description" content={post.summary} />
             </Helmet>
 

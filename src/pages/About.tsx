@@ -7,11 +7,15 @@ const About: React.FC = () => {
     return (
         <section className="about-page">
             <Helmet>
-                <title>About Juriva Legal | Advocates & Solicitors, Kota, Rajasthan</title>
+                <title>About Juriva Legal | Advocates &amp; Lawyers in Kota, Rajasthan</title>
                 <meta
                     name="description"
-                    content="Juriva Legal is a legal practice based in Kota, Rajasthan, headed by Advocate Nishant Giri. The practice undertakes civil, criminal, banking, revenue, family, and arbitration matters before courts and tribunals."
+                    content="Juriva Legal is a premier chamber of advocates and lawyers in Kota, Rajasthan, headed by Advocate Nishant Giri. We represent clients across Kota District Courts, Rajasthan High Court, and DRT Jaipur."
                 />
+                <link rel="canonical" href="https://jurivalegal.in/about" />
+                <meta property="og:title" content="About Juriva Legal | Advocates &amp; Lawyers in Kota, Rajasthan" />
+                <meta property="og:description" content="Chamber profile of Juriva Legal, leading advocates and lawyers in Kota, Rajasthan, practicing before District Courts, High Court, and tribunals in Rajasthan." />
+                <meta property="og:url" content="https://jurivalegal.in/about" />
             </Helmet>
 
             <div className="about-wrapper">

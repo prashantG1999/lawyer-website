@@ -1,25 +1,54 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import './Home.css';
 import { NavLink, useNavigate } from 'react-router-dom';
 import logoImage from '../assets/Juriva_Logo.png';
 import { blogPosts } from '../data/blogData.ts';
+import { practiceAreasList } from '../data/practiceAreasData.ts';
+
+const faqs = [
+    {
+        question: "How can I consult or hire an experienced lawyer in Kota, Rajasthan?",
+        answer: "You can schedule a consultation with Juriva Legal by contacting our Kota chambers via phone (+91 96642 81653), WhatsApp, or email (jurivalegal@gmail.com). Our chambers are situated at Sogaria and R.K. Puram in Kota, Rajasthan. We provide comprehensive case evaluations for civil litigation, criminal defense, banking/DRT, and land disputes."
+    },
+    {
+        question: "Does Juriva Legal practice before the Rajasthan High Court and DRT Jaipur?",
+        answer: "Yes, Advocate Nishant Giri and the chamber team represent clients before the Rajasthan High Court (Jaipur Bench) for writ petitions, civil/criminal appeals, and revisions, as well as before the Debt Recovery Tribunal (DRT Jaipur) for SARFAESI and debt recovery proceedings across Rajasthan."
+    },
+    {
+        question: "What legal assistance is available for property and revenue land disputes in Kota and Rajasthan?",
+        answer: "Juriva Legal provides comprehensive litigation for ancestral property partition, title declarations, illegal possession, agricultural land tenancy disputes under the Rajasthan Tenancy Act, and mutation/partition matters before Revenue Courts (Tehsildar, SDM, Collector, and Board of Revenue Rajasthan, Ajmer)."
+    },
+    {
+        question: "What representation is provided in Kota District Courts for criminal and cheque bounce matters?",
+        answer: "We represent clients before the Chief Judicial Magistrate (CJM), Judicial Magistrates, and Sessions Courts of Kota for regular and anticipatory bail, trials under BNS and BNSS, and fast-track prosecution or defense in Section 138 Negotiable Instruments Act (cheque bounce) cases."
+    }
+];
 
 const Home: React.FC = () => {
     const navigate = useNavigate();
+    const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+    const toggleFaq = (index: number) => {
+        setOpenFaq(prev => prev === index ? null : index);
+    };
+
     return (
         <div className="home-page">
             <Helmet>
-                <title>Juriva Legal | Advocates &amp; Solicitors in Kota, Rajasthan</title>
+                <title>Juriva Legal | Leading Lawyers in Kota &amp; Advocates in Rajasthan</title>
                 <meta
                     name="description"
-                    content="JURIVA LEGAL is a legal practice based in Rajasthan, with practice areas including civil and criminal litigation, banking and financial laws, revenue and land law, negotiable instruments law, family and matrimonial law, personal law and succession, and arbitration and alternative dispute resolution."
+                    content="Looking for a trusted lawyer in Kota or advocate in Rajasthan? Juriva Legal provides strategic legal counsel across Kota District Courts, Rajasthan High Court, DRT Jaipur, civil, criminal, banking, and land disputes."
                 />
-                <meta property="og:title" content="Juriva Legal | Advocates &amp; Solicitors in Kota, Rajasthan" />
-                <meta property="og:description" content="JURIVA LEGAL is a legal practice based in Rajasthan, with practice areas including civil and criminal litigation, banking and financial laws, revenue and land law, negotiable instruments law, family and matrimonial law, personal law and succession, and arbitration and alternative dispute resolution." />
+                <meta name="keywords" content="Lawyer in Kota, Lawyer in Rajasthan, Advocate in Kota, Advocate in Rajasthan, Best Lawyer in Kota, Top Advocates Kota, Law Firm in Kota, Law Firm in Rajasthan, Rajasthan High Court Advocate, Kota District Court Lawyer, DRT Lawyer Jaipur, Civil Lawyer Kota, Criminal Lawyer Kota, Revenue Land Lawyer Kota" />
+                <link rel="canonical" href="https://jurivalegal.in/" />
+                <meta property="og:title" content="Juriva Legal | Leading Lawyers in Kota &amp; Advocates in Rajasthan" />
+                <meta property="og:description" content="Trusted legal counsel and courtroom representation in Kota and throughout Rajasthan across District Courts, Rajasthan High Court, and DRT Jaipur." />
+                <meta property="og:url" content="https://jurivalegal.in/" />
                 <meta property="og:type" content="website" />
-                <meta name="twitter:title" content="Juriva Legal | Advocates &amp; Solicitors in Kota, Rajasthan" />
-                <meta name="twitter:description" content="JURIVA LEGAL is a legal practice based in Rajasthan, with practice areas including civil and criminal litigation, banking and financial laws, revenue and land law, negotiable instruments law, family and matrimonial law, personal law and succession, and arbitration and alternative dispute resolution." />
+                <meta name="twitter:title" content="Juriva Legal | Lawyers in Kota &amp; Advocates in Rajasthan" />
+                <meta name="twitter:description" content="Trusted courtroom litigation and legal advisory across Kota District Courts, Rajasthan High Court, and DRT Jaipur." />
             </Helmet>
 
             {/* Hero Section */}
@@ -39,10 +68,10 @@ const Home: React.FC = () => {
                             />
                             <span>JURIVA <span style={{ color: 'var(--secondary-color)' }}>LEGAL</span></span>
                         </span>
-                        <span className="hero-tagline">Advocates &amp; Solicitors</span>
+                        <span className="hero-tagline">Lawyers in Kota &amp; Advocates in Rajasthan</span>
                     </h1>
                     <p className="font-bookman">
-                        JURIVA LEGAL is a legal practice based in Rajasthan, with practice areas including civil and criminal litigation, banking and financial laws, revenue and land law, negotiable instruments law, family and matrimonial law, personal law and succession, and arbitration and alternative dispute resolution.
+                        JURIVA LEGAL is a premier chamber of advocates and lawyers in Kota, Rajasthan, headed by Advocate Nishant Giri. We provide strategic counsel and robust courtroom litigation across Kota District &amp; Sessions Courts, the Rajasthan High Court, Debt Recovery Tribunal (DRT Jaipur), Revenue Courts, and tribunals throughout Rajasthan.
                     </p>
                     <div className="cta-group">
                         <NavLink to="/contact" className="cta-button">Get In Touch</NavLink>
@@ -60,21 +89,125 @@ const Home: React.FC = () => {
                                 "Ubi Jus, Ibi Remedium"
                             </blockquote>
                             <p className="quote-desc">
-                                Where there is a right, there is a remedy. The practice is guided by the applicable law, facts, and procedural framework of each matter, with representation undertaken before competent courts, tribunals, and legally constituted forums.
+                                Where there is a right, there is a remedy. Serving clients in Kota and across Rajasthan, our practice is grounded in meticulous legal analysis, statutory depth, and steadfast courtroom advocacy before District Courts, High Court, and tribunals in Rajasthan.
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
 
+            {/* Areas of Practice Preview Section */}
+            <section className="home-services-preview">
+                <div className="container">
+                    <div className="section-header" style={{ textAlign: 'center' }}>
+                        <h2>Areas of Legal Practice in <span>Kota &amp; Rajasthan</span></h2>
+                        <p style={{ color: 'var(--text-secondary)', maxWidth: '700px', margin: '0.5rem auto 0' }}>
+                            Comprehensive legal representation, trial advocacy, and dispute resolution across Kota courts and Rajasthan statutory forums.
+                        </p>
+                    </div>
+
+                    <div className="home-services-grid">
+                        {practiceAreasList.map((area) => (
+                            <div
+                                key={area.id}
+                                className="home-service-card"
+                                onClick={() => {
+                                    window.scrollTo(0, 0);
+                                    navigate(`/services/${area.id}`);
+                                }}
+                                role="button"
+                                tabIndex={0}
+                                onKeyDown={(e) => {
+                                    if (e.key === 'Enter' || e.key === ' ') {
+                                        window.scrollTo(0, 0);
+                                        navigate(`/services/${area.id}`);
+                                    }
+                                }}
+                            >
+                                <div>
+                                    <span className="home-service-icon" aria-hidden="true">{area.icon}</span>
+                                    <h3>{area.title}</h3>
+                                    <p>{area.description}</p>
+                                </div>
+                                <span className="home-service-link">
+                                    Explore Practice &rarr;
+                                </span>
+                            </div>
+                        ))}
+                    </div>
+
+                    <div style={{ textAlign: 'center', marginTop: '3rem' }}>
+                        <NavLink to="/services" className="cta-button" onClick={() => window.scrollTo(0, 0)}>
+                            View All Practice Details
+                        </NavLink>
+                    </div>
+                </div>
+            </section>
+
+            {/* Court & Tribunal Practice in Rajasthan */}
+            <section className="home-forums-section">
+                <div className="container">
+                    <div className="section-header" style={{ textAlign: 'center' }}>
+                        <h2>Court &amp; Tribunal Practice Across <span>Rajasthan</span></h2>
+                        <p style={{ color: 'var(--text-secondary)', maxWidth: '720px', margin: '0.5rem auto 0' }}>
+                            Active litigation and representation before judicial and quasi-judicial authorities in Kota and throughout Rajasthan.
+                        </p>
+                    </div>
+
+                    <div className="forums-grid">
+                        <div className="forum-card">
+                            <span className="forum-badge">Kota Courts</span>
+                            <h3>Kota District &amp; Sessions Judiciary</h3>
+                            <p>
+                                Comprehensive trial courtroom litigation before District &amp; Sessions Courts of Kota for civil suits, permanent injunctions, ancestral property partition, title declarations, and criminal trials under the Bharatiya Nyaya Sanhita (BNS) and BNSS.
+                            </p>
+                        </div>
+
+                        <div className="forum-card">
+                            <span className="forum-badge">High Court</span>
+                            <h3>Rajasthan High Court Practice</h3>
+                            <p>
+                                Dedicated representation in constitutional writ petitions under Articles 226 and 227, civil and criminal revisions, first appeals, second appeals, and bail applications before the High Court of Judicature for Rajasthan (Jaipur Bench).
+                            </p>
+                        </div>
+
+                        <div className="forum-card">
+                            <span className="forum-badge">DRT Jaipur</span>
+                            <h3>Banking &amp; DRT Practice in Rajasthan</h3>
+                            <p>
+                                Defense of borrowers, guarantors, and business enterprises under the SARFAESI Act, 2002 and RDB Act, 1993 before the Debt Recovery Tribunal (DRT Jaipur) and DRAT, including securing stays against property auctions and physical possession.
+                            </p>
+                        </div>
+
+                        <div className="forum-card">
+                            <span className="forum-badge">Revenue Courts</span>
+                            <h3>Revenue &amp; Land Laws in Rajasthan</h3>
+                            <p>
+                                Dedicated advocacy under the Rajasthan Tenancy Act and Rajasthan Land Revenue Act before Revenue Courts (Tehsildar, SDM, District Collector, and Board of Revenue Rajasthan, Ajmer) for agricultural land partition and mutation.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Regional Chamber Highlight */}
+                    <div className="nri-highlight-box">
+                        <h3>Legal Chambers in Kota Serving Clients Across Rajasthan</h3>
+                        <p>
+                            With chambers established at Sogaria and R.K. Puram in Kota, Juriva Legal represents individuals, families, and businesses across Kota, Bundi, Baran, Jhalawar (Hadoti region), Jaipur, and throughout Rajasthan. We provide comprehensive litigation and dispute resolution tailored to state laws, local court procedures, and client needs.
+                        </p>
+                        <NavLink to="/contact" className="cta-button" onClick={() => window.scrollTo(0, 0)}>
+                            Consult Chamber Counsel in Kota
+                        </NavLink>
+                    </div>
+                </div>
+            </section>
 
             {/* Latest Legal Insights Section */}
             <section className="home-blog-section">
                 <div className="container">
                     <div className="section-header" style={{ textAlign: 'center', marginBottom: '3rem' }}>
-                        <h2>Latest Legal <span>Insights</span></h2>
+                        <h2>Legal Insights &amp; <span>Articles</span></h2>
                         <p style={{ color: 'var(--text-secondary)', maxWidth: '600px', margin: '0.5rem auto 0' }}>
-                            Legal analyses, commentary, and information on matters relating to Indian law and practice.
+                            Legal analyses, case law commentaries, and practical guides on Rajasthan judicial practice and Indian law.
                         </p>
                     </div>
 
@@ -109,12 +242,49 @@ const Home: React.FC = () => {
                 </div>
             </section>
 
+            {/* FAQ Section */}
+            <section className="home-faq-section">
+                <div className="container">
+                    <div className="section-header" style={{ textAlign: 'center' }}>
+                        <h2>Frequently Asked <span>Questions</span></h2>
+                        <p style={{ color: 'var(--text-secondary)', maxWidth: '600px', margin: '0.5rem auto 0' }}>
+                            Key information on retaining legal counsel, courtroom representation, and case evaluation in Kota and Rajasthan.
+                        </p>
+                    </div>
+
+                    <div className="faq-container">
+                        {faqs.map((faq, index) => (
+                            <div key={index} className={`faq-item ${openFaq === index ? 'active' : ''}`}>
+                                <button
+                                    type="button"
+                                    className="faq-question"
+                                    onClick={() => toggleFaq(index)}
+                                    aria-expanded={openFaq === index}
+                                >
+                                    <span>{faq.question}</span>
+                                    <span className="faq-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </span>
+                                </button>
+                                {openFaq === index && (
+                                    <div className="faq-answer">
+                                        <p>{faq.answer}</p>
+                                    </div>
+                                )}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             {/* Get in Touch CTA Section */}
             <section className="home-cta-section">
                 <div className="container">
                     <div className="cta-box">
-                        <h2>Get in Touch</h2>
-                        <p>Contact the chamber to schedule a consultation or to obtain information regarding the practice and its areas of work.</p>
+                        <h2>Get in Touch with Chamber Counsel in Kota</h2>
+                        <p>Contact the chamber to schedule an in-person or remote legal consultation regarding your matter in Kota or across Rajasthan.</p>
 
                         <div className="cta-info-grid">
                             <div className="cta-info-item">

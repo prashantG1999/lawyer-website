@@ -10,11 +10,15 @@ const Services: React.FC = () => {
     return (
         <section className="services-page">
             <Helmet>
-                <title>Areas of Practice | Juriva Legal - Advocates in Kota, Rajasthan</title>
+                <title>Areas of Practice | Juriva Legal - Lawyers in Kota, Rajasthan</title>
                 <meta 
                     name="description" 
-                    content="Areas of practice of Juriva Legal, Kota, Rajasthan: banking and financial laws (DRT/SARFAESI), civil litigation, criminal law, revenue and land laws, negotiable instruments law, family and matrimonial law, personal law and succession, and arbitration and ADR." 
+                    content="Legal practice areas of Juriva Legal, leading lawyers in Kota and advocates in Rajasthan: civil litigation, criminal defense, banking &amp; DRT Jaipur, revenue land disputes, cheque bounce, and High Court representation." 
                 />
+                <link rel="canonical" href="https://jurivalegal.in/services" />
+                <meta property="og:title" content="Areas of Legal Practice | Juriva Legal - Lawyers in Kota, Rajasthan" />
+                <meta property="og:description" content="Explore legal practice areas and courtroom litigation provided by Juriva Legal, advocates and lawyers in Kota, Rajasthan." />
+                <meta property="og:url" content="https://jurivalegal.in/services" />
             </Helmet>
             <div className="container">
                 <div className="section-header">
